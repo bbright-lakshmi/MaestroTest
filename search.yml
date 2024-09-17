@@ -1,8 +1,0 @@
-appId: org.wikipedia
----
-- tapOn: "Search Wikipedia"
-- inputText: "Sun"
-- assertVisible: "Star in the Solar System"
-
-- back
-- back

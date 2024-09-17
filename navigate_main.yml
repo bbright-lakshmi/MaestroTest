@@ -1,0 +1,8 @@
+# run-test.yml
+appId: org.wikipedia
+---
+- launchApp
+- runFlow: "dashboard/search.yml"
+- runFlow: "dashboard/feed.yml"
+- runFlow: "dashboard/copy-paste.yml"
+- runFlow: "dashboard/saved.yml"

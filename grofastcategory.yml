@@ -1,0 +1,84 @@
+appId: com.example.org
+--- 
+- launchApp
+- tapOn: "Name"
+- inputText: "Lakshmi"
+- tapOn: "Mobile number"
+- inputText: "9876543212"
+- tapOn: "Sign In"
+- tapOn:
+    point: "50%,55%"
+- inputText: "654321"
+- tapOn: "Verify"
+- tapOn:
+    point: "50%,94%"
+- tapOn:
+    point: "50%,94%"
+- tapOn:
+    point: "50%,94%"
+- tapOn: "Get Started"
+- tapOn: "Search Stores"
+- inputText: "test"
+- scrollUntilVisible:
+    element: "test\nstore address"
+    direction: DOWN
+- tapOn: "test\nstore address"
+- tapOn: "Category"
+- extendedWaitUntil:
+    visible: "Toys\n10 Items" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Category/1
+- tapOn: "Fruits\n2 Items"
+- extendedWaitUntil:
+    visible: "test\nx 1\n₹1"
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Category/2
+- tapOn: "test\nx 1\n₹1"
+- extendedWaitUntil:
+    visible: "Fruits" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Category/3
+- tapOn:
+    point: "11%,8%"
+- tapOn: "Basket&Bounty\nx 1\n₹1"
+- extendedWaitUntil:
+    visible: "Fruits" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Category/4
+- tapOn:
+    point: "11%,8%"
+- tapOn:
+    point: "11%,8%"
+- tapOn: "DryFruts\n1 Items"
+- extendedWaitUntil:
+    visible: "DryFruts\n1 Items"
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Category/5
+- tapOn:
+    point: "11%,8%"
+- tapOn: "Toys\n10 Items"
+- extendedWaitUntil:
+    visible: "Toys" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Category/6
+- scrollUntilVisible:
+    element:  "Pista\nx 1\n₹1000"
+    direction: DOWN
+- extendedWaitUntil:
+    visible: "Toys" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Category/7
+- scrollUntilVisible:
+    element:  "Buzz lightYear\nx 1\n₹500"
+    direction: DOWN 
+- extendedWaitUntil:
+    visible: "Toys" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Category/8
+- tapOn:
+    point: "11%,8%"
+
+
+
+
+

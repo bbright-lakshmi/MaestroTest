@@ -1,0 +1,46 @@
+appId: com.saragrocery.name.delivery_app
+--- 
+- launchApp
+# - extendedWaitUntil:
+#     visible: "Let's Start with Login!" 
+#     timeout: 10000       
+# - takeScreenshot: Images/FristPage
+# - tapOn: Name
+# - inputText: lakshmi
+# - scroll 
+# - tapOn: Mobile Number
+# - inputText: 9876543210
+# - tapOn: Login
+# - extendedWaitUntil:
+#     visible: "Let's Start with Login!" 
+#     timeout: 10000       
+# - takeScreenshot: Images/loginPage
+# - tapOn:
+#     point: "50%,54%"
+# - inputText: "654321"
+# - tapOn: "Verify"
+# - extendedWaitUntil:
+#     visible: "Enter Pin" 
+#     timeout: 10000       
+# - takeScreenshot: Images/Enter Pin Page
+- tapOn:
+    point: "50%,55%"
+- inputText: "1234"
+- extendedWaitUntil:
+    visible: "Enter Pin" 
+    timeout: 10000       
+- takeScreenshot: Images/Mainpage
+- tapOn: "Verify"
+- extendedWaitUntil:
+    visible: "Incorrect Pin" 
+    timeout: 10000       
+- takeScreenshot: Images/Incorrect pin
+
+
+
+
+
+
+
+
+    

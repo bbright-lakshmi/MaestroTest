@@ -1,0 +1,25 @@
+appId: com.saragrocery.name
+---
+- launchApp
+- tapOn: "Sara Grocery Mulapeta, SPSR Nellore 524003 Chennur Road, Buchireddypalem, SPSR Nellore 524305"
+- scrollUntilVisible:
+    element: "Snacks"
+    direction: DOWN
+    speed: 90
+ 
+- scrollUntilVisible:
+    element: "Sleep Well mosquito agarbatti\
+    x 1
+    ₹15"
+    direction: RIGHT
+   
+- scrollUntilVisible:
+    element: "Good Knight Gold Flash - Refill
+    x 1
+    ₹75"
+    direction: LEFT
+ 
+- scrollUntilVisible:
+    element: "₹99"
+    direction: UP
+    speed: 90        

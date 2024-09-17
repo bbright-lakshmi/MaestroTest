@@ -1,0 +1,90 @@
+- tapOn: Name
+- inputText: lakshmi
+- tapOn: Phone Number
+- inputText: 9876543210
+- tapOn: Sign In
+- tapOn: "50%,47%"
+- inputText: "654321"
+- tapOn: "submit"
+
+
+
+- tapOn: "సన్ ఫ్లవర్ ఆయిల్ (Freedom Refined Sunflower Oil, 1L)
+
+    1lt x 1
+
+    ₹127"
+# tap on increment button
+- tapOn:
+    point: "25%,66%"
+- tapOn: "Add"
+- tapOn: "Cart"
+- tapOn: "Delete"
+- tapOn: "Add address"
+# tap on map location
+- tapOn:
+    id: "com.android.permissioncontroller:id/permission_allow_foreground_only_button" 
+- tapOn:
+    id: "android:id/content"
+- tapOn: Frist Name
+- inputText: lakshmi
+- tapOn: Last Name
+- inputText: Addepalli
+- tapOn: Contact Number
+- tapOn: Address
+- inputText: "3-20,A Gokavaram"
+- tapOn: City
+- inputText: Eluru
+- tapOn: Pincode
+- inputText: 534416
+- tapOn: save
+- tapOn: "Choose Payment\n(Cash On Delivery)"
+- tapOn: "Paytm"
+- tapOn: "Place Order\n₹305.0"
+- tapOn: "Yes"
+- tapOn: Choose Payment (Cash On Delivery)
+- tapOn: "Place Order\n₹305.0"
+- tapOn: Ok
+
+
+
+- scrollUntilVisible:
+    element:
+      text: "Add" # or any other selector
+    direction: DOWN # DOWN|UP|LEFT|RIGHT (optional, default: DOWN)
+- tapOn: "Add"
+
+- tapOn: First Name
+- inputText: Lakshmi
+- tapOn: Last Name
+- inputText: Addepalli
+- tapOn: Contact Number
+- inputText: 9876541230
+- tapOn: Address
+- inputText: vijayawada
+- scrollUntilVisible:
+    element:
+      text: "City"
+    direction: DOWN 
+- tapOn: City
+- inputText: Eluru
+- tapOn: Pincode
+- inputText: 456987
+- tapOn: Save
+
+
+
+- swipe: 
+    start: 80%,20%
+    end: 20%,80%
+    duration: 60
+- swipe: 
+    start: 80%,80%
+    end: 20%,20%
+    duration: 150
+
+
+
+
+tapOn: frist name 
+inputText: prasanna 

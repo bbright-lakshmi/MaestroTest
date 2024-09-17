@@ -1,0 +1,110 @@
+appId: com.example.org
+--- 
+- launchApp
+- extendedWaitUntil:
+    visible: "Sign In" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Storepage/WelcomePage
+- tapOn:
+    point: "50%,44%"
+- inputText: "Lakshmi"
+- tapOn: "Mobile number"
+- inputText: "9876543212"
+- tapOn: "Sign In"
+- extendedWaitUntil:
+    visible: "Enter OTP" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Storepage/OtpPage
+- tapOn:
+    point: "50%,55%"
+- inputText: "654321"
+- tapOn: "Verify"
+- extendedWaitUntil:
+    visible: 
+       point: "50%,94%"
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Storepage/Onboardpage1
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+     visible: 
+        point: "50%,94%" 
+     timeout: 5000
+- takeScreenshot: Images/MobileApp/Storepage/Onboardpage2
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Storepage/Onboardpage3
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Storepage/Onboardpage4
+- tapOn: "Get Started"
+- extendedWaitUntil:
+    visible: "Steel_681\n93396 Ralph Corner" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Storepage/StorePage1
+- tapOn: "Search Stores"
+- inputText: "test"
+- scrollUntilVisible:
+    element: "test\nstore address"
+    direction: DOWN
+- tapOn: "test\nstore address"
+- extendedWaitUntil:
+    visible: "Premium\ntest\nx 1\n₹1" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Address/productpage
+- tapOn: "Premium\ntest\nx 1\n₹1"
+- extendedWaitUntil:
+    visible: "Fruits" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Address/productpage1
+- tapOn: "Add to bag"
+- tapOn: "Cart"
+- tapOn: "Add"
+- extendedWaitUntil:
+    visible: "Add Address" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Address/productpage2
+- tapOn:
+    point: "50%,48%"
+- tapOn:
+    point: "50%,51%"
+- scrollUntilVisible:
+    element: "Pin code"
+    direction: DOWN
+- extendedWaitUntil:
+    visible: "Add Address" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Address/productpage3
+- tapOn: "First name"
+- inputText: "lakshmi"
+- tapOn: "Last name"
+- inputText: "A"
+- tapOn: "Phone number"
+- inputText: "9876543213"
+- tapOn: "Full address"
+- inputText: "Hyderabad teke"
+- tapOn: "City name"
+- inputText: "Telangana"
+- tapOn: "Pin code"
+- inputText: "500050"
+- extendedWaitUntil:
+    visible: "Add Address" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Address/productpage4-1
+- scrollUntilVisible:
+    element: "Save"
+    direction: DOWN
+- tapOn: "Save"
+- extendedWaitUntil:
+    visible: "Chnage" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Address/productpage4
+

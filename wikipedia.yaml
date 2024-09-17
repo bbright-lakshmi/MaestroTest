@@ -1,0 +1,6 @@
+appId : org.wikipedia
+---
+- launchApp
+- tapOn: Search wikipedia
+- inputText: shift-left testing
+

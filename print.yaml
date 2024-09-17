@@ -1,0 +1,7 @@
+appId: com.google.android.youtube
+env:
+    MY_NAME: Lakshmi
+---
+- launchApp
+- runScript: myscript.js 
+- inputText: ${output.myFlow}

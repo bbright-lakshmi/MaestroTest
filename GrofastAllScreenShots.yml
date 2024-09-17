@@ -1,0 +1,242 @@
+appId: com.example.org
+--- 
+- launchApp
+# - extendedWaitUntil:
+#     visible: "Sign In" 
+#     timeout: 10000       
+# - takeScreenshot: Images/MobileApp/WelcomePage
+# - tapOn:
+#     point: "50%,44%"
+# - inputText: "Lakshmi"
+# - tapOn: "Mobile number"
+# - inputText: "9876543212"
+# - tapOn: "Sign In"
+# - extendedWaitUntil:
+#     visible: "Enter OTP" 
+#     timeout: 10000       
+# - takeScreenshot: Images/MobileApp/OtpPage
+# - tapOn:
+#     point: "50%,55%"
+# - inputText: "654321"
+# - tapOn: "Verify"
+# - extendedWaitUntil:
+#     visible: 
+#        point: "50%,94%"
+#     timeout: 10000       
+# - takeScreenshot: Images/MobileApp/Onboardpage1
+# - tapOn:
+#     point: "50%,94%"
+# - extendedWaitUntil:
+#      visible: 
+#         point: "50%,94%" 
+#      timeout: 10000       
+# - takeScreenshot: Images/MobileApp/Onboardpage2
+# - tapOn:
+#     point: "50%,94%"
+# - extendedWaitUntil:
+#     visible: 
+#         point: "50%,94%"
+#     timeout: 10000       
+# - takeScreenshot: Images/MobileApp/Onboardpage3
+# - tapOn:
+#     point: "50%,94%"
+# - extendedWaitUntil:
+#     visible: 
+#         point: "50%,94%"
+#     timeout: 10000       
+# - takeScreenshot: Images/MobileApp/Onboardpage4
+# - tapOn: "Get Started"
+# - extendedWaitUntil:
+#     visible: "Steel_681\n93396 Ralph Corner" 
+#     timeout: 10000       
+# - takeScreenshot: Images/MobileApp/StorePage1
+# - tapOn: "Search Stores"
+# - inputText: "test"
+# - scrollUntilVisible:
+#     element: "test\nstore address"
+#     direction: DOWN
+# - tapOn: "test\nstore address"
+# - extendedWaitUntil:
+#     visible: "Premium\ntest\nx 1\n₹1" 
+#     timeout: 10000       
+# - takeScreenshot: Images/MobileApp/productpage
+# - tapOn: "Premium\ntest\nx 1\n₹1"
+# - extendedWaitUntil:
+#     visible: "Fruits" 
+#     timeout: 10000       
+# - takeScreenshot: Images/MobileApp/productpage1
+# - scrollUntilVisible:
+#     element: "Basket&Bounty\nx 1\n₹1"
+#     direction: DOWN
+# - tapOn: "Basket&Bounty\nx 1\n₹1"
+# - extendedWaitUntil:
+#     visible: "Fruits" 
+#     timeout: 10000       
+# - takeScreenshot: Images/MobileApp/productpage2
+# - scrollUntilVisible:
+#     element: "test\nx 1\n₹1"
+#     direction: DOWN
+# - extendedWaitUntil:
+#     visible: "Fruits" 
+#     timeout: 10000       
+# - takeScreenshot: Images/MobileApp/productpage3
+# - tapOn:
+#     point: "11%,8%"
+# - tapOn:
+#     point: "11%,8%"
+# - scrollUntilVisible:
+#     element: "Kit\nx 1\n₹100"
+#     direction: DOWN
+# - tapOn: "Kit\nx 1\n₹100"
+# - extendedWaitUntil:
+#     visible:  "Image"
+#     timeout: 10000       
+# - takeScreenshot: Images/MobileApp/productpage4
+- scrollUntilVisible:
+    element: "8"
+    direction: DOWN
+- extendedWaitUntil:
+    visible: "8"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/productpage5
+- swipe:
+    direction: LEFT
+    duration: 2000  
+- extendedWaitUntil:
+    visible: "₹0"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/productpage6    
+- tapOn:
+    point: "11%,8%"
+- tapOn: "Kit1\nx 1\n₹100100"
+- extendedWaitUntil:
+    visible: "Kit1"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/productpage7
+- scrollUntilVisible:
+    element: "7"
+    direction: DOWN
+- extendedWaitUntil:
+    visible: "7"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/productpage8
+- swipe:
+    direction: LEFT
+    duration: 2000 
+- extendedWaitUntil:
+    visible: "7"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/productpage9
+- tapOn:
+    point: "11%,8%" 
+- tapOn: "sample 1\nx 1\n₹200000"
+- extendedWaitUntil:
+    visible: "sample 1"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/productpage7-1
+- tapOn:
+    point: "11%,8%"
+- scrollUntilVisible:
+    element: "WalnutsClone to test overflow issue in the mobileDevicevfdvzdvb fvnc v cn vn vcnv cnv cnv cv,n
+
+               ₹1500"
+    direction: DOWN
+- tapOn: "WalnutsClone to test overflow issue in the mobileDevicevfdvzdvb fvnc v cn vn vcnv cnv cnv cv,n
+
+    ₹1500"
+- extendedWaitUntil:
+    visible: "DryFruts"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/productpage8-1
+- scrollUntilVisible:
+    element: "Watermelon"
+    direction: DOWN
+- tapOn: "Watermelon"
+- extendedWaitUntil:
+    visible: "Toys"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/productpage9-1
+- tapOn:
+    point: "11%,8%"
+- scrollUntilVisible:
+    element: "Teddy Bear"
+    direction: DOWN
+- tapOn: "Teddy Bear"
+- extendedWaitUntil:
+    visible: "Toys"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/productpage10
+- tapOn:
+    point: "11%,8%"
+- tapOn: "Woody"
+- extendedWaitUntil:
+    visible: "Toys"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/productpage11
+- tapOn:
+    point: "11%,8%"
+- tapOn: "Blue Berries"
+- extendedWaitUntil:
+    visible: "Toys"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/productpage12
+- tapOn:
+    point: "11%,8%"
+- tapOn: "Walnuts"
+- extendedWaitUntil:
+    visible: "Toys"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/productpage13
+- tapOn:
+    point: "11%,8%"
+- tapOn: "Tangerine"
+- extendedWaitUntil:
+    visible: "Toys"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/productpage14
+- tapOn:
+    point: "11%,8%"
+- tapOn: "sample 1"
+- extendedWaitUntil:
+    visible: "Toys"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/productpage15
+- tapOn:
+    point: "11%,8%"
+- tapOn: "Pista"
+- extendedWaitUntil:
+    visible: "Toys"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/productpage16
+- tapOn:
+    point: "11%,8%"
+- tapOn: "Tangerine Clone"
+- extendedWaitUntil:
+    visible: "Toys"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/productpage17
+- tapOn:
+    point: "11%,8%"
+- tapOn: "Buzz lightYear"
+- extendedWaitUntil:
+    visible: "Toys"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/productpage18
+- tapOn:
+    point: "11%,8%"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

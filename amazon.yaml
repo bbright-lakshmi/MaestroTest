@@ -1,0 +1,9 @@
+appId: in.amazon.mShop.android.shopping
+---
+- launchApp
+- tapOn: "Search Amazon.in"
+- inputText: "mobiles"
+- tapOn:
+    text: "mobiles"
+    index: 1
+      index: 3

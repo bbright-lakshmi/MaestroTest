@@ -1,0 +1,41 @@
+# Import necessary libraries
+# (Adapt these lines based on your chosen libraries and setup)
+# Android example:
+import com.github.anandbose.deviceinfo.DeviceInfo
+
+# Define the test
+test: get_device_specs
+  # Actions based on platform (modify accordingly)
+  # Android
+  actions:
+    - platform: android
+      actions:
+        - ExecuteShellCommand:
+            command: |
+              adb shell dumpsys | grep -m 1 "MODEL=" | cut -d'=' -f2
+          storeOutput: device_model
+        - ExecuteShellCommand:
+            command: |
+              adb shell cat /proc/meminfo | grep MemTotal | cut -d' ' -f2
+          storeOutput: ram
+        - ExecuteShellCommand:
+            command: |
+              adb shell wm size
+          storeOutput: screen_resolution
+        - DeviceInfoAction:
+            # Assuming you've added DeviceInfo library
+            method: getBuildVersion
+          storeOutput: device_version
+
+  # Assertions (print all specs)
+  assertions:
+    - Log:
+        message: "Device Name: {{ device_name }}"  # You'll need to define device_name externally
+    - Log:
+        message: "Device Model: {{ device_model }}"
+    - Log:
+        message: "RAM: {{ ram }}"
+    - Log:
+        message: "Version: {{ device_version }}"
+    - Log:
+        message: "Screen Resolution: {{ screen_resolution }}"

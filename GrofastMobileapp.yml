@@ -1,0 +1,129 @@
+ appId: com.example.org
+--- 
+- launchApp
+- extendedWaitUntil:
+    visible: "Sign In" 
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/WelcomePage
+- tapOn:
+    point: "50%,44%"
+- inputText: "Lakshmi"
+- tapOn: "Mobile number"
+- inputText: "9876543212"
+- tapOn: "Sign In"
+- extendedWaitUntil:
+    visible: "Enter OTP" 
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/OtpPage
+- tapOn:
+    point: "50%,55%"
+- inputText: "654321"
+- tapOn: "Verify"
+- extendedWaitUntil:
+    visible: 
+       point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+     visible: 
+        point: "50%,94%" 
+     timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage1
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage2
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage3
+- tapOn: "Get Started"
+- extendedWaitUntil:
+    visible: "Steel_681\n93396 Ralph Corner" 
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage4
+- tapOn: "Steel_681\n93396 Ralph Corner"
+# - extendedWaitUntil:
+#     visible: "Incredible Soft Chips_39\nx 46\n₹386"
+#     timeout: 10000       
+# - takeScreenshot: Images/MobileApp/StorePage5
+# - tapOn: "Incredible Soft Chips_39\nx 46\n₹386"
+# - extendedWaitUntil:
+#     visible: "Incredible Soft Chips_39" 
+#     timeout: 10000       
+# - takeScreenshot: Images/MobileApp/StorePage6
+# - swipe:              
+#     direction: LEFT
+#     duration: 2000
+# - extendedWaitUntil:
+#     visible: "₹386" 
+#     timeout: 10000       
+# - takeScreenshot: Images/MobileApp/StorePage7
+# - tapOn:
+#     point: "40%,84%"
+# - extendedWaitUntil:
+#     visible: "47" 
+#     timeout: 10000       
+# - takeScreenshot: Images/MobileApp/StorePage8
+# - tapOn: "Add to bag"
+# - assertVisible: "Success\nItem added to cart"
+# - tapOn: "Category"
+# - tapOn: "Search"
+# - extendedWaitUntil:
+#     visible: "Incredible Soft Chips_39\nx 46\n₹386" 
+#     timeout: 5000      
+# - takeScreenshot: Images/MobileApp/StorePage9
+# - tapOn:
+#     point: "89%,10%"
+# - extendedWaitUntil:
+#     visible: "Rating" 
+#     timeout: 5000      
+# - takeScreenshot: Images/MobileApp/StorePage10
+# - tapOn: "Clear"
+# - extendedWaitUntil:
+#     visible: 
+#         point: "89%,10%"
+#     timeout: 5000      
+# - takeScreenshot: Images/MobileApp/StorePage11
+# - tapOn: "Cart"
+# - extendedWaitUntil:
+#     visible: "   SAVING CORNER   "
+#     timeout: 10000       
+# - takeScreenshot: Images/MobileApp/StorePage12
+# - tapOn: "Pay Using"
+# - extendedWaitUntil:
+#     visible: "Paytm\nPaytm"
+#     timeout: 10000       
+# - takeScreenshot: Images/MobileApp/StorePage13
+# - tapOn: "   SAVING CORNER   "
+# - tapOn: "Add"
+# - extendedWaitUntil:
+#     visible: "Add Address"
+#     timeout: 10000       
+# - takeScreenshot: Images/MobileApp/Add
+- tapOn: "Profile"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,240 @@
+appId: com.example.org
+--- 
+- launchApp
+- extendedWaitUntil:
+    visible: "Sign In" 
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/WelcomePage
+- tapOn:
+    point: "50%,44%"
+- inputText: "Lakshmi"
+- tapOn: "Mobile number"
+- inputText: "9876543210"
+- tapOn: "Sign In"
+- extendedWaitUntil:
+    visible: "Enter OTP" 
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/OtpPage
+- tapOn:
+    point: "50%,55%"
+- inputText: "654321"
+- tapOn: "Verify"
+- extendedWaitUntil:
+    visible: 
+       point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+     visible: 
+        point: "50%,94%" 
+     timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage1
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage2
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage3
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage4
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage5
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage6
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+      point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage7
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible:
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage8
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage9
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%" 
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage10
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage11
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage12
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage13
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage14
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage15
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage16
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage17
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%" 
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage18
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage19
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage20
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%" 
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage21
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage22
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage23
+- tapOn: "Get Started"
+- extendedWaitUntil:
+    visible: "Steel_681\n93396 Ralph Corner" 
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage24
+- tapOn: "Steel_681\n93396 Ralph Corner"
+- extendedWaitUntil:
+    visible: "Rustic Granite Ball_2000" 
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage25
+- tapOn: "Category"
+- extendedWaitUntil:
+    visible: 
+      id: "android:id/content"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage26
+- tapOn: "Search"
+- extendedWaitUntil:
+    visible: "Search Products" 
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage27
+- tapOn: "Cart"
+- extendedWaitUntil:
+    visible: "Start Shopping"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage28
+- tapOn: "Profile"
+- extendedWaitUntil:
+    visible: "My Orders"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage29
+- scroll
+- tapOn: "Logout"
+- tapOn: "Yes"
+- extendedWaitUntil:
+    visible: "Sign In"
+    timeout: 10000       
+- takeScreenshot: Images/MobileApp/StorePage30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

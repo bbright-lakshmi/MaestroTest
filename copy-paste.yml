@@ -1,0 +1,13 @@
+appId: org.wikipedia
+---
+- launchApp
+- tapOn: "Explore"
+- scrollUntilVisible:
+    element: "Top read"
+- copyTextFrom:
+    index: 0
+- tapOn: "Explore"
+- tapOn: "Search Wikipedia"
+- inputText: "${maestro.copiedText}"
+- back
+- back

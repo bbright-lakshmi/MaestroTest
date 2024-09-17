@@ -1,0 +1,27 @@
+appId: com.example.org
+--- 
+- launchApp
+- startRecording: recording
+- tapOn: "Name"
+- inputText: "Lakshmi"
+- tapOn: "Mobile number"
+- inputText: "9876543212"
+- tapOn: "Sign In"
+- tapOn:
+    point: "50%,55%"
+- inputText: "654321"
+- tapOn: "Verify"
+- tapOn:
+    point: "50%,94%"
+- tapOn:
+    point: "50%,94%"
+- tapOn:
+    point: "50%,94%"
+- tapOn: "Get Started"
+- tapOn: "Search Stores"
+- inputText: "test"
+- scrollUntilVisible:
+    element: "test\nstore address"
+    direction: DOWN
+- tapOn: "test\nstore address"
+- stopRecording

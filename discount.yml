@@ -1,0 +1,87 @@
+appId: com.example.org
+--- 
+- launchApp
+- extendedWaitUntil:
+    visible: "Sign In" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Storepage/WelcomePage
+- tapOn:
+    point: "50%,44%"
+- inputText: "Lakshmi"
+- tapOn: "Mobile number"
+- inputText: "9876543212"
+- tapOn: "Sign In"
+- extendedWaitUntil:
+    visible: "Enter OTP" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Storepage/OtpPage
+- tapOn:
+    point: "50%,55%"
+- inputText: "654321"
+- tapOn: "Verify"
+- extendedWaitUntil:
+    visible: 
+       point: "50%,94%"
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Storepage/Onboardpage1
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+     visible: 
+        point: "50%,94%" 
+     timeout: 5000
+- takeScreenshot: Images/MobileApp/Storepage/Onboardpage2
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Storepage/Onboardpage3
+- tapOn:
+    point: "50%,94%"
+- extendedWaitUntil:
+    visible: 
+        point: "50%,94%"
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Storepage/Onboardpage4
+- tapOn: "Get Started"
+- extendedWaitUntil:
+    visible: "Steel_681\n93396 Ralph Corner" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Storepage/StorePage1
+- tapOn: "Search Stores"
+- inputText: "Wooden_307"
+- tapOn: "Wooden_307\n4432 Watsica Fort"
+- extendedWaitUntil:
+    visible: 
+         point: "50%,74%"
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Discount/1
+- tapOn:
+    point: "50%,74%"
+- extendedWaitUntil:
+    visible: "Sankranthi" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Discount/2
+- tapOn:
+    point: "27%,36%"
+- extendedWaitUntil:
+    visible: "nbcvbcvnbc" 
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Discount/3
+- tapOn: "Add to bag"
+- tapOn: "Cart"
+- extendedWaitUntil:
+    visible: "   COUPON   "
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Discount/4
+- scrollUntilVisible:
+    element: "Review your order and address details to avoid cancellations
+
+    Read Cancellation Policy"
+    direction: DOWN
+- extendedWaitUntil:
+    visible: "   SAVING CORNER   "
+    timeout: 5000       
+- takeScreenshot: Images/MobileApp/Discount/5

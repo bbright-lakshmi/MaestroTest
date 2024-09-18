@@ -1,0 +1,30 @@
+appId: com.saragrocery.name.delivery_app
+--- 
+- launchApp
+- tapOn: "Name"
+- inputText: "Lakshmi"
+- scrollUntilVisible:
+    element: "Login"
+    direction: DOWN
+- tapOn: "Mobile number"
+- inputText: "9876543210"
+- tapOn: "Login"
+- tapOn:
+    point: "50%,54%"
+- inputText : "654321"
+- tapOn: "Verify"
+- tapOn:
+    point: "50%,55%"
+- inputText: "1234"
+- tapOn: "Verify"
+- tapOn: "Your store\nnellore nellore"
+- tapOn: "Assigned"
+- extendedWaitUntil:
+    visible: "Assigned" 
+    timeout: 5000       
+- takeScreenshot: Images/DeliveryApp/Order/1
+- tapOn: "Unassigned"
+- extendedWaitUntil:
+    visible: "Assigned" 
+    timeout: 5000       
+- takeScreenshot: Images/DeliveryApp/Order/2

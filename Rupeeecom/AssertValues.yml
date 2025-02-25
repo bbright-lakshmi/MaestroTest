@@ -1,0 +1,24 @@
+appId: com.rupee.template_two
+---
+- launchApp
+# - tapOn: "Name"
+# - inputText: "Lakshmi"
+# - scrollUntilVisible:
+#     element: "Mobile number"
+#     direction: DOWN
+# - tapOn: "Mobile number"
+# - inputText: "9346716572"
+# - tapOn: "Sign In"
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- tapOn: "Boutique\nMarathahalli"
+- tapOn: "Search"
+- tapOn:
+    point: "50%,14%"
+- inputText: "dairymilk"
+- tapOn: "dairymilk\nkg x 1\n₹20"
+- assertVisible:
+    text: "dairymilk"
+- assertVisible: "₹20\n1"
+
+

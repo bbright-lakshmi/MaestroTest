@@ -1,4 +1,4 @@
-appId: com.example.org
+appId: com.example.org123
 --- 
 - launchApp
 - extendedWaitUntil:

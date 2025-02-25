@@ -1,0 +1,65 @@
+appId: com.rupeecom.business_app
+---
+- launchApp
+# - tapOn: "Email"
+# - inputText: "imlakshmi2803@gmail.com"
+# - tapOn: "Password"
+# - inputText: "123456"
+# - scrollUntilVisible:
+#     element: "Login"
+#     direction: DOWN
+# - tapOn: "Login"
+- scrollUntilVisible:
+    element: "Store Name 2\nAndhra Pradesh, India"
+    direction: DOWN
+- tapOn: "Store Name 2\nAndhra Pradesh, India"
+- tapOn: "#CONDESCENDINGCLARKE-HAT\ 
+
+    Items : 1
+
+    Total : ₹44.10
+
+    Date 25-02-2025
+
+    Time 3:05:08 PM
+
+    NEW"
+# - assertVisible: "Accept"
+# - assertVisible: "Reject"
+- tapOn: "View Stock"
+- extendedWaitUntil:
+    visible: "Close" 
+    timeout: 5000       
+- takeScreenshot: Images/Business/1
+- tapOn: "Close"
+# - tapOn: "Accept"
+# - tapOn: "No"
+# - tapOn: "Reject"
+# - tapOn: "No"
+# - tapOn: "Accept"
+# - tapOn: "Yes"
+- tapOn: "Location"
+- extendedWaitUntil:
+    visible:
+      point: "50%,47%" 
+    timeout: 5000       
+- takeScreenshot: Images/Business/2
+- tapOn: "Home"
+- tapOn: "Complete"
+- extendedWaitUntil:
+    visible: "No" 
+    timeout: 5000       
+- takeScreenshot: Images/Business/3
+- tapOn: "Yes"
+- assertVisible: "Order completed successfully"
+- tapOn: "Incomplete"
+-  extendedWaitUntil:
+    visible: "No" 
+    timeout: 5000       
+- takeScreenshot: Images/Business/4
+- tapOn: "Yes"
+- assertVisible: "Order marked as incomplete successfully"
+
+
+
+

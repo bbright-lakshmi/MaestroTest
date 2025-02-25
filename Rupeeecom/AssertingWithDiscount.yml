@@ -1,0 +1,26 @@
+appId: com.rupee.template_two
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "frozen"
+- tapOn: "Frozen_1475\n6625 Harber Fields"
+- tapOn: "Search"
+- tapOn:
+    point: "50%,14%"
+- inputText: "kit"
+- tapOn:
+    point: "23%,35%"
+- assertVisible:
+    text: "kitkat"
+- assertVisible: "₹110\n₹107.80\n1"
+- tapOn: "Add to Cart"
+- tapOn: "Cart"
+- scrollUntilVisible:
+    element:
+      point: "RazorPay"
+    direction: DOWN
+- assertTrue: "Discount
+
+    ₹4.40"
+
+

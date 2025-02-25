@@ -1,0 +1,11 @@
+appId: com.rupeecom.delivery_app
+---
+- launchApp
+- tapOn: "Name"
+- inputText: "Lakshmi"
+- tapOn: "Mobile number"
+- inputText: "9346716572"
+- tapOn: "Login"
+- tapOn: "Copy OTP"
+- tapOn:
+    point: "50%,54

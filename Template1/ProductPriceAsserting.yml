@@ -1,0 +1,55 @@
+appId: com.rupee.template_one
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText : "non returnable"
+- assertVisible: "hod\nnon returnable\nx 1\n₹14"
+- tapOn: "hod\nnon returnable\nx 1\n₹14"
+- assertVisible: "₹14"
+- tapOn: "Add to bag"
+- assertVisible: "Cart\n1"
+- tapOn: "Cart\n1"
+- assertVisible: "non returnable\n1p x 1\n₹14"
+- assertVisible: "Cart Total (1 Item)
+
+    ₹14
+
+    Delivery/Package
+
+    ₹20
+
+    Discount
+
+    ₹0
+
+    Coupon
+
+    ₹0
+
+    Total Savings
+
+    ₹0
+
+    Tax
+
+    ₹0
+
+    Pay
+
+    ₹34"
+- assertVisible: "Total\n₹34\nPlace Order"
+- tapOn: "Pay Using"
+- tapOn: "Cash On Delivery\nCash On Delivery"
+- tapOn: "Scrim"
+
+
+
+
+
+
+

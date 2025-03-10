@@ -10,6 +10,8 @@ appId: com.rupee.template_one
 - assertVisible: "No Delivery Address Found"
 - tapOn:
     point: "88%,85%"
+- tapOn:
+    point: "50%,82%"
 - scrollUntilVisible:
     element: "Save"
     direction: DOWN

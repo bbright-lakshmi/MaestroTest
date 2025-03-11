@@ -7,18 +7,18 @@ appId: com.rupee.template_one
 - tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
 - tapOn: "Search Products"
-- inputText : "non returnable kit"
-- assertVisible: "Count 1\nnon returnable kit\nx 1\n₹30"
-- tapOn: "Count 1\nnon returnable kit\nx 1\n₹30"
-- assertVisible: "₹30"
+- inputText : "returnable kit"
+- tapOn: "Count 1\nreturnable kit\nx 1\n₹40"
+- assertVisible: "returnable kit"
+- assertVisible: "₹40"
 - tapOn: "Add to bag"
 - assertVisible: "Success\nItem added to cart"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
-- assertVisible: "non returnable kit\n x 1\n₹30"
+- assertVisible: "returnable kit\n x 1\n₹40"
 - assertVisible: "Cart Total (1 Item)
 
-    ₹30
+    ₹40
 
     Delivery/Package
 
@@ -42,15 +42,17 @@ appId: com.rupee.template_one
 
     Pay
 
-    ₹64.35"
+    ₹74.35"
 - tapOn: "Pay Using"
 - tapOn: "Cash On Delivery\nCash On Delivery"  
 - assertVisible: "Cash On Delivery"
-- tapOn: "Total\n₹64.35\nPlace Order"
+- tapOn: "Total\n₹74.35\nPlace Order"
 - assertVisible: "Success\nOrder placed successfully"
 - tapOn: "Profile"
 - tapOn: "My Orders"
 - tapOn:
     point: "50%,29%"
-- assertVisible: "Process\nnon returnable kit\n₹30"
+- assertVisible: "Process\nreturnable kit\n₹40"
 - tapOn: "Cancel"
+- tapOn: "Yes"
+- assertVisible: "Info\nItem canceled successfully."

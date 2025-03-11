@@ -1,0 +1,17 @@
+appId: com.rupee.template_three
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText : "returnable kit"
+- tapOn:
+    point: "90%,91%"
+- tapOn: "Count 1\nreturnable kit\n1 x 1\n₹40"
+- tapOn: "Add to bag"
+- assertVisible: "Cart\n1"
+- tapOn: "Cart\n1"
+- assertVisible: "returnable kit\n x 1\n₹40"

@@ -1,0 +1,29 @@
+appId: com.rupee.template_one
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText : "Outofstockkit"
+- assertVisible: "Out Of Stock
+
+    Count 2
+
+    outofstockkit
+
+    x 1
+
+    ₹30"
+- tapOn: "Out Of Stock
+
+    Count 2
+
+    outofstockkit
+
+    x 1
+
+    ₹30"
+- assertVisible: "outofstockkit"

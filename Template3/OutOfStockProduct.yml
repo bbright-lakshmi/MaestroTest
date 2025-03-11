@@ -1,0 +1,21 @@
+appId: com.rupee.template_three
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText : "mangalagiri sarees"
+- tapOn: "mangalagiri sarees"
+- tapOn: "Out of Stock
+
+    man
+
+    mangalagiri sarees
+
+    x 1
+
+    ₹17"
+- assertVisible: "Out of Stock"

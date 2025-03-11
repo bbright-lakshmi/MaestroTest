@@ -1,0 +1,21 @@
+appId: com.rupee.template_three
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText : "non returnable"
+- tapOn: "non returnable"
+- tapOn: "hod\nnon returnable\nx 1\n₹21"
+- assertVisible: "₹21"
+- tapOn: "Add to bag"
+- assertVisible: "Cart\n1"
+- tapOn: "Cart\n1"
+- assertVisible: "non returnable\n1p x 1\n₹21"
+- tapOn: "Proceed to checkout"
+- tapOn: "Cash On Delivery"
+- assertVisible: "Cash On Delivery"
+- tapOn: "Place Order"

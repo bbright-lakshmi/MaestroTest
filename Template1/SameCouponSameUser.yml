@@ -8,6 +8,8 @@ appId: com.rupee.template_one
 - tapOn: "Search"
 - tapOn: "Search Products"
 - inputText : "non returnable"
+- tapOn:
+    point: "42%,18%"
 - assertVisible: "hod\nnon returnable\nx 1\n₹21"
 - tapOn: "hod\nnon returnable\nx 1\n₹21"
 - assertVisible: "₹21"
@@ -17,23 +19,23 @@ appId: com.rupee.template_one
 - assertVisible: "non returnable\n1p x 1\n₹21"
 - tapOn: "Please select coupon\nCoupon"
 - tapOn: "3 %
-
+ 
     OFF
-
+ 
     Boutique
-
+ 
     Coupon Code
-
+ 
     COUPON_2
-
+ 
     Cart Amount ₹10
-
+ 
     Expire - Mar 24, 2025"
 - tapOn: "Scrim"
 - assertVisible: "COUPON_2"
 - tapOn: "Pay Using"
 - tapOn: "Cash On Delivery\nCash On Delivery"  
-- tapOn: "Scrim" 
+- tapOn: "Scrim"
 - assertVisible: "Cash On Delivery"
 - tapOn: "Total\n₹53.35\nPlace Order"
 - assertVisible: "Success\nOrder placed successfully"
@@ -54,18 +56,19 @@ appId: com.rupee.template_one
 - assertVisible: "non returnable\n1p x 1\n₹21"
 - tapOn: "Please select coupon\nCoupon"
 - tapOn: "3 %
-
+ 
     OFF
-
+ 
     Boutique
-
+ 
     Coupon Code
-
+ 
     COUPON_2
-
+ 
     Cart Amount ₹10
-
+ 
     Expire - Mar 24, 2025"
 - assertVisible: "Info
-
+ 
     Coupon already applied for this user Mobile number"  
+ 

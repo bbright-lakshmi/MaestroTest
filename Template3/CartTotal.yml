@@ -30,6 +30,9 @@ appId: com.rupee.template_three
 - assertVisible: "returnable\n1f x 1\n₹33.66"
 - assertVisible: "returnable\n2f x 1\n₹56"
 - assertVisible: "returnable\n3f x 1\n₹69"
+- scrollUntilVisible:
+    element: "Pay"
+    direction: DOWN
 - assertVisible: "Cart Total (3 Item)"
 - assertVisible: "₹158.66"
 - assertVisible: "Delivery/Package"

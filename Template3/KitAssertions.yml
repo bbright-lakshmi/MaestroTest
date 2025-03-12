@@ -29,3 +29,4 @@ appId: com.rupee.template_three
 - tapOn: "Cash On Delivery"
 - assertVisible: "Cash On Delivery"
 - tapOn: "Place Order"
+- assertVisible: "Success\nOrder placed successfully"

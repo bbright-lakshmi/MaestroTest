@@ -45,7 +45,8 @@ appId: com.rupee.template_two
 
     ₹116.50"
 - scrollUntilVisible:
-    element: "Cash On Delivery"
+    element: "Note:Cancellation must be requested 24 hours prior."
     direction: DOWN
 - tapOn: "Cash On Delivery"
 - tapOn: "Place Order"
+- assertVisible: "Success\nOrder placed successfully"

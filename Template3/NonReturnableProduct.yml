@@ -8,7 +8,9 @@ appId: com.rupee.template_three
 - tapOn: "Search"
 - tapOn: "Search Products"
 - inputText : "non returnable"
-- tapOn: "non returnable"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 56
 - tapOn: "hod\nnon returnable\nx 1\n₹21"
 - assertVisible: "₹21"
 - tapOn: "Add to bag"
@@ -27,4 +29,3 @@ appId: com.rupee.template_three
 - tapOn: "Process\nnon returnable\n₹21"
 - tapOn: "Cancel"
 - assertVisible: "Info\nThis item is not returnable."
-- tapOn: "Scrim"

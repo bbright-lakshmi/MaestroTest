@@ -7,21 +7,39 @@ appId: com.rupee.template_two
 - tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
 - tapOn: "Search Products"
-- inputText : "non returnable"
-- tapOn: "non returnable"
-- tapOn: "hod\nnon returnable\nx 1\n₹21"
+- inputText : "returnable"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 56
+- tapOn: "soch\nreturnable\n1f x 1\n₹33.66"
+- assertVisible: "₹33.66"
 - tapOn: "Add to bag"
 - assertVisible: "Success\nItem added to cart"
 - assertVisible: "Cart\n1"
-- tapOn: "Cart\n1"
-- assertVisible: "non returnable\n1p x 1\n₹21"
-- assertVisible: "Cart Total (1 Item)
+- tapOn: "2f"
+- assertVisible: "₹56"
+- tapOn: "Add to bag"
+- assertVisible: "Success\nItem added to cart"
+- assertVisible: "Cart\n2"
+- tapOn: "3f"
+- assertVisible: "₹69"
+- tapOn: "Add to bag"
+- assertVisible: "Success\nItem added to cart"
+- assertVisible: "Cart\n3"
+- tapOn: "Cart\n3"
+- assertVisible: "returnable\n1f x 1\n₹33.66"
+- assertVisible: "returnable\n2f x 1\n₹56"
+- assertVisible: "returnable\n3f x 1\n₹69"
+- scrollUntilVisible:
+    element: "Note:Cancellation must be requested 24 hours prior."
+    direction: DOWN
+- assertVisible: "Cart Total (3 Item)
 
-    ₹21
+    ₹158.66
 
     Delivery/Package
 
-    ₹86.50
+    ₹86.45
 
     Discount
 
@@ -41,10 +59,7 @@ appId: com.rupee.template_two
 
     Pay
 
-    ₹107.50"
-- scrollUntilVisible:
-    element: "Cash On Delivery"
-    direction: DOWN
+    ₹245.11"
 - tapOn: "Cash On Delivery"
 - tapOn: "Place Order"
 - assertVisible: "Success\nOrder placed successfully"
@@ -55,6 +70,3 @@ appId: com.rupee.template_two
 - assertVisible: "Process\nreturnable\n₹33.66"
 - assertVisible: "Process\nreturnable\n₹56"
 - assertVisible: "Process\nreturnable\n₹69"
-- tapOn: "Cancel"
-- tapOn: "Yes"
-- assertVisible: "Info\nItem canceled successfully."

@@ -39,3 +39,4 @@ appId: com.rupee.template_three
 - assertVisible: "Process\nreturnable\n₹69"
 - tapOn: "Cancel"
 - tapOn: "Yes"
+- assertVisible: "Info\nItem canceled successfully."

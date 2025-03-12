@@ -1,0 +1,28 @@
+appId: com.rupee.template_two
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
+- tapOn: "Profile"
+- tapOn: "My Addresses"
+- assertVisible: "No Delivery Address Found"
+- tapOn: "Add New Address"
+- scrollUntilVisible:
+    element: "Save"
+    direction: DOWN
+- tapOn: "First name"
+- inputText: "Krish"
+- tapOn: "Last name"
+- inputText: "123"
+- tapOn: "Phone number"
+- inputText: "9876543210"
+- tapOn: "Full address"
+- inputText: "Dlp, Nlr"
+- tapOn: "City name"
+- inputText: "Nellore"
+- tapOn: "Pin code"
+- inputText: "524004"
+- tapOn: "Save"
+- assertVisible: "Krish 123\nDlp, Nlr\n9876543210"

@@ -1,4 +1,4 @@
-appId: com.rupee.template_three
+appId: com.rupee.template_two
 ---
 - launchApp
 - tapOn: "Search Stores"
@@ -8,35 +8,39 @@ appId: com.rupee.template_three
 - tapOn: "Search"
 - tapOn: "Search Products"
 - inputText : "returnable"
-- tapOn:
-    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 52
+- tapOn: "returnable"
 - tapOn: "soch\nreturnable\n1f x 1\n₹33.66"
 - assertVisible: "₹33.66"
 - tapOn: "Add to bag"
+- assertVisible: "Success\nItem added to cart"
 - assertVisible: "Cart\n1"
 - tapOn: "2f"
 - assertVisible: "₹56"
 - tapOn: "Add to bag"
+- assertVisible: "Success\nItem added to cart"
 - assertVisible: "Cart\n2"
 - tapOn: "3f"
 - assertVisible: "₹69"
 - tapOn: "Add to bag"
+- assertVisible: "Success\nItem added to cart"
 - assertVisible: "Cart\n3"
 - tapOn: "Cart\n3"
 - assertVisible: "returnable\n1f x 1\n₹33.66"
 - assertVisible: "returnable\n2f x 1\n₹56"
 - assertVisible: "returnable\n3f x 1\n₹69"
-- tapOn: "Proceed to checkout"
+- scrollUntilVisible:
+    element: "Cash On Delivery"
+    direction: DOWN
 - tapOn: "Cash On Delivery"
-- assertVisible: "Cash On Delivery"
-- assertVisible: "₹245.11"
 - tapOn: "Place Order"
 - assertVisible: "Success\nOrder placed successfully"
 - tapOn: "Profile"
 - tapOn: "My Orders"
-- tapOn: "View Order Summary"
+- tapOn:
+    point: "19%,25%"
 - assertVisible: "Process\nreturnable\n₹33.66"
 - assertVisible: "Process\nreturnable\n₹56"
 - assertVisible: "Process\nreturnable\n₹69"
-- tapOn: "Scrim"
+- tapOn: "Cancel"
+- tapOn: "Yes"
+- assertVisible: "Info\nItem canceled successfully."

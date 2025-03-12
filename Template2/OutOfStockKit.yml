@@ -1,4 +1,4 @@
-appId: com.rupee.template_three
+appId: com.rupee.template_two
 ---
 - launchApp
 - tapOn: "Search Stores"
@@ -11,13 +11,11 @@ appId: com.rupee.template_three
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 52
-- tapOn: "Out of Stock
+- tapOn: "Out Of Stock
 
     Count 2
 
     outofstockkit
-
-    1 x 1
 
     ₹30"
 - assertVisible: "Out of Stock"

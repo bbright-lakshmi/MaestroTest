@@ -31,3 +31,11 @@ appId: com.rupee.template_three
 - tapOn: "Cash On Delivery"
 - assertVisible: "Cash On Delivery"
 - tapOn: "Place Order"
+- assertVisible: "Success\nOrder placed successfully"
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn:
+    point: "23%,27%"
+- assertVisible: "Process\nreturnable\n₹69"
+- tapOn: "Cancel"
+- tapOn: "Yes"

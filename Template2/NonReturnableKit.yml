@@ -1,4 +1,4 @@
-appId: com.rupee.template_three
+appId: com.rupee.template_two
 ---
 - launchApp
 - tapOn: "Search Stores"
@@ -7,24 +7,27 @@ appId: com.rupee.template_three
 - tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
 - tapOn: "Search Products"
-- inputText : "non returnable"
-- tapOn: "non returnable"
-- tapOn: "hod\nnon returnable\nx 1\n₹21"
-- assertVisible: "₹21"
+- inputText : "non returnable kit"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 56
+- tapOn: "Count 1\nnon returnable kit\n₹30"
 - tapOn: "Add to bag"
+- assertVisible: "Success\nItem added to cart"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
-- assertVisible: "non returnable\n1p x 1\n₹21"
-- tapOn: "Proceed to checkout"
+- assertVisible: "non returnable kit\n x 1\n₹30"
+- scrollUntilVisible:
+    element: "Cash On Delivery"
+    direction: DOWN
 - tapOn: "Cash On Delivery"
-- assertVisible: "Cash On Delivery"
 - tapOn: "Place Order"
 - assertVisible: "Success\nOrder placed successfully"
 - tapOn: "Profile"
 - tapOn: "My Orders"
 - tapOn:
-    point: "23%,27%"
-- tapOn: "Process\nnon returnable\n₹21"
+    point: "19%,25%"
+- assertVisible: "Process\nnon returnable kit\n₹30"
 - tapOn: "Cancel"
 - assertVisible: "Info\nThis item is not returnable."
 - tapOn: "Scrim"

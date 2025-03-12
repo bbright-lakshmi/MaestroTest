@@ -1,0 +1,68 @@
+appId: com.rupee.template_three
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText : "handwork sarees"
+- tapOn: "handwork sarees"
+- tapOn: "hwk
+
+    ₹3 off
+
+    0
+
+    0
+
+    6
+
+    6
+
+    :
+
+    0
+
+    0
+
+    1
+
+    1
+
+    :
+
+    0
+
+    0
+
+    0
+
+    0
+
+    :
+
+    5
+
+    5
+
+    2
+
+    2
+
+    handwork sarees
+
+    x 1
+
+    ₹12
+
+    ₹9"
+- tapOn: "Add to bag"
+- assertVisible: "Cart\n1"
+- tapOn: "Proceed to checkout"
+- tapOn: "Cash On Delivery"
+- tapOn: "Place Order"
+- assertVisible: "Info
+
+    Minimum order amount is 20.00. Please add items worth 8.00 more to proceed."

@@ -2,27 +2,96 @@ appId: com.rupee.template_two
 ---
 - launchApp
 - tapOn: "Search Stores"
-- inputText: "frozen"
-- tapOn: "Frozen_1475\n6625 Harber Fields"
+- inputText: "Store Name 2"
+- assertVisible: "Store Name 2\nAndhra Pradesh, India"
+- tapOn: "Store Name 2\nAndhra Pradesh, India"
+- tapOn: "₹10 off
+
+    0
+
+    0
+
+    5
+
+    5
+
+    :
+
+    0
+
+    0
+
+    0
+
+    0
+
+    :
+
+    4
+
+    4
+
+    1
+
+    1
+
+    :
+
+    1
+
+    1
+
+    4
+
+    4
+
+    Premium
+
+    WithTax
+
+    x 1
+
+    ₹15
+
+    ₹5"
+- tapOn: "Add to bag"
+- assertVisible: "Cart\n1"
+- tapOn:
+    point: "13%,8%"
 - tapOn: "Search"
-- tapOn:
-    point: "50%,14%"
-- inputText: "kit"
-- tapOn:
-    point: "23%,35%"
-- assertVisible:
-    text: "kitkat"
-- assertVisible: "₹110\n₹107.80\n1"
-- tapOn: "Add to Cart"
-- tapOn: "Cart"
+- tapOn: "Search Products"
+- inputText: "WithoutTax"
+- tapOn: "WithoutTax"
+- tapOn: "Add to bag"
+- assertVisible: "Cart\n2"
+- tapOn: "Cart\n2"
 - scrollUntilVisible:
-    element:
-      point: "RazorPay"
+    element: "Pay"
     direction: DOWN
-- assertTrue: "Tax
+- assertVisible: "Cart Total (2 Item)
 
-    ₹10.78"
+    ₹30
 
+    Delivery/Package
 
+    ₹2593.35
 
+    Discount
 
+    ₹10
+
+    Coupon
+
+    ₹0
+
+    Total Savings
+
+    ₹10
+
+    Tax
+
+    ₹0.85
+
+    Pay
+
+    ₹2614.20"

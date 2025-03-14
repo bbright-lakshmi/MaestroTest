@@ -10,7 +10,8 @@ appId: com.rupee.template_three
 - assertVisible: "No Delivery Address Found"
 - tapOn: "Add New Address"
 - scrollUntilVisible:
-    element: "Save"
+    element:
+      point: "50%,78%"
     direction: DOWN
 - tapOn: "First name"
 - inputText: "Van"

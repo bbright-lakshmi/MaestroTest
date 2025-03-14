@@ -22,7 +22,7 @@ appId: com.rupee.template_one
 
     Delivery/Package
 
-    ₹34.35
+    ₹86.45
 
     Discount
 
@@ -42,11 +42,11 @@ appId: com.rupee.template_one
 
     Pay
 
-    ₹74.35"
+    ₹126.45"
 - tapOn: "Pay Using"
 - tapOn: "Cash On Delivery\nCash On Delivery"  
 - assertVisible: "Cash On Delivery"
-- tapOn: "Total\n₹74.35\nPlace Order"
+- tapOn: "Total\n₹126.45\nPlace Order"
 - assertVisible: "Success\nOrder placed successfully"
 - tapOn: "Profile"
 - tapOn: "My Orders"

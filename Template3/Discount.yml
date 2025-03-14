@@ -1,0 +1,125 @@
+appId: com.rupee.template_three
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
+- scrollUntilVisible:
+    element: "Discount"
+    direction: DOWN
+- tapOn: "Off ₹10
+
+    0
+
+    0
+
+    6
+
+    6
+
+    :
+
+    2
+
+    2
+
+    1
+
+    1
+
+    :
+
+    4
+
+    4
+
+    7
+
+    7
+
+    :
+
+    3
+
+    3
+
+    6
+
+    7"
+
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText : "WithTax"
+- tapOn: "WithTax"
+- tapOn: "₹10 off
+
+    0
+
+    0
+
+    6
+
+    6
+
+    :
+
+    2
+
+    2
+
+    1
+
+    1
+
+    :
+
+    4
+
+    4
+
+    5
+
+    5
+
+    :
+
+    2
+
+    2
+
+    1
+
+    1
+
+    WithTax
+
+    x 1
+
+    ₹15
+
+    ₹5"
+- tapOn: "Add to bag"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText : "Returnable"
+- tapOn: "Returnable"
+- tapOn: "Add to bag"
+- assertVisible: "Cart\n2"
+- tapOn: "Cart\n2"
+- scrollUntilVisible:
+    element: "Pay"
+    direction: DOWN
+- assertVisible: "Discount"
+- assertVisible: "₹10"
+- tapOn: "Proceed to checkout"
+- tapOn: "Cash On Delivery"
+- tapOn: "Place Order"
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn:
+    point: "88%,39%"
+- extendedWaitUntil:
+    visible: "Upload" 
+    timeout: 5000       
+- takeScreenshot: Images/Template3/DiscountValues

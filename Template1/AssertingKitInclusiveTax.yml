@@ -1,0 +1,45 @@
+appId: com.rupee.template_one
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText: "inclusive tax"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 56
+- tapOn: "Count 2\nInclusive tax\nx 1\n₹14.28"
+- assertVisible: "₹14.28"
+- tapOn: "Add to bag"
+- assertVisible: "Cart\n1"
+- tapOn: "Cart\n1"
+- assertVisible: "Cart Total (1 Item)
+
+    ₹14.28
+
+    Delivery/Package
+
+    ₹86.45
+
+    Discount
+
+    ₹0
+
+    Coupon
+
+    ₹0
+
+    Total Savings
+
+    ₹0
+
+    Tax
+
+    ₹0
+
+    Pay
+
+    ₹100.73"

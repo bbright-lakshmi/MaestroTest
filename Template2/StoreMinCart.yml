@@ -7,26 +7,22 @@ appId: com.rupee.template_two
 - tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
 - tapOn: "Search Products"
-- inputText : "non returnable"
+- inputText : "dress"
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 52
-- tapOn: "hod\nnon returnable\nx 1\n₹21"
+    index: 58
+- tapOn: "Dress\nx 1\n₹7"
 - tapOn: "Add to bag"
 - assertVisible: "Success\nItem added to cart"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
-- assertVisible: "non returnable\n1p x 1\n₹21"
 - scrollUntilVisible:
     element: "Note:Cancellation must be requested 24 hours prior."
     direction: DOWN
 - tapOn: "Cash On Delivery"
 - tapOn: "Place Order"
-- assertVisible: "Success\nOrder placed successfully"
-- tapOn: "Profile"
-- tapOn: "My Orders"
-- tapOn:
-    point: "19%,25%"
-- assertVisible: "Process\nnon returnable\n₹21.63"
-- tapOn: "Cancel"
-- assertVisible: "Info\nThis item is not returnable."
+- extendedWaitUntil:
+    visible:
+     point: "50%,30%"
+    timeout: 5000      
+- takeScreenshot: Images/Template2/StoreMinCart

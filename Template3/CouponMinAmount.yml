@@ -1,0 +1,31 @@
+appId: com.rupee.template_three
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText : "Returnable"
+- tapOn: "Returnable"
+- tapOn: "Add to bag"
+- assertVisible: "Cart\n1"
+- tapOn: "Cart\n1"
+- tapOn: "Please select coupon"
+- tapOn: "₹10
+
+    OFF
+
+    Store Name 2
+
+    Coupon Code
+
+    COUPONEW
+
+    Cart Amount ₹50
+
+    Expire - Mar 25, 2025"
+- assertVisible: "Info
+
+    Minimum cart value required is 50"

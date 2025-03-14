@@ -8,7 +8,9 @@ appId: com.rupee.template_one
 - tapOn: "Search"
 - tapOn: "Search Products"
 - inputText : "non returnable kit"
-- assertVisible: "Count 1\nnon returnable kit\nx 1\n₹30"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 56
 - tapOn: "Count 1\nnon returnable kit\nx 1\n₹30"
 - assertVisible: "₹30"
 - tapOn: "Add to bag"
@@ -22,7 +24,7 @@ appId: com.rupee.template_one
 
     Delivery/Package
 
-    ₹34.35
+    ₹86.45
 
     Discount
 
@@ -42,11 +44,11 @@ appId: com.rupee.template_one
 
     Pay
 
-    ₹64.35"
+    ₹116.45"
 - tapOn: "Pay Using"
 - tapOn: "Cash On Delivery\nCash On Delivery"  
 - assertVisible: "Cash On Delivery"
-- tapOn: "Total\n₹64.35\nPlace Order"
+- tapOn: "Total\n₹116.45\nPlace Order"
 - assertVisible: "Success\nOrder placed successfully"
 - tapOn: "Profile"
 - tapOn: "My Orders"
@@ -54,3 +56,8 @@ appId: com.rupee.template_one
     point: "50%,29%"
 - assertVisible: "Process\nnon returnable kit\n₹30"
 - tapOn: "Cancel"
+- extendedWaitUntil:
+    visible:
+      point: "50%,29%"
+    timeout: 5000      
+- takeScreenshot: Images/Template1/NonReturnableKit

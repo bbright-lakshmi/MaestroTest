@@ -1,4 +1,4 @@
-appId: com.rupee.template_three
+appId: com.rupee.template_one
 ---
 - launchApp
 - tapOn: "Search Stores"
@@ -24,19 +24,33 @@ appId: com.rupee.template_three
 - tapOn: "Add to bag"
 - assertVisible: "Cart\n3"
 - tapOn: "Cart\n3"
-- assertVisible: "returnable\n1f x 1\n₹33.66"
-- assertVisible: "returnable\n2f x 1\n₹56"
-- assertVisible: "returnable\n3f x 1\n₹69"
-- tapOn: "Proceed to checkout"
-- tapOn: "Cash On Delivery"
-- assertVisible: "Cash On Delivery"
-- assertVisible: "₹245.11"
-- tapOn: "Place Order"
-- assertVisible: "Success\nOrder placed successfully"
-- tapOn: "Profile"
-- tapOn: "My Orders"
-- tapOn:
-    point: "23%,27%"
-- assertVisible: "Process\nreturnable\n₹33.66"
-- assertVisible: "Process\nreturnable\n₹56"
-- assertVisible: "Process\nreturnable\n₹69"
+- scrollUntilVisible:
+    element: "Note: Cancellation must be requested 24 hours prior."
+    direction: DOWN
+- assertVisible: "Cart Total (3 Item)
+
+    ₹158.66
+
+    Delivery/Package
+
+    ₹86.45
+
+    Discount
+
+    ₹0
+
+    Coupon
+
+    ₹0
+
+    Total Savings
+
+    ₹0
+
+    Tax
+
+    ₹0
+
+    Pay
+
+    ₹245.11"

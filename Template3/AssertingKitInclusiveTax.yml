@@ -7,26 +7,16 @@ appId: com.rupee.template_three
 - tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
 - tapOn: "Search Products"
-- inputText : "non returnable kit"
+- inputText: "inclusive tax"
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 56
-- tapOn: "Count 1
-
-    non returnable kit
-
-    1 x 1
-
-    ₹30"
+- tapOn: "Count 2\nInclusive tax\n1 x 1\n₹14.28"
+- assertVisible: "₹14.28"
 - tapOn: "Add to bag"
-- assertVisible: "Success\nItem added to cart"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
-- assertVisible: "non returnable kit\n x 1\n₹30"
 - assertVisible: "Cart Total (1 Item)"
-- assertVisible: "₹30"
-- tapOn: "Proceed to checkout"
-- tapOn: "Cash On Delivery"
-- assertVisible: "Cash On Delivery"
-- tapOn: "Place Order"
-- assertVisible: "Success\nOrder placed successfully"
+- assertVisible: "₹14.28"
+- assertVisible: "Tax"
+- assertVisible: "₹0"

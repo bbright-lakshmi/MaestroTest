@@ -8,7 +8,9 @@ appId: com.rupee.template_two
 - tapOn: "Search"
 - tapOn: "Search Products"
 - inputText : "returnable"
-- tapOn: "returnable"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 56
 - tapOn: "soch\nreturnable\n1f x 1\n₹33.66"
 - assertVisible: "₹33.66"
 - tapOn: "Add to bag"
@@ -29,7 +31,7 @@ appId: com.rupee.template_two
 - assertVisible: "returnable\n2f x 1\n₹56"
 - assertVisible: "returnable\n3f x 1\n₹69"
 - scrollUntilVisible:
-    element: "Cash On Delivery"
+    element: "Note:Cancellation must be requested 24 hours prior."
     direction: DOWN
 - tapOn: "Cash On Delivery"
 - tapOn: "Place Order"

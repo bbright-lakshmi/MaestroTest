@@ -13,7 +13,8 @@ appId: com.rupee.template_one
 - tapOn:
     point: "50%,82%"
 - scrollUntilVisible:
-    element: "Save"
+    element:
+      point: "50%,50%"
     direction: DOWN
 - tapOn: "First name"
 - inputText: "Rajesh"

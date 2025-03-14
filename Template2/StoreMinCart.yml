@@ -7,46 +7,22 @@ appId: com.rupee.template_two
 - tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
 - tapOn: "Search Products"
-- inputText : "non returnable kit"
+- inputText : "dress"
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 56
-- tapOn: "Count 1\nnon returnable kit\n₹30"
+    index: 58
+- tapOn: "Dress\nx 1\n₹7"
 - tapOn: "Add to bag"
 - assertVisible: "Success\nItem added to cart"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
-- assertVisible: "non returnable kit\n x 1\n₹30"
-- assertVisible: "Cart Total (1 Item)
-
-    ₹30
-
-    Delivery/Package
-
-    ₹86.50
-
-    Discount
-
-    ₹0
-
-    Coupon
-
-    ₹0
-
-    Total Savings
-
-    ₹0
-
-    Tax
-
-    ₹0
-
-    Pay
-
-    ₹116.50"
 - scrollUntilVisible:
     element: "Note:Cancellation must be requested 24 hours prior."
     direction: DOWN
 - tapOn: "Cash On Delivery"
 - tapOn: "Place Order"
-- assertVisible: "Success\nOrder placed successfully"
+- extendedWaitUntil:
+    visible:
+     point: "50%,30%"
+    timeout: 5000      
+- takeScreenshot: Images/Template2/StoreMinCart

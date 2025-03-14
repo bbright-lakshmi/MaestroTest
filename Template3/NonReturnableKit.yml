@@ -35,4 +35,3 @@ appId: com.rupee.template_three
 - assertVisible: "Process\nnon returnable kit\n₹30"
 - tapOn: "Cancel"
 - assertVisible: "Info\nThis item is not returnable."
-- tapOn: "Scrim"

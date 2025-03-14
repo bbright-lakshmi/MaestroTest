@@ -24,7 +24,13 @@ appId: com.rupee.template_three
 - assertVisible: "Success\nOrder placed successfully"
 - tapOn: "Profile"
 - tapOn: "My Orders"
-- tapOn: "View Order Summary"
+- tapOn:
+    point: "23%,27%"
 - assertVisible: "Process\nreturnable kit\n₹40"
 - tapOn: "Cancel"
 - tapOn: "Yes"
+- extendedWaitUntil:
+    visible:
+      point: "23%,27%"
+    timeout: 5000      
+- takeScreenshot: Images/Template3/ReturnableKit

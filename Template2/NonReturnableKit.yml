@@ -18,7 +18,7 @@ appId: com.rupee.template_two
 - tapOn: "Cart\n1"
 - assertVisible: "non returnable kit\n x 1\n₹30"
 - scrollUntilVisible:
-    element: "Cash On Delivery"
+    element: "Note:Cancellation must be requested 24 hours prior."
     direction: DOWN
 - tapOn: "Cash On Delivery"
 - tapOn: "Place Order"
@@ -30,4 +30,3 @@ appId: com.rupee.template_two
 - assertVisible: "Process\nnon returnable kit\n₹30"
 - tapOn: "Cancel"
 - assertVisible: "Info\nThis item is not returnable."
-- tapOn: "Scrim"

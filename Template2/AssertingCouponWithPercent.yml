@@ -30,7 +30,6 @@ appId: com.rupee.template_two
     Cart Amount ₹2
 
     Expire - Jan 29, 2025"
-- tapOn: "Scrim"
 - assertVisible: "VVBBBBNB"
 - assertVisible: "
     Coupon

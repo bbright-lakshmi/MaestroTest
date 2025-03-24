@@ -1,0 +1,33 @@
+appId: com.rupee.template_five
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Template5"
+- tapOn: "Template5\nHyderabad Tg"
+- tapOn: "Profile"
+- tapOn: "My Addresses"
+- extendedWaitUntil:
+    visible: "Manage Addresses"
+    timeout: 5000      
+- takeScreenshot: Images/Template5/NoDelivery
+- tapOn: "Add New Address"
+- scrollUntilVisible:
+    element: "Pincode"
+    direction: DOWN
+- tapOn: "First name"
+- inputText: "Ira Sandeep"
+- tapOn: "Last name"
+- inputText: "A"
+- tapOn: "Phone number"
+- inputText: "9876543210"
+- tapOn: "Full address"
+- inputText: "hjfgsnfhjsgfhjgmshf"
+- tapOn: "City name"
+- inputText: "Hyderabad"
+- tapOn: "Pincode"
+- inputText: "500001"
+- scrollUntilVisible:
+    element: "Save"
+    direction: DOWN
+- tapOn: "Save"
+

@@ -1,0 +1,31 @@
+appId: com.rupee.template_five
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Template5"
+- tapOn: "Template5\nHyderabad Tg"
+- tapOn: "Search"
+- tapOn: "Count 1\nWithtaxKit\n1 x 1\n₹10"
+- tapOn: "Add To Cart"
+- tapOn:
+    point: "9%,8%"
+- tapOn: "Count 1\nWithoutTax\n1 x 1\n₹10"
+- tapOn: "Add To Cart"
+- tapOn: "Cart\n2"
+- tapOn: "Please select coupon"
+- tapOn: "₹10
+
+    OFF
+
+    Template5
+
+    Coupon Code
+
+    APPLYALL
+
+    Cart Amount ₹20
+
+    Expire - Mar 24, 2025"
+- assertVisible: "Info\nOops!, Coupon is expired"
+
+

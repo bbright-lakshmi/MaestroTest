@@ -1,0 +1,26 @@
+appId: com.rupee.template_five
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Template5"
+- tapOn: "Template5\nHyderabad Tg"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText: "InclusiveTax"
+- tapOn: "InclusiveTax"
+- tapOn:
+    point: "85%,80%"
+- tapOn: "Add To Cart"
+- assertVisible: "Success\nItem added to cart"
+- tapOn: "Cart\n1"
+- assertVisible: "InclusiveTax\n x 2\n₹30.60"
+- tapOn: "Proceed to checkout"
+- tapOn: "Cash On Delivery"
+- tapOn: "Place Order"
+- assertVisible: "Success\nOrder placed successfully"
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn:
+    point: "25%,31%"
+- assertVisible: "Process\nInclusiveTax\n₹30.60"
+

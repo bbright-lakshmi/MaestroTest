@@ -1,0 +1,55 @@
+appId: com.rupee.template_five
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Template 5"
+- assertVisible: "Template 5\nChikkamagaluru"
+- tapOn: "Template 5\nChikkamagaluru"
+- tapOn: "Search"
+- tapOn:
+    point: "50%,8%"
+- inputText: "biriyani ex"
+- tapOn: "Biriyani Ex"
+#- tapOn:
+#    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+#    index: 56
+- tapOn:
+    point: "24%,31%"
+- tapOn: "Add To Cart"
+- tapOn: "2kg"
+- tapOn: "Add To Cart"
+- tapOn: "3kg"
+- tapOn: "Add To Cart"
+- tapOn: "Cart\n3"
+- tapOn: "Please select coupon"
+- tapOn: "₹4
+
+    OFF
+
+    Template 5
+
+    Coupon Code
+
+    NONVEGCN
+
+    Cart Amount ₹20
+
+    Expire - Mar 30, 2025"
+- tapOn: "Scrim"
+- scrollUntilVisible:
+    element: "Pay"
+    direction: DOWN
+- assertVisible: "Cart Total (3 Item)"
+- assertVisible: "₹198"
+- assertVisible: "Delivery/Package"
+- assertVisible: "₹2637.97"
+- assertVisible: "Discount"
+- assertVisible: "₹9.90"
+- assertVisible: "Coupon"
+- assertVisible: "₹4"
+- assertVisible: "Total Savings"
+- assertVisible: "₹13.90"
+- assertVisible: "Tax"
+- assertVisible: "₹3.76"
+- assertVisible: "Pay"
+- assertVisible: "₹2825.83"

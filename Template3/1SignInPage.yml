@@ -1,0 +1,21 @@
+appId: com.rupee.template_three
+---
+- launchApp
+#- assertVisible:
+#    id: "com.android.permissioncontroller:id/grant_dialog"
+#- tapOn:
+#    id: "com.android.permissioncontroller:id/permission_allow_button"
+- tapOn: "Name"
+- inputText: "xyz"
+- tapOn: "Mobile number"
+- inputText: "9182118702"
+- tapOn: "Sign In"
+- tapOn:
+    id: "android:id/action0"
+    index: 2
+- tapOn:
+    point: "50%,54%"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 1
+- tapOn: "Verify"

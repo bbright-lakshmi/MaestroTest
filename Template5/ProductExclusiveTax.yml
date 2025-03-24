@@ -1,0 +1,25 @@
+appId: com.rupee.template_five
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Template 5"
+- assertVisible: "Template 5\nChikkamagaluru"
+- tapOn: "Template 5\nChikkamagaluru"
+- tapOn: "Search"
+- tapOn:
+    point: "50%,8%"
+- inputText: "biriyani ex"
+- tapOn: "Biriyani Ex"
+- tapOn:
+    point: "24%,31%"
+- tapOn: "Add To Cart"
+- tapOn: "2kg"
+- tapOn: "Add To Cart"
+- tapOn: "3kg"
+- tapOn: "Add To Cart"
+- tapOn: "Cart\n3"
+- scrollUntilVisible:
+    element: "Pay"
+    direction: DOWN
+- assertVisible: "Tax"
+- assertVisible: "₹3.76"

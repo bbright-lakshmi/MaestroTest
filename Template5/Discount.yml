@@ -1,0 +1,127 @@
+appId: com.rupee.template_five
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Template 5"
+- assertVisible: "Template 5\nChikkamagaluru"
+- tapOn: "Template 5\nChikkamagaluru"
+- scrollUntilVisible:
+    element: "Discount"
+    direction: DOWN
+- tapOn: "Explore all"
+- tapOn:
+    point: "50%,25%"
+- tapOn: "Search Discount Items"
+- inputText: "Biriyani Ex"
+- tapOn:
+    point: "26%,33%"
+- assertVisible: "₹55"
+- assertVisible: "₹52.25"
+- tapOn: "Add To Cart"
+- tapOn: "2kg"
+- assertVisible: "₹66"
+- assertVisible: "₹62.70"
+- tapOn: "Add To Cart"
+- tapOn: "3kg"
+- assertVisible: "₹77"
+- assertVisible: "₹73.15"
+- tapOn: "Add To Cart"
+- tapOn: "Cart\n3"
+- assertVisible: "Biriyani Ex\nkg x 1\n₹55\n₹52.25"
+- assertVisible: "Biriyani Ex\n2kg x 1\n₹66\n₹62.70"
+- assertVisible: "Biriyani Ex\n3kg x 1\n₹77\n₹73.15"
+- scrollUntilVisible:
+    element: "Pay"
+    direction: DOWN
+- assertVisible: "Discount"
+- assertVisible: "₹9.90"
+- tapOn: "Proceed to checkout"
+- tapOn: "Cash On Delivery"
+- tapOn: "Place Order"
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nBiriyani Ex\n₹53.30"
+- assertVisible: "Process\nBiriyani Ex\n₹63.95"
+- assertVisible: "Process\nBiriyani Ex\n₹74.61"
+- tapOn: "Scrim"
+- tapOn:
+    point: "94%,30%"
+- assertVisible: "Payment Details
+
+    Package Cost
+
+    ₹10
+
+    Delivery Cost
+
+    ₹2627.97
+
+    Discount
+
+    ₹9.90
+
+    Payment Mode
+
+    Cash On Delivery
+
+    Coupon
+
+    No Coupon
+
+    Coupon Amount
+
+    0
+
+    Tax
+
+    ₹3.76
+
+    Total Savings
+
+    ₹9.90
+
+    Total Amount
+
+    ₹2829.83"
+- tapOn: "Process\nBiriyani Ex\n₹53.30"
+- scrollUntilVisible:
+    element: "Tax"
+    direction: DOWN
+- assertVisible: "Payment Details
+
+    Package Cost
+
+    ₹10
+
+    Delivery Cost
+
+    ₹2627.97
+
+    Discount
+
+    ₹9.90
+
+    Payment Mode
+
+    Cash On Delivery
+
+    Coupon
+
+    No Coupon
+
+    Coupon Amount
+
+    0
+
+    Tax
+
+    ₹3.76
+
+    Total Savings
+
+    ₹9.90
+
+    Total Amount
+
+    ₹2829.83"

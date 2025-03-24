@@ -1,0 +1,23 @@
+appId: com.rupee.template_five
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Template 5"
+- assertVisible: "Template 5\nChikkamagaluru"
+- tapOn: "Template 5\nChikkamagaluru"
+- tapOn: "Search"
+- tapOn:
+    point: "50%,8%"
+- inputText: "out of stock prod"
+- tapOn: "Out of stock prod"
+#- tapOn:
+#   id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+#   index: 56
+- tapOn: "Out of Stock
+
+    Out of stock prod
+
+    x 1
+
+    ₹7"
+- assertVisible: "Out of Stock"

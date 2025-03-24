@@ -2,21 +2,52 @@ appId: com.rupee.template_three
 ---
 - launchApp
 - tapOn: "Search Stores"
-- inputText: "Boutique"
-- assertVisible: "Boutique\nnellore, A.P"
-- tapOn: "Boutique\nnellore, A.P"
+- inputText: "Store Name 2"
+- tapOn: "Store Name 2\nAndhra Pradesh, India"
 - tapOn: "Search"
 - tapOn: "Search Products"
-- inputText : "non returnable"
-- tapOn:
-    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 52
-- tapOn: "hod\nnon returnable\nx 1\n₹21"
-- assertVisible: "₹21"
+- inputText : "returnable"
+- tapOn: "Returnable"
 - tapOn: "Add to bag"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
-- assertVisible: "Cart Total (1 Item)"
-- assertVisible: "₹21"
-- assertVisible: "Tax"
-- assertVisible: "₹0.63"
+- scrollUntilVisible:
+    element: "Pay"
+    direction: DOWN
+- assertVisible: "Cart Total (1 Item)
+
+    ₹20
+
+    Delivery/Package
+
+    ₹2593.35
+
+    Discount
+
+    ₹0
+
+    Coupon
+
+    ₹0
+
+    Total Savings
+
+    ₹0
+
+    Tax
+
+    ₹1
+
+    Pay
+
+    ₹2614.35"
+- tapOn: "Cash On Delivery"
+- tapOn: "Place Order"
+- assertVisible: "Success\nOrder placed successfully"
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- extendedWaitUntil:
+    visible: "View Order Summary"
+    timeout: 5000      
+- takeScreenshot: Images/Template3/ProductExclusiveTax
+

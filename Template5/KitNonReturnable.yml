@@ -1,0 +1,23 @@
+appId: com.rupee.template_five
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Template5"
+- tapOn: "Template5\nHyderabad Tg"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText: "WithtaxKit"
+- tapOn: "WithtaxKit"
+- tapOn:
+    point: "85%,80%"
+- tapOn: "Add To Cart"
+- tapOn: "Cart\n1"
+- tapOn: "Proceed to checkout"
+- tapOn: "Cash On Delivery"
+- tapOn: "Place Order"
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn:
+    point: "25%,31%"
+- tapOn: "Cancel"
+- assertVisible: "Info\nThis item is not returnable."

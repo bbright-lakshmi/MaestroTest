@@ -1,0 +1,22 @@
+appId: com.rupee.template_five
+---
+- launchApp
+- tapOn: "Name"
+- inputText: "Ira"
+- scrollUntilVisible:
+      element: "Sign In"
+      direction: DOWN
+- tapOn: "Mobile number"
+- inputText: "9346716572"
+- tapOn: "Sign In"
+- tapOn:
+    id: "com.truecaller:id/primaryAction"
+- tapOn:
+    point: "50%,56%"
+- tapOn:
+    point: "50%,66%"
+- tapOn: "Verify"
+- tapOn: "Get Started"
+- tapOn: "Get Started"
+- tapOn: "Get Started"
+- tapOn: "Get Started"

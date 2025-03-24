@@ -1,0 +1,25 @@
+appId: com.rupee.template_five
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Template5"
+- tapOn: "Template5\nHyderabad Tg"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText: "ReturnableKit"
+- tapOn: "ReturnableKit"
+- tapOn: "Add To Cart"
+- tapOn: "Cart\n1"
+- tapOn: "Proceed To Checkout"
+- tapOn: "Cash On Delivery"
+- tapOn: "Place Order"
+- assertVisible: "Success\nOrder placed successfully"
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn:
+    point: "25%,31%"
+- tapOn: "Cancel"
+- tapOn: "Yes"
+- tapOn:
+    point: "25%,31%"
+- assertVisible: "Cancel\nReturnableKit\n₹20.40"

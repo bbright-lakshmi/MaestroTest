@@ -11,18 +11,18 @@ appId: com.rupee.template_one
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 56
-- tapOn: "Count 2\nInclusive tax\nx 1\n₹14.28"
-- assertVisible: "₹14.28"
+- tapOn: "Count 2\nInclusive tax\nx 1\n₹22"
+- assertVisible: "₹22"
 - tapOn: "Add to bag"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
 - assertVisible: "Cart Total (1 Item)
 
-    ₹14.28
+    ₹22
 
     Delivery/Package
 
-    ₹86.45
+    ₹86.50
 
     Discount
 
@@ -42,4 +42,11 @@ appId: com.rupee.template_one
 
     Pay
 
-    ₹100.73"
+    ₹108.50"
+- tapOn: "Pay Using"
+- tapOn: "Cash On Delivery\nCash On Delivery"
+- tapOn: "Total\n₹108.50\nPlace Order"
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nInclusive tax\n₹22"

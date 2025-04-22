@@ -1,0 +1,27 @@
+appId: com.rupee.template_one
+---
+- launchApp
+- tapOn: "Name"
+- inputText: "xyz"
+- tapOn: "Mobile number"
+- inputText: "9182118702"
+- tapOn: "Sign In"
+- tapOn:
+    id: "android:id/action0"
+    index: 2
+- tapOn:
+    point: "50%,51%"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 3
+- tapOn: "Verify"
+#Onboarding pages
+#- tapOn:
+#    point: "50%,93%"
+#- tapOn:
+#    point: "50%,93%"
+#- tapOn:
+#    point: "50%,93%"
+#- tapOn:
+#    point: "50%,93%"
+#- tapOn: "Get Started"

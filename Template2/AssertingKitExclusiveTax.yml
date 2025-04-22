@@ -11,8 +11,35 @@ appId: com.rupee.template_two
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 56
-- tapOn: "Count 1\nExclusive tax\nx 1\n₹20"
-- assertVisible: "₹20"
+- tapOn: "Count 1\nExclusive tax\nx 1\n₹40"
+- assertVisible: "₹40"
 - tapOn: "Add to bag"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
+- assertVisible: "Cart Total (1 Item)
+
+    ₹2
+
+    Delivery/Package
+
+    ₹86.45
+
+    Discount
+
+    ₹0
+
+    Coupon
+
+    ₹0
+
+    Total Savings
+
+    ₹0
+
+    Tax
+
+    ₹0.06
+
+    Pay
+
+    ₹88.51"

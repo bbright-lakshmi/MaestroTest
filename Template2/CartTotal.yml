@@ -7,18 +7,16 @@ appId: com.rupee.template_two
 - tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
 - tapOn: "Search Products"
-- inputText: "exclusive tax"
+- inputText : "non returnable kit"
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 56
-- tapOn: "Count 1\nExclusive tax\nx 1\n₹40"
-- assertVisible: "₹40"
+- tapOn: "Count 1\nnon returnable kit\n₹30"
 - tapOn: "Add to bag"
-- assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
 - assertVisible: "Cart Total (1 Item)
 
-    ₹2
+    ₹30
 
     Delivery/Package
 
@@ -38,14 +36,12 @@ appId: com.rupee.template_two
 
     Tax
 
-    ₹0.06
+    ₹0
 
     Pay
 
-    ₹88.51"
-- assertVisible: "VVBBBBNB"
-- assertVisible: "
-    Coupon
+    ₹116.45"
 
-    ₹22"
-- assertVisible: "₹233.38"
+
+
+

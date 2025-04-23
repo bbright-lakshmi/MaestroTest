@@ -19,3 +19,11 @@ appId: com.rupee.template_three
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 1
 - tapOn: "Verify"
+#Onboarding pages
+- repeat:
+    times: 4
+    commands:
+      - tapOn: 
+          point: "50%,93%"
+- tapOn: "Get Started"
+

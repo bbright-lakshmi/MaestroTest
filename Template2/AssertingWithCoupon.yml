@@ -2,49 +2,33 @@ appId: com.rupee.template_two
 ---
 - launchApp
 - tapOn: "Search Stores"
-- inputText: "frozen"
-- tapOn: "Frozen_1475\n6625 Harber Fields"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
+- tapOn: "Search Products"
+- inputText: "exclusive tax"
 - tapOn:
-    point: "50%,14%"
-- inputText: "kit"
-- tapOn:
-    point: "23%,35%"
-- assertVisible:
-    text: "kitkat"
-- assertVisible: "₹110\n₹107.80\n1"
-- tapOn: "Add to Cart"
-- tapOn: "Cart"
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 56
+- tapOn: "Count 1\nExclusive tax\nx 1\n₹40"
+- assertVisible: "₹40"
+- tapOn: "Add to bag"
+- assertVisible: "Cart\n1"
+- tapOn: "Cart\n1"
 - tapOn: "Please select coupon\nCoupon"
-- tapOn: "₹10
+- tapOn: "₹3
 
     OFF
 
-    Frozen_1475
+    Boutique
 
     Coupon Code
 
-    VVBBBBNB
+    COUPON_2
 
-    Cart Amount ₹2
+    Cart Amount ₹20
 
-    Expire - Jan 28, 2025"
-- assertVisible: "₹10
-
-    OFF
-
-    Frozen_1475
-
-    Coupon Code
-
-    VVBBBBNB
-
-    Cart Amount ₹2
-
-    Expire - Jan 28, 2025"
-- assertVisible: "VVBBBBNB"
-- assertVisible: "
-    Coupon
-
-    ₹10"
-- assertVisible: "₹245.38"
+    Expire - Apr 29, 2025"
+- tapOn: "scrim"
+- assertVisible: "COUPON_2"

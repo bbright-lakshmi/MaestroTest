@@ -16,6 +16,12 @@ appId: com.rupee.template_two
     index: 3
 - tapOn: "Verify"
 #Onboarding pages
+- repeat:
+    times: 4
+    commands:
+      - tapOn: 
+          point: "50%,93%"
+- tapOn: "Get Started"
 #- tapOn:
 #    point: "50%,93%"
 #- tapOn:

@@ -52,8 +52,7 @@ appId: com.rupee.template_one
 - assertVisible: "Success\nOrder placed successfully"
 - tapOn: "Profile"
 - tapOn: "My Orders"
-- tapOn:
-    point: "50%,29%"
+- tapOn: "View Order Summary"
 - assertVisible: "Process\nnon returnable kit\n₹30"
 - tapOn: "Cancel"
 - extendedWaitUntil:

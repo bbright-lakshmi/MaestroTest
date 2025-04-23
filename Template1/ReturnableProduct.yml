@@ -27,8 +27,7 @@ appId: com.rupee.template_one
 - tapOn: "Total\n₹3547.93\nPlace Order"
 - tapOn: "Profile"
 - tapOn: "My Orders"
-- tapOn:
-    point: "50%,36%"
+- tapOn: "View Order Summary"
 - assertVisible: "Process\nreturnable\n₹33.66"
 - assertVisible: "Process\nreturnable\n₹56"
 - assertVisible: "Process\nreturnable\n₹69"

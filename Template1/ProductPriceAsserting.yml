@@ -45,7 +45,7 @@ appId: com.rupee.template_one
 - assertVisible: "Total\n₹34\nPlace Order"
 - tapOn: "Pay Using"
 - tapOn: "Cash On Delivery\nCash On Delivery"
-- tapOn: "Scrim"
+- tapOn: "Total\n₹1479.80\nPlace Order"
 
 
 

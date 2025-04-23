@@ -16,7 +16,9 @@ appId: com.rupee.template_five
 - tapOn:
     point: "50%,66%"
 - tapOn: "Verify"
-- tapOn: "Get Started"
-- tapOn: "Get Started"
-- tapOn: "Get Started"
-- tapOn: "Get Started"
+#Onboarding pages
+- repeat:
+    times: 4
+    commands:
+      - tapOn: "Get Started"
+          

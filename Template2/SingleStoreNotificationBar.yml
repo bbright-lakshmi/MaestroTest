@@ -1,0 +1,21 @@
+appId: com.rupee.template_two
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
+- tapOn: "Profile"
+- assertVisible:
+    id: "com.android.systemui:id/status_bar_contents"
+# Dark mode
+- tapOn:
+    point: "82%,43%"
+- assertVisible:
+    id: "com.android.systemui:id/status_bar_contents"
+# System Mode
+- tapOn:
+    point: "82%,50%"
+- assertVisible:
+    id: "com.android.systemui:id/status_bar_contents"
+

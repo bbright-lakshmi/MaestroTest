@@ -14,5 +14,5 @@ appId: com.rupee.template_one
 - tapOn: "Cart\n1"
 - tapOn: "Pay Using"
 - tapOn: "Cash On Delivery\nCash On Delivery" 
-- tapOn:
-    point: "50%,37%"
+- tapOn: "Please select coupon\nCoupon"
+- assertVisible: "Info\nOops!, Coupon is expired"

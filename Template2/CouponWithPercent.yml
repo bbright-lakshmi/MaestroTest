@@ -42,5 +42,42 @@ appId: com.rupee.template_two
 - tapOn: "View Order Summary"
 - tapOn: "Process\nExclusive tax\n₹41.20"
 - scrollUntilVisible:
-    element: "Note:Cancellation must be requested 24 hours prior."
+    element: "Total Amount"
     direction: DOWN
+- assertVisible: "Payment Details
+
+    Package Cost
+
+    ₹20
+
+    Delivery Cost
+
+    ₹66.45
+
+    Discount
+
+    ₹0
+
+    Payment Mode
+
+    Cash On Delivery
+
+    Coupon
+
+    FHFHFFHG
+
+    Coupon Amount
+
+    ₹2
+
+    Tax
+
+    ₹1.20
+
+    Total Savings
+
+    ₹2
+
+    Total Amount
+
+    ₹125.65"

@@ -1,0 +1,144 @@
+appId: com.rupee.template_three
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
+- tapOn: "Search"
+- tapOn: "Search Products"
+#Premium
+- inputText: "handwork sarees"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 56
+- tapOn: "hwk
+
+    ₹3 off
+
+    handwork sarees
+
+    x 1
+
+    ₹12
+
+    ₹9
+
+    0
+
+    0
+
+    6
+
+    6
+
+    :
+
+    2
+
+    2
+
+    3
+
+    3
+
+    :
+
+    0
+
+    0
+
+    3
+
+    3
+
+    :
+
+    3
+
+    3
+
+    1
+
+    1"
+- tapOn: "Add to bag"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- tapOn:
+    point: "8%,12%"
+#List
+- inputText: "fancy sarees"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 56
+- tapOn: "Fancy sarees\nx 1\n₹25"
+- tapOn: "Add to bag"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- tapOn:
+    point: "8%,12%"
+#Quilt
+- inputText: "non returnable"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 56
+- tapOn: "hod\nnon returnable\nx 1\n₹21"
+- tapOn: "Add to bag"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- tapOn:
+    point: "8%,12%"
+#Popular-View
+- inputText: "frocks"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 56
+- tapOn: "Frocks\nx 1\n₹22"
+- tapOn: "Add to bag"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- tapOn:
+    point: "8%,12%"
+#Horizontal-View
+- inputText: "frocks"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 56
+- tapOn: "Kurtis\nx 1\n₹22"
+- tapOn: "Add to bag"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- tapOn:
+    point: "8%,12%"
+#Carousel
+- inputText: "returnable"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 56
+- tapOn: "soch\nreturnable\n1f x 1\n₹33.66"
+- tapOn: "Add to bag"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- tapOn:
+    point: "8%,12%"
+#Cart
+- tapOn: "Cart\n6"
+- assertVisible: "handwork sarees\n1 piece x 1\n₹12\n₹9"
+- assertVisible: "Fancy sarees\n2 x 1\n₹25"
+- assertVisible: "non returnable\n1p x 1\n₹21"
+- assertVisible: "Frocks\n2 x 1\n₹22"
+- assertVisible: "Kurtis\n1 x 1\n₹22"
+- assertVisible: "returnable\n1f x 1\n₹33.66"
+- tapOn: "Proceed to checkout"
+- tapOn: "Cash On Delivery"
+- assertVisible: "Success\nOrder placed successfully"
+#Profile
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nhandwork sarees\n₹9.27"
+- assertVisible: "Process\nFancy sarees\n₹25"
+- assertVisible: "Process\nnon returnable\n₹21.63"
+- assertVisible: "Process\nFrocks\n₹22"
+- assertVisible: "Process\nKurtis\n₹22"
+- assertVisible: "Process\nreturnable\n₹33.66"

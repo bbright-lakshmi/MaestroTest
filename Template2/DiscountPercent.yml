@@ -1,0 +1,140 @@
+appId: com.rupee.template_two
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText: "dress"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 58
+- tapOn: "₹1.10 off
+
+    0
+
+    0
+
+    6
+
+    6
+
+    :
+
+    2
+
+    2
+
+    3
+
+    3
+
+    :
+
+    5
+
+    5
+
+    2
+
+    2
+
+    :
+
+    1
+
+    1
+
+    6
+
+    6
+
+    Dress
+
+    x 1
+
+    ₹22
+
+    ₹20.90"
+- assertVisible: "₹22\n₹20.90\n1"
+- tapOn: "Add to bag"
+- tapOn: "Cart\n1"
+- assertVisible: "Dress\n1d x 1\n₹22\n₹20.90"
+- assertVisible: "Cart Total (1 Item)
+
+    ₹22
+
+    Delivery/Package
+
+    ₹86.45
+
+    Discount
+
+    ₹1.10
+
+    Coupon
+
+    ₹0
+
+    Total Savings
+
+    ₹1.10
+
+    Tax
+
+    ₹0.63
+
+    Pay
+
+    ₹107.98"
+- scrollUntilVisible:
+    element: "Note: Cancellation must be requested 24 hours prior."
+    direction: DOWN
+- tapOn: "Cash On Delivery"
+- tapOn: "Place Order"
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- tapOn: "Process\nDress\n₹21.53"
+- scrollUntilVisible:
+    element: "Total Amount"
+    direction: DOWN
+- assertVisible: "Payment Details
+
+    Package Cost
+
+    ₹20
+
+    Delivery Cost
+
+    ₹66.45
+
+    Discount
+
+    ₹1.10
+
+    Payment Mode
+
+    Cash On Delivery
+
+    Coupon
+
+    No Coupon
+
+    Coupon Amount
+
+    0
+
+    Tax
+
+    ₹0.63
+
+    Total Savings
+
+    ₹1.10
+
+    Total Amount
+
+    ₹107.98"

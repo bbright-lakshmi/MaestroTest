@@ -1,0 +1,165 @@
+appId: com.rupee.template_two
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
+- scrollUntilVisible:
+    element: "Discount"
+    direction: DOWN
+- tapOn: "See all"
+- tapOn: "Off ₹3
+
+    0
+
+    0
+
+    6
+
+    6
+
+    :
+
+    2
+
+    2
+
+    2
+
+    2
+
+    :
+
+    0
+
+    0
+
+    1
+
+    1
+
+    :
+
+    4
+
+    4
+
+    5
+
+    5"
+- tapOn: "Search Discount Items"
+- inputText : "handwork sarees"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 56
+- tapOn: "hwk
+
+    ₹3 off
+
+    handwork sarees
+
+    x 1
+
+    ₹12
+
+    ₹9
+
+    0
+
+    0
+
+    6
+
+    6
+
+    :
+
+    2
+
+    2
+
+    3
+
+    3
+
+    :
+
+    0
+
+    0
+
+    3
+
+    3
+
+    :
+
+    3
+
+    3
+
+    1
+
+    1"
+- assertVisible: "₹12\n₹9\n1"
+- tapOn:
+    point: "91%,51%"
+- tapOn: "Add to bag"
+- tapOn: "Cart\n1"
+- assertVisible: "handwork sarees
+
+    1 piece x 2
+
+    ₹24
+
+    ₹18"
+- scrollUntilVisible:
+    element: "Note: Cancellation must be requested 24 hours prior."
+    direction: DOWN
+- tapOn: "Cash On Delivery"
+- tapOn: "Place Order"
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- tapOn: "Process\nhandwork sarees\n₹18.54"
+- scrollUntilVisible:
+    element: "Total Amount"
+    direction: DOWN
+- assertVisible: "Payment Details
+
+    Package Cost
+
+    ₹20
+
+    Delivery Cost
+
+    ₹66.45
+
+    Discount
+
+    ₹6
+
+    Payment Mode
+
+    Cash On Delivery
+
+    Coupon
+
+    No Coupon
+
+    Coupon Amount
+
+    0
+
+    Tax
+
+    ₹0.54
+
+    Total Savings
+
+    ₹6
+
+    Total Amount
+
+    ₹104.99"

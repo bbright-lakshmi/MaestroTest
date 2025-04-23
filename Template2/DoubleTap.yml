@@ -1,0 +1,28 @@
+appId: com.rupee.template_two
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText : "non returnable kit"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 56
+- tapOn: "Count 1\nnon returnable kit\n₹30"
+- tapOn: "Add to bag"
+- tapOn: "Cart\n1"
+- assertVisible: "non returnable kit\n x 1\n₹30"
+- scrollUntilVisible:
+    element: "Note:Cancellation must be requested 24 hours prior."
+    direction: DOWN
+- tapOn: "Cash On Delivery"
+- doubleTapOn:
+    text: "Place Order"
+    delay: 100 # (optional) Delay between taps. Default, 100ms
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nnon returnable kit\n₹30"

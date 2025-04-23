@@ -1,0 +1,55 @@
+appId: com.rupee.template_one
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText: "returnable kit"
+- tapOn: "Count 1\nreturnable kit\nx 1\n₹40"
+- assertVisible: "returnable kit"
+- assertVisible: "₹40"
+- tapOn: "Add to bag"
+- assertVisible: "Success\nItem added to cart"
+- assertVisible: "Cart\n1"
+- tapOn: "Cart\n1"
+- assertVisible: "returnable kit\n x 1\n₹40"
+- assertVisible: "Cart Total (1 Item)
+
+    ₹40
+
+    Delivery/Package
+
+    ₹86.50
+
+    Discount
+
+    ₹0
+
+    Coupon
+
+    ₹0
+
+    Total Savings
+
+    ₹0
+
+    Tax
+
+    ₹0
+
+    Pay
+
+    ₹126.50"
+- tapOn: "Pay Using"
+- tapOn: "Cash On Delivery\nCash On Delivery"  
+- assertVisible: "Cash On Delivery"
+- doubleTapOn:
+    text:  "Total\n₹126.50\nPlace Order"
+    delay: 100 # (optional) Delay between taps. Default, 100ms
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nreturnable kit\n₹40"

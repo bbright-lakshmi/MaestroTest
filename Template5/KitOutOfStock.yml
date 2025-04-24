@@ -2,9 +2,22 @@ appId: com.rupee.template_five
 ---
 - launchApp
 - tapOn: "Search Stores"
-- inputText: "Template5"
-- tapOn: "Template5\nHyderabad Tg"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
-- inputText: "OutofstockKit"
-- tapOn: "OutofstockKit"
+- tapOn: "Search Products"
+- inputText : "outofstockkit"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 52
+- tapOn: "Out of Stock
+
+    Count 2
+
+    outofstockkit
+
+    1 x 1
+
+    ₹30"
 - assertVisible: "Out of Stock"

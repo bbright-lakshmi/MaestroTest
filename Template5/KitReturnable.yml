@@ -2,24 +2,34 @@ appId: com.rupee.template_five
 ---
 - launchApp
 - tapOn: "Search Stores"
-- inputText: "Template5"
-- tapOn: "Template5\nHyderabad Tg"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
 - tapOn: "Search Products"
-- inputText: "ReturnableKit"
-- tapOn: "ReturnableKit"
-- tapOn: "Add To Cart"
+- inputText : "returnable kit"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 56
+- tapOn: "Count 1\nreturnable kit\n1 x 1\n₹40"
+- tapOn: "Add to bag"
+- assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
-- tapOn: "Proceed To Checkout"
+- assertVisible: "returnable kit\n x 1\n₹40"
+- tapOn: "Proceed to checkout"
 - tapOn: "Cash On Delivery"
+- assertVisible: "Cash On Delivery"
+- assertVisible: "₹126.45"
 - tapOn: "Place Order"
 - assertVisible: "Success\nOrder placed successfully"
 - tapOn: "Profile"
 - tapOn: "My Orders"
-- tapOn:
-    point: "25%,31%"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nreturnable kit\n₹40"
 - tapOn: "Cancel"
 - tapOn: "Yes"
-- tapOn:
-    point: "25%,31%"
-- assertVisible: "Cancel\nReturnableKit\n₹20.40"
+- extendedWaitUntil:
+    visible:
+      point: "23%,27%"
+    timeout: 5000      
+- takeScreenshot: Images/Template3/ReturnableKit

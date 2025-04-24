@@ -2,22 +2,20 @@ appId: com.rupee.template_five
 ---
 - launchApp
 - tapOn: "Search Stores"
-- inputText: "Template 5"
-- assertVisible: "Template 5\nChikkamagaluru"
-- tapOn: "Template 5\nChikkamagaluru"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
-- tapOn:
-    point: "50%,8%"
-- inputText: "out of stock prod"
-- tapOn: "Out of stock prod"
-#- tapOn:
-#   id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-#   index: 56
+- tapOn: "Search Products"
+- inputText : "mangalagiri sarees"
+- tapOn: "mangalagiri sarees"
 - tapOn: "Out of Stock
 
-    Out of stock prod
+    man
+
+    mangalagiri sarees
 
     x 1
 
-    ₹7"
+    ₹17"
 - assertVisible: "Out of Stock"

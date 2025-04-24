@@ -2,8 +2,9 @@ appId: com.rupee.template_five
 ---
 - launchApp
 - tapOn: "Search Stores"
-- inputText: "Template5"
-- tapOn: "Template5\nHyderabad Tg"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Profile"
 - tapOn: "My Addresses"
 - extendedWaitUntil:

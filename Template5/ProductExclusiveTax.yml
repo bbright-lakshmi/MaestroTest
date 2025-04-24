@@ -2,24 +2,52 @@ appId: com.rupee.template_five
 ---
 - launchApp
 - tapOn: "Search Stores"
-- inputText: "Template 5"
-- assertVisible: "Template 5\nChikkamagaluru"
-- tapOn: "Template 5\nChikkamagaluru"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
+- tapOn: "Search Products"
+- inputText : "non returnable"
 - tapOn:
-    point: "50%,8%"
-- inputText: "biriyani ex"
-- tapOn: "Biriyani Ex"
-- tapOn:
-    point: "24%,31%"
-- tapOn: "Add To Cart"
-- tapOn: "2kg"
-- tapOn: "Add To Cart"
-- tapOn: "3kg"
-- tapOn: "Add To Cart"
-- tapOn: "Cart\n3"
-- scrollUntilVisible:
-    element: "Pay"
-    direction: DOWN
-- assertVisible: "Tax"
-- assertVisible: "₹3.76"
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 52
+- assertVisible: "hod\nnon returnable\nx 1\n₹21"
+- tapOn: "hod\nnon returnable\nx 1\n₹21"
+- assertVisible: "₹21"
+- tapOn: "Add to bag"
+- assertVisible: "Success\nItem added to cart"
+- tapOn: "Cart\n1"
+- assertVisible: "Cart Total (1 Item)
+
+    ₹21
+
+    Delivery/Package
+
+    ₹86.50
+
+    Discount
+
+    ₹0
+
+    Coupon
+
+    ₹0
+
+    Total Savings
+
+    ₹0
+
+    Tax
+
+    ₹0.63
+
+    Pay
+
+    ₹108.13"
+- tapOn: "Proceed to checkout"
+- tapOn: "Cash On Delivery"
+- tapOn: "Place Order"
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nnon returnable\n₹21.63"

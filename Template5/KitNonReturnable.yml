@@ -2,22 +2,35 @@ appId: com.rupee.template_five
 ---
 - launchApp
 - tapOn: "Search Stores"
-- inputText: "Template5"
-- tapOn: "Template5\nHyderabad Tg"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
 - tapOn: "Search Products"
-- inputText: "WithtaxKit"
-- tapOn: "WithtaxKit"
+- inputText : "non returnable kit"
 - tapOn:
-    point: "85%,80%"
-- tapOn: "Add To Cart"
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 56
+- tapOn: "Count 1
+
+    non returnable kit
+
+    1 x 1
+
+    ₹30"
+- tapOn: "Add to bag"
+- assertVisible: "Success\nItem added to cart"
+- assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
+- assertVisible: "non returnable kit\n x 1\n₹30"
 - tapOn: "Proceed to checkout"
 - tapOn: "Cash On Delivery"
+- assertVisible: "Cash On Delivery"
 - tapOn: "Place Order"
+- assertVisible: "Success\nOrder placed successfully"
 - tapOn: "Profile"
 - tapOn: "My Orders"
-- tapOn:
-    point: "25%,31%"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nnon returnable kit\n₹30"
 - tapOn: "Cancel"
 - assertVisible: "Info\nThis item is not returnable."

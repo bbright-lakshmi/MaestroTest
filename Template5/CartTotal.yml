@@ -2,54 +2,48 @@ appId: com.rupee.template_five
 ---
 - launchApp
 - tapOn: "Search Stores"
-- inputText: "Template 5"
-- assertVisible: "Template 5\nChikkamagaluru"
-- tapOn: "Template 5\nChikkamagaluru"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
+- tapOn: "Search Products"
+- inputText : "returnable"
 - tapOn:
-    point: "50%,8%"
-- inputText: "biriyani ex"
-- tapOn: "Biriyani Ex"
-#- tapOn:
-#    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-#    index: 56
-- tapOn:
-    point: "24%,31%"
-- tapOn: "Add To Cart"
-- tapOn: "2kg"
-- tapOn: "Add To Cart"
-- tapOn: "3kg"
-- tapOn: "Add To Cart"
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 52
+- tapOn: "soch\nreturnable\n1f x 1\n₹33.66"
+- assertVisible: "₹33.66"
+- tapOn: "Add to bag"
+- assertVisible: "Success\nItem added to cart"
+- assertVisible: "Cart\n1"
+- tapOn: "2f"
+- assertVisible: "₹57.12"
+- tapOn: "Add to bag"
+- assertVisible: "Success\nItem added to cart"
+- assertVisible: "Cart\n2"
+- tapOn: "3f"
+- assertVisible: "₹70.38"
+- tapOn: "Add to bag"
+- assertVisible: "Success\nItem added to cart"
+- assertVisible: "Cart\n3"
 - tapOn: "Cart\n3"
-- tapOn: "Please select coupon"
-- tapOn: "₹4
-
-    OFF
-
-    Template 5
-
-    Coupon Code
-
-    NONVEGCN
-
-    Cart Amount ₹20
-
-    Expire - Mar 30, 2025"
-- tapOn: "Scrim"
+- assertVisible: "returnable\n1f x 1\n₹33.66"
+- assertVisible: "returnable\n2f x 1\n₹57.12"
+- assertVisible: "returnable\n3f x 1\n₹70.38"
 - scrollUntilVisible:
     element: "Pay"
     direction: DOWN
 - assertVisible: "Cart Total (3 Item)"
-- assertVisible: "₹198"
+- assertVisible: "₹158.66"
 - assertVisible: "Delivery/Package"
-- assertVisible: "₹2637.97"
+- assertVisible: "₹20"
 - assertVisible: "Discount"
-- assertVisible: "₹9.90"
+- assertVisible: "₹0"
 - assertVisible: "Coupon"
-- assertVisible: "₹4"
+- assertVisible: "₹0"
 - assertVisible: "Total Savings"
-- assertVisible: "₹13.90"
+- assertVisible: "₹0"
 - assertVisible: "Tax"
-- assertVisible: "₹3.76"
+- assertVisible: "₹0"
 - assertVisible: "Pay"
-- assertVisible: "₹2825.83"
+- assertVisible: "₹178.66"

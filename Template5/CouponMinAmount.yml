@@ -21,9 +21,11 @@ appId: com.rupee.template_five
 
     Coupon Code
 
-    COUPON12
+    COUPONEW
 
-    Cart Amount ₹12
+    Cart Amount ₹50
 
-    Expire - Mar 27, 2025"
-- assertVisible: "Info\nOops!, Coupon is expired"
+    Expire - Mar 25, 2025"
+- assertVisible: "Info
+
+    Minimum cart value required is 50"

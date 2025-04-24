@@ -13,7 +13,7 @@ appId: com.rupee.template_five
     index: 56
 - tapOn: "Count 1\nExclusive tax\nx 1\n₹40"
 - assertVisible: "₹40"
-- tapOn: "Add to bag"
+- tapOn: "Add To Cart"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
 - assertVisible: "Tax"

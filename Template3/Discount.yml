@@ -8,7 +8,8 @@ appId: com.rupee.template_three
 - scrollUntilVisible:
     element: "Discount"
     direction: DOWN
-- tapOn: "Off ₹10
+- tapOn: "Explore all"
+- tapOn: "Off ₹3
 
     0
 
@@ -24,49 +25,15 @@ appId: com.rupee.template_three
 
     2
 
-    1
+    2
 
-    1
-
-    :
-
-    4
-
-    4
-
-    7
-
-    7
+    2
 
     :
-
-    3
-
-    3
-
-    6
-
-    7"
-
-- tapOn: "Search"
-- tapOn: "Search Products"
-- inputText : "WithTax"
-- tapOn: "WithTax"
-- tapOn: "₹10 off
 
     0
 
     0
-
-    6
-
-    6
-
-    :
-
-    2
-
-    2
 
     1
 
@@ -80,45 +47,119 @@ appId: com.rupee.template_three
 
     5
 
-    5
+    5"
+- tapOn: "Search Discount Items"
+- inputText : "handwork sarees"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 54
+- tapOn: "hwk
 
-    :
+    ₹3 off
 
-    2
-
-    2
-
-    1
-
-    1
-
-    WithTax
+    handwork sarees
 
     x 1
 
-    ₹15
+    ₹12
 
-    ₹5"
+    ₹9
+
+    0
+
+    0
+
+    6
+
+    6
+
+    :
+
+    2
+
+    2
+
+    3
+
+    3
+
+    :
+
+    0
+
+    0
+
+    3
+
+    3
+
+    :
+
+    3
+
+    3
+
+    1
+
+    1"
+- assertVisible: "₹12\n₹9\n1"
+- tapOn:
+    point: "91%,51%"
 - tapOn: "Add to bag"
-- tapOn: "Search"
-- tapOn: "Search Products"
-- inputText : "Returnable"
-- tapOn: "Returnable"
-- tapOn: "Add to bag"
-- assertVisible: "Cart\n2"
-- tapOn: "Cart\n2"
-- scrollUntilVisible:
-    element: "Pay"
-    direction: DOWN
-- assertVisible: "Discount"
-- assertVisible: "₹10"
+- tapOn: "Cart\n1"
+- assertVisible: "handwork sarees
+
+    1 piece x 2
+
+    ₹24
+
+    ₹18"
 - tapOn: "Proceed to checkout"
 - tapOn: "Cash On Delivery"
+- assertVisible: "Cash On Delivery"
 - tapOn: "Place Order"
+- assertVisible: "Success\nOrder placed successfully"
 - tapOn: "Profile"
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"
-- extendedWaitUntil:
-    visible: "Upload" 
-    timeout: 5000       
-- takeScreenshot: Images/Template3/DiscountValues
+- tapOn: "Process\nhandwork sarees\n₹18.54"
+- scrollUntilVisible:
+    element: "Total Amount"
+    direction: DOWN
+- assertVisible: "Payment Details
+
+    Package Cost
+
+    ₹20
+
+    Delivery Cost
+
+    ₹66.50
+
+    Discount
+
+    ₹6
+
+    Payment Mode
+
+    Cash On Delivery
+
+    Coupon
+
+    No Coupon
+
+    Coupon Amount
+
+    0
+
+    Tax
+
+    ₹0.54
+
+    Total Savings
+
+    ₹6
+
+    Total Amount
+
+    ₹105.04"

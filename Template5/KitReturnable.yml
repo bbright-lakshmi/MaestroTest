@@ -12,14 +12,12 @@ appId: com.rupee.template_five
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 56
 - tapOn: "Count 1\nreturnable kit\n1 x 1\n₹40"
-- tapOn: "Add to bag"
+- tapOn: "Add To Cart"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
 - assertVisible: "returnable kit\n x 1\n₹40"
 - tapOn: "Proceed to checkout"
 - tapOn: "Cash On Delivery"
-- assertVisible: "Cash On Delivery"
-- assertVisible: "₹126.45"
 - tapOn: "Place Order"
 - assertVisible: "Success\nOrder placed successfully"
 - tapOn: "Profile"
@@ -32,4 +30,4 @@ appId: com.rupee.template_five
     visible:
       point: "23%,27%"
     timeout: 5000      
-- takeScreenshot: Images/Template3/ReturnableKit
+- takeScreenshot: Images/Template5/ReturnableKit

@@ -18,7 +18,7 @@ appId: com.rupee.template_five
     1 x 1
 
     ₹30"
-- tapOn: "Add to bag"
+- tapOn: "Add To Cart"
 - assertVisible: "Success\nItem added to cart"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"

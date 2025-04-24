@@ -13,7 +13,7 @@ appId: com.rupee.template_five
     index: 52
 - tapOn: "hod\nnon returnable\nx 1\n₹21"
 - assertVisible: "₹21"
-- tapOn: "Add to bag"
+- tapOn: "Add To Cart"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
 - assertVisible: "non returnable\n1p x 1\n₹21"

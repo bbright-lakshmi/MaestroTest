@@ -7,23 +7,26 @@ appId: com.rupee.template_five
 - tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
 - tapOn: "Search Products"
-- inputText : "Returnable"
-- tapOn: "Returnable"
-- tapOn: "Add to bag"
+- inputText : "returnable"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 52
+- tapOn: "soch\nreturnable\n1f x 1\n₹33.66"
+- tapOn: "Add To Cart"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
 - tapOn: "Please select coupon"
-- tapOn: "₹10
+- assertVisible: "5 %
 
     OFF
 
-    Store Name 2
+    Boutique
 
     Coupon Code
 
-    COUPON12
+    FHFHFFHG
 
-    Cart Amount ₹12
+    Cart Amount ₹10
 
-    Expire - Mar 27, 2025"
+    Expire - Apr 20, 2025"
 - assertVisible: "Info\nOops!, Coupon is expired"

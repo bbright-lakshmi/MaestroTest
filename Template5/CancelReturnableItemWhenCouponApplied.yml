@@ -7,12 +7,13 @@ appId: com.rupee.template_five
 - tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
 - tapOn: "Search Products"
-- inputText : "non returnable"
+- inputText : "returnable"
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 52
-- tapOn: "hod\nnon returnable\nx 1\n₹21"
-- assertVisible: "₹21"
+- tapOn: "returnable"
+- tapOn: "soch\nreturnable\n1f x 1\n₹33.66"
+- assertVisible: "₹33.66"
 - tapOn: "Add To Cart"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
@@ -31,38 +32,15 @@ appId: com.rupee.template_five
 
     Expire - Apr 29, 2025"
 - tapOn: "Scrim"
+- assertVisible: "COUPON_2"
 - tapOn: "Proceed to checkout"
 - tapOn: "Cash On Delivery"
-- tapOn: "Place Order"
-- assertVisible: "Success\nOrder placed successfully"
 - tapOn: "Profile"
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"
-- assertVisible: "Process\nnon returnable\n₹21.63"
-- tapOn: "Search"
-- tapOn: "Add To Cart"
-- tapOn: "Cart\n1"
-- tapOn: "Please select coupon"
-- tapOn: "₹3
-
-    OFF
-
-    Boutique
-
-    Coupon Code
-
-    COUPON_2
-
-    Cart Amount ₹20
-
-    Expire - Apr 29, 2025"
-- assertVisible: "Info
- 
-    Coupon already applied for this user Mobile number"  
-
-
-
-
-
-
-
+- assertVisible: "Process\nreturnable\n₹33.66"
+- tapOn: "Cancel"
+- assertVisible: "Coupon Applied"
+- assertVisible: "A coupon has been applied to this order. The entire order must be canceled. Do you want to cancel the entire order?"
+- tapOn: "Yes"
+#item cancelled

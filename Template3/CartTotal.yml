@@ -34,9 +34,9 @@ appId: com.rupee.template_three
     element: "Pay"
     direction: DOWN
 - assertVisible: "Cart Total (3 Item)"
-- assertVisible: "₹158.66"
+- assertVisible: "₹161.66"
 - assertVisible: "Delivery/Package"
-- assertVisible: "₹20"
+- assertVisible: "₹86.50"
 - assertVisible: "Discount"
 - assertVisible: "₹0"
 - assertVisible: "Coupon"
@@ -46,4 +46,4 @@ appId: com.rupee.template_three
 - assertVisible: "Tax"
 - assertVisible: "₹0"
 - assertVisible: "Pay"
-- assertVisible: "₹178.66"
+- assertVisible: "₹247.66"

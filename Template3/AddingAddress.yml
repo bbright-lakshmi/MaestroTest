@@ -2,8 +2,9 @@ appId: com.rupee.template_three
 ---
 - launchApp
 - tapOn: "Search Stores"
-- inputText: "Store Name 2"
-- tapOn: "Store Name 3\nAndhra Pradesh, India"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Profile"
 - tapOn: "My Addresses"
 - assertVisible: "No Delivery Address Found"

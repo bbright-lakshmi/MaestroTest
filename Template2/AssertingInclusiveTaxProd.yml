@@ -1,4 +1,4 @@
-appId: com.rupee.template_one
+appId: com.rupee.template_two
 ---
 - launchApp
 - tapOn: "Search Stores"

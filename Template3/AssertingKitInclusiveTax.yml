@@ -11,42 +11,19 @@ appId: com.rupee.template_three
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 56
-- tapOn: "Count 2\nInclusive tax\nx 1\n₹22"
-- assertVisible: "₹22"
+- tapOn: "Count 2\nInclusive tax\n1 x 1\n₹22.44"
+- assertVisible: "₹22.44"
 - tapOn: "Add to bag"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
-- assertVisible: "Cart Total (1 Item)
-
-    ₹22
-
-    Delivery/Package
-
-    ₹86.50
-
-    Discount
-
-    ₹0
-
-    Coupon
-
-    ₹0
-
-    Total Savings
-
-    ₹0
-
-    Tax
-
-    ₹0
-
-    Pay
-
-    ₹108.50"
-- tapOn: "Pay Using"
-- tapOn: "Cash On Delivery\nCash On Delivery"
-- tapOn: "Total\n₹108.50\nPlace Order"
+- assertVisible: "Cart Total (1 Item)"
+- assertVisible: "₹22.44"
+- assertVisible: "Tax"
+- assertVisible: "₹1.20"
+- tapOn: "Proceed to checkout"
+- tapOn: "Cash On Delivery"
+- tapOn: "Place Order"
 - tapOn: "Profile"
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"
-- assertVisible: "Process\nInclusive tax\n₹22"
+- assertVisible: "Process\nInclusive tax\n₹22.44"

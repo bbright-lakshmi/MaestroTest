@@ -34,8 +34,7 @@ appId: com.rupee.template_three
 - assertVisible: "Success\nOrder placed successfully"
 - tapOn: "Profile"
 - tapOn: "My Orders"
-- tapOn:
-    point: "23%,27%"
+- tapOn: "View Order Summary"
 - assertVisible: "Process\nreturnable\n₹69"
 - tapOn: "Cancel"
 - tapOn: "Yes"

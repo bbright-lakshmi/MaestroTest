@@ -117,8 +117,7 @@ appId: com.rupee.template_three
 - tapOn: "Place Order"
 - tapOn: "Profile"
 - tapOn: "My Orders"
-- tapOn:
-    point: "88%,39%"
+- tapOn: "View Order Summary"
 - extendedWaitUntil:
     visible: "Upload" 
     timeout: 5000       

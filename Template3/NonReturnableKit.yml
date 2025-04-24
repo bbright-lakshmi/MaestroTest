@@ -30,8 +30,7 @@ appId: com.rupee.template_three
 - assertVisible: "Success\nOrder placed successfully"
 - tapOn: "Profile"
 - tapOn: "My Orders"
-- tapOn:
-    point: "23%,27%"
+- tapOn: "View Order Summary"
 - assertVisible: "Process\nnon returnable kit\n₹30"
 - tapOn: "Cancel"
 - assertVisible: "Info\nThis item is not returnable."

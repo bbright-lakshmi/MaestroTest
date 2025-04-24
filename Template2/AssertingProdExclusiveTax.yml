@@ -44,3 +44,12 @@ appId: com.rupee.template_two
     Pay
 
     ₹108.08"
+- scrollUntilVisible:
+    element: "Note: Cancellation must be requested 24 hours prior."
+    direction: DOWN
+- tapOn: "Cash On Delivery"
+- tapOn: "Place Order"
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nnon returnable\n₹21.63"

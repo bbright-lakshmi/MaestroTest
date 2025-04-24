@@ -16,11 +16,11 @@ appId: com.rupee.template_two
 - tapOn: "Add to bag"
 - assertVisible: "Cart\n1"
 - tapOn: "2f"
-- assertVisible: "₹56"
+- assertVisible: "₹57.12"
 - tapOn: "Add to bag"
 - assertVisible: "Cart\n2"
 - tapOn: "3f"
-- assertVisible: "₹69"
+- assertVisible: "₹70.38"
 - tapOn: "Add to bag"
 - assertVisible: "Cart\n3"
 - tapOn: "Cart\n3"
@@ -29,7 +29,7 @@ appId: com.rupee.template_two
     direction: DOWN
 - assertVisible: "Cart Total (3 Item)
 
-    ₹158.66
+    ₹161.16
 
     Delivery/Package
 
@@ -53,4 +53,12 @@ appId: com.rupee.template_two
 
     Pay
 
-    ₹245.11"
+    ₹247.61"
+- tapOn: "Cash On Delivery"
+- tapOn: "Place Order"
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nreturnable\n₹33.66"
+- assertVisible: "Process\nreturnable\n₹57.12"
+- assertVisible: "Process\nreturnable\n₹70.38"

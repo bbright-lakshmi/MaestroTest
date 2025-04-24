@@ -18,11 +18,11 @@ appId: com.rupee.template_one
 - tapOn: "Cart\n1"
 - assertVisible: "Cart Total (1 Item)
 
-    ₹2
+    ₹40
 
     Delivery/Package
 
-    ₹86.45
+    ₹86.50
 
     Discount
 
@@ -38,8 +38,15 @@ appId: com.rupee.template_one
 
     Tax
 
-    ₹0.06
+    ₹1.20
 
     Pay
 
-    ₹88.51"
+    ₹127.70"
+- tapOn: "Pay Using"
+- tapOn: "Cash On Delivery\nCash On Delivery"
+- tapOn: "Total\n₹127.70\nPlace Order"
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nExclusive tax\n₹41.20"

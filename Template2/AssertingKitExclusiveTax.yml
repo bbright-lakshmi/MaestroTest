@@ -18,7 +18,7 @@ appId: com.rupee.template_two
 - tapOn: "Cart\n1"
 - assertVisible: "Cart Total (1 Item)
 
-    ₹2
+    ₹40
 
     Delivery/Package
 
@@ -38,8 +38,17 @@ appId: com.rupee.template_two
 
     Tax
 
-    ₹0.06
+    ₹1.20
 
     Pay
 
-    ₹88.51"
+    ₹127.65"
+- scrollUntilVisible:
+    element: "Note: Cancellation must be requested 24 hours prior."
+    direction: DOWN
+- tapOn: "Cash On Delivery"
+- tapOn: "Place Order"
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nExclusive tax\n₹41.20"

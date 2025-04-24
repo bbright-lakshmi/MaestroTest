@@ -11,14 +11,14 @@ appId: com.rupee.template_two
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 56
-- tapOn: "Count 2\nInclusive tax\nx 1\n₹14.28"
-- assertVisible: "₹14.28"
+- tapOn: "Count 2\nInclusive tax\n₹22.44"
+- assertVisible: "₹22.44"
 - tapOn: "Add to bag"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
 - assertVisible: "Cart Total (1 Item)
 
-    ₹14.28
+    ₹22.44
 
     Delivery/Package
 
@@ -42,4 +42,13 @@ appId: com.rupee.template_two
 
     Pay
 
-    ₹100.73"
+    ₹108.89"
+- scrollUntilVisible:
+    element: "Note: Cancellation must be requested 24 hours prior."
+    direction: DOWN
+- tapOn: "Cash On Delivery"
+- tapOn: "Place Order"
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nInclusive tax\n₹22.44"

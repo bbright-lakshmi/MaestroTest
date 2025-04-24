@@ -44,9 +44,9 @@ appId: com.rupee.template_three
     Pay
 
     ₹108.13"
-- tapOn: "Pay Using"
-- tapOn: "Cash On Delivery\nCash On Delivery"
-- tapOn: "Total\n₹108.13\nPlace Order"
+- tapOn: "Proceed to checkout"
+- tapOn: "Cash On Delivery"
+- tapOn: "Place Order"
 - tapOn: "Profile"
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"

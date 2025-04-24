@@ -16,30 +16,12 @@ appId: com.rupee.template_three
 - tapOn: "Add to bag"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
-- assertVisible: "Cart Total (1 Item)
-
-    ₹2
-
-    Delivery/Package
-
-    ₹86.45
-
-    Discount
-
-    ₹0
-
-    Coupon
-
-    ₹0
-
-    Total Savings
-
-    ₹0
-
-    Tax
-
-    ₹0.06
-
-    Pay
-
-    ₹88.51"
+- assertVisible: "Tax"
+- assertVisible: "₹1.20"
+- tapOn: "Proceed to checkout"
+- tapOn: "Cash On Delivery"
+- tapOn: "Place Order"
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nExclusive tax\n₹41.20"

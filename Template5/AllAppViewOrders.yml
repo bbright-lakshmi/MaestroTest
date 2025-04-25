@@ -8,119 +8,65 @@ appId: com.rupee.template_five
 - tapOn: "Search"
 - tapOn: "Search Products"
 #Premium
-- inputText: "handwork sarees"
+- inputText: "western"
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 56
-- tapOn: "hwk
-
-    ₹3 off
-
-    handwork sarees
-
-    x 1
-
-    ₹12
-
-    ₹9
-
-    0
-
-    0
-
-    6
-
-    6
-
-    :
-
-    2
-
-    2
-
-    3
-
-    3
-
-    :
-
-    0
-
-    0
-
-    3
-
-    3
-
-    :
-
-    3
-
-    3
-
-    1
-
-    1"
-- tapOn: "Add To Cart"
+- tapOn: "wes\nWestern\nx 1\n₹25.50"
+- tapOn: "Add to bag"
 - tapOn: "Search"
-- tapOn: "Search Products"
-- tapOn:
-    point: "9%,8%"
+- tapOn: "western"
+- eraseText: 50
 #List
 - inputText: "fancy sarees"
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 56
 - tapOn: "Fancy sarees\nx 1\n₹25"
-- tapOn: "Add To Cart"
+- tapOn: "Add to bag"
 - tapOn: "Search"
-- tapOn: "Search Products"
-- tapOn:
-    point: "9%,8%"
+- tapOn: "fancy sarees"
+- eraseText: 50
 #Quilt
 - inputText: "non returnable"
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 56
+    index: 52
 - tapOn: "hod\nnon returnable\nx 1\n₹21"
-- tapOn: "Add To Cart"
+- tapOn: "Add to bag"
 - tapOn: "Search"
-- tapOn: "Search Products"
-- tapOn:
-    point: "9%,8%"
+- tapOn: "non returnable"
+- eraseText: 50
 #Popular-View
 - inputText: "frocks"
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 56
 - tapOn: "Frocks\nx 1\n₹22"
-- tapOn: "Add To Cart"
+- tapOn: "Add to bag"
 - tapOn: "Search"
-- tapOn: "Search Products"
-- tapOn:
-    point: "9%,8%"
+- tapOn: "frocks"
+- eraseText: 50
 #Horizontal-View
-- inputText: "frocks"
+- inputText: "kurtis"
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 56
 - tapOn: "Kurtis\nx 1\n₹22"
-- tapOn: "Add To Cart"
+- tapOn: "Add to bag"
 - tapOn: "Search"
-- tapOn: "Search Products"
-- tapOn:
-    point: "9%,8%"
+- tapOn: "kurtis"
+- eraseText: 50
 #Carousel
 - inputText: "returnable"
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 56
 - tapOn: "soch\nreturnable\n1f x 1\n₹33.66"
-- tapOn: "Add To Cart"
+- tapOn: "Add to bag"
 - tapOn: "Search"
-- tapOn: "Search Products"
-- tapOn:
-    point: "9%,8%"
+- tapOn: "returnable"
+- eraseText: 50
 #Cart
 - tapOn: "Cart\n6"
 - assertVisible: "handwork sarees\n1 piece x 1\n₹12\n₹9"

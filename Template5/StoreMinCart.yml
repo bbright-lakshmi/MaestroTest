@@ -58,7 +58,7 @@ appId: com.rupee.template_five
     ₹12
 
     ₹9"
-- tapOn: "Add to bag"
+- tapOn: "Add to Cart"
 - assertVisible: "Cart\n1"
 - tapOn: "Proceed to checkout"
 - tapOn: "Cash On Delivery"

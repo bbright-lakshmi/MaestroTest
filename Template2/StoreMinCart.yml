@@ -7,11 +7,9 @@ appId: com.rupee.template_two
 - tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
 - tapOn: "Search Products"
-- inputText : "dress"
-- tapOn:
-    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 58
-- tapOn: "Dress\nx 1\n₹7"
+- inputText : "western"
+- tapOn: "western"
+- tapOn: "wes\nWestern\nx 1\n₹15.30"
 - tapOn: "Add to bag"
 - assertVisible: "Success\nItem added to cart"
 - assertVisible: "Cart\n1"

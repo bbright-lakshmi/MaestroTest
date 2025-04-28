@@ -39,9 +39,7 @@ appId: com.rupee.template_five
 - eraseText: 50
 #Popular-View
 - inputText: "frocks"
-- tapOn:
-    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 56
+- tapOn: "Frocks"
 - tapOn: "Frocks\nx 1\n₹22"
 - tapOn: "Add to bag"
 - tapOn: "Search"
@@ -61,7 +59,7 @@ appId: com.rupee.template_five
 - inputText: "trendy"
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 54
+    index: 56
 - tapOn: "dfd\nTrendy\nx 1\n₹21.42"
 - tapOn: "Add to bag"
 #Cart
@@ -74,6 +72,7 @@ appId: com.rupee.template_five
 - assertVisible: "Trendy\n2 x 1\n₹21.42"
 - tapOn: "Proceed to checkout"
 - tapOn: "Cash On Delivery"
+- tapOn: "Place Order"
 - assertVisible: "Success\nOrder placed successfully"
 #Profile
 - tapOn: "Profile"

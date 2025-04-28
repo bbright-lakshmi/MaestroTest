@@ -1,0 +1,69 @@
+appId: com.rupee.template_two
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText : "non returnable"
+- tapOn:
+    point: "42%,18%"
+- assertVisible: "hod\nnon returnable\nx 1\n₹21"
+- tapOn: "hod\nnon returnable\nx 1\n₹21"
+- tapOn: "Add to bag"
+- assertVisible: "Cart\n1"
+- tapOn: "Cart\n1"
+- assertVisible: "non returnable\n1p x 1\n₹21"
+- tapOn: "Please select coupon\nCoupon"
+- tapOn: "₹3
+
+    OFF
+
+    Boutique
+
+    Coupon Code
+
+    COUPON_2
+
+    Cart Amount ₹20
+
+    Expire - Apr 29, 2025"
+- tapOn: "Scrim"
+- assertVisible: "COUPON_2"
+- tapOn: "Proceed to checkout"
+- tapOn: "Cash On Delivery"
+- assertVisible: "Cash On Delivery"
+- tapOn: "Place Order"
+- assertVisible: "Success\nOrder placed successfully"
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nnon returnable\n₹21.63"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText : "non returnable"
+- assertVisible: "hod\nnon returnable\nx 1\n₹21"
+- tapOn: "hod\nnon returnable\nx 1\n₹21"
+- tapOn: "Add to bag"
+- assertVisible: "Cart\n1"
+- tapOn: "Cart\n1"
+- assertVisible: "non returnable\n1p x 1\n₹21"
+- tapOn: "Please select coupon\nCoupon"
+- tapOn: "₹3
+
+    OFF
+
+    Boutique
+
+    Coupon Code
+
+    COUPON_2
+
+    Cart Amount ₹20
+
+    Expire - Apr 29, 2025"
+- assertVisible: "Info
+
+    Coupon already applied for this user Mobile number"

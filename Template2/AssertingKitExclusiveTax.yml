@@ -11,8 +11,8 @@ appId: com.rupee.template_two
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 56
-- tapOn: "Count 1\nExclusive tax\nx 1\n₹40"
-- assertVisible: "₹40"
+- tapOn: "Count 1\nExclusive tax\n₹40"
+- assertVisible: "₹40\n1"
 - tapOn: "Add to bag"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
@@ -44,7 +44,7 @@ appId: com.rupee.template_two
 
     ₹127.65"
 - scrollUntilVisible:
-    element: "Note: Cancellation must be requested 24 hours prior."
+    element: "Note:Cancellation must be requested 24 hours prior."
     direction: DOWN
 - tapOn: "Cash On Delivery"
 - tapOn: "Place Order"

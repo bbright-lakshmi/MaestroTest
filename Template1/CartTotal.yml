@@ -11,7 +11,7 @@ appId: com.rupee.template_one
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 56
-- tapOn: "Count 1\nnon returnable kit\n₹30"
+- tapOn: "Count 1\nnon returnable kit\nx 1\n₹30"
 - tapOn: "Add to bag"
 - tapOn: "Cart\n1"
 - assertVisible: "Cart Total (1 Item)
@@ -20,7 +20,7 @@ appId: com.rupee.template_one
 
     Delivery/Package
 
-    ₹86.45
+    ₹86.50
 
     Discount
 
@@ -40,8 +40,6 @@ appId: com.rupee.template_one
 
     Pay
 
-    ₹116.45"
-
-
+    ₹116.50"
 
 

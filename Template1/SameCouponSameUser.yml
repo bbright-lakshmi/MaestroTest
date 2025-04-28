@@ -18,32 +18,30 @@ appId: com.rupee.template_one
 - tapOn: "Cart\n1"
 - assertVisible: "non returnable\n1p x 1\n₹21"
 - tapOn: "Please select coupon\nCoupon"
-- tapOn: "3 %
- 
+- tapOn: "₹3
+
     OFF
- 
+
     Boutique
- 
+
     Coupon Code
- 
+
     COUPON_2
- 
-    Cart Amount ₹10
- 
-    Expire - Mar 24, 2025"
+
+    Cart Amount ₹20
+
+    Expire - Apr 29, 2025"
 - tapOn: "Scrim"
 - assertVisible: "COUPON_2"
 - tapOn: "Pay Using"
 - tapOn: "Cash On Delivery\nCash On Delivery"  
-- tapOn: "Scrim"
 - assertVisible: "Cash On Delivery"
-- tapOn: "Total\n₹53.35\nPlace Order"
+- tapOn: "Total\n₹105.13\nPlace Order"
 - assertVisible: "Success\nOrder placed successfully"
 - tapOn: "Profile"
 - tapOn: "My Orders"
-- tapOn:
-    point: "50%,29%"
-- assertVisible: "Process\nnon returnable\n₹21"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nnon returnable\n₹21.63"
 - tapOn: "Search"
 - tapOn: "Search Products"
 - inputText : "non returnable"
@@ -55,19 +53,19 @@ appId: com.rupee.template_one
 - tapOn: "Cart\n1"
 - assertVisible: "non returnable\n1p x 1\n₹21"
 - tapOn: "Please select coupon\nCoupon"
-- tapOn: "3 %
- 
+- tapOn: "₹3
+
     OFF
- 
+
     Boutique
- 
+
     Coupon Code
- 
+
     COUPON_2
- 
-    Cart Amount ₹10
- 
-    Expire - Mar 24, 2025"
+
+    Cart Amount ₹20
+
+    Expire - Apr 29, 2025"
 - assertVisible: "Info
  
     Coupon already applied for this user Mobile number"  

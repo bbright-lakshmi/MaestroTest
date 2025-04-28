@@ -7,12 +7,25 @@ appId: com.rupee.template_one
 - tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
 - tapOn: "Search Products"
-- inputText : "handwork sarees"
-- tapOn: "handwork sarees"
-- tapOn: "hwk\nhandwork sarees\nx 1\n₹12"
+- inputText : "western"
+- tapOn: "western"
+- tapOn: "wes\nWestern\nx 1\n₹15.30"
 - tapOn: "Add to bag"
 - tapOn: "Cart\n1"
 - tapOn: "Pay Using"
 - tapOn: "Cash On Delivery\nCash On Delivery" 
 - tapOn: "Please select coupon\nCoupon"
+- tapOn: "5 %
+
+    OFF
+
+    Boutique
+
+    Coupon Code
+
+    FHFHFFHG
+
+    Cart Amount ₹10
+
+    Expire - Apr 20, 2025"
 - assertVisible: "Info\nOops!, Coupon is expired"

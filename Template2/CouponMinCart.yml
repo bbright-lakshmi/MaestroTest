@@ -13,9 +13,21 @@ appId: com.rupee.template_one
 - tapOn: "Add to bag"
 - tapOn: "Cart\n1"
 - tapOn: "Pay Using"
-- tapOn: "Cash On Delivery\nCash On Delivery"  
-- tapOn: "Total\n₹102.26\nPlace Order"
-- extendedWaitUntil:
-    visible: "Total\n₹102.26\nPlace Order" 
-    timeout: 5000       
-- takeScreenshot: Images/Template1/Error
+- tapOn: "Cash On Delivery\nCash On Delivery" 
+- tapOn: "Please select coupon\nCoupon"
+- tapOn: "₹3
+
+    OFF
+
+    Boutique
+
+    Coupon Code
+
+    COUPON_2
+
+    Cart Amount ₹20
+
+    Expire - Apr 29, 2025"
+- assertVisible: "Info
+
+    Minimum cart value required is 20"

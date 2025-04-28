@@ -1,4 +1,4 @@
-appId: com.rupee.template_two
+appId: com.rupee.template_one
 ---
 - launchApp
 - tapOn: "Search Stores"
@@ -7,15 +7,13 @@ appId: com.rupee.template_two
 - tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
 - tapOn: "Search Products"
-- inputText: "exclusive tax"
-- tapOn:
-    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 56
-- tapOn: "Count 1\nExclusive tax\nx 1\n₹40"
-- assertVisible: "₹40"
+- inputText : "western"
+- tapOn: "western"
+- tapOn: "wes\nWestern\nx 1\n₹15.30"
 - tapOn: "Add to bag"
-- assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
+- tapOn: "Pay Using"
+- tapOn: "Cash On Delivery\nCash On Delivery" 
 - tapOn: "Please select coupon\nCoupon"
 - tapOn: "₹3
 
@@ -30,5 +28,6 @@ appId: com.rupee.template_two
     Cart Amount ₹20
 
     Expire - Apr 29, 2025"
-- tapOn: "scrim"
-- assertVisible: "COUPON_2"
+- assertVisible: "Info
+
+    Minimum cart value required is 20"

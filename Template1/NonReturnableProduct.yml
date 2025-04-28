@@ -19,7 +19,7 @@ appId: com.rupee.template_one
 - assertVisible: "non returnable\n1p x 1\n₹21"
 - tapOn: "Pay Using"
 - tapOn: "Cash On Delivery\nCash On Delivery"
-- tapOn: "Total\n₹108.08\nPlace Order"
+- tapOn: "Total\n₹108.13\nPlace Order"
 - assertVisible: "Success\nOrder placed successfully"
 - tapOn: "Profile"
 - tapOn: "My Orders"

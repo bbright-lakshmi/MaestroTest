@@ -11,8 +11,8 @@ appId: com.rupee.template_three
 - inputText: "western"
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 56
-- tapOn: "wes\nWestern\nx 1\n₹25.50"
+    index: 54
+- tapOn: "wes\nWestern\nx 1\n₹15.30"
 - tapOn: "Add to bag"
 - tapOn: "Search"
 - tapOn: "western"
@@ -58,23 +58,20 @@ appId: com.rupee.template_three
 - tapOn: "kurtis"
 - eraseText: 50
 #Carousel
-- inputText: "returnable"
+- inputText: "trendy"
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 56
-- tapOn: "soch\nreturnable\n1f x 1\n₹33.66"
+    index: 54
+- tapOn: "dfd\nTrendy\nx 1\n₹21.42"
 - tapOn: "Add to bag"
-- tapOn: "Search"
-- tapOn: "returnable"
-- eraseText: 50
 #Cart
 - tapOn: "Cart\n6"
-- assertVisible: "handwork sarees\n1 piece x 1\n₹12\n₹9"
+- assertVisible: "Western\nw x 1\n₹15.30"
 - assertVisible: "Fancy sarees\n2 x 1\n₹25"
 - assertVisible: "non returnable\n1p x 1\n₹21"
 - assertVisible: "Frocks\n2 x 1\n₹22"
 - assertVisible: "Kurtis\n1 x 1\n₹22"
-- assertVisible: "returnable\n1f x 1\n₹33.66"
+- assertVisible: "Trendy\n2 x 1\n₹21.42"
 - tapOn: "Proceed to checkout"
 - tapOn: "Cash On Delivery"
 - assertVisible: "Success\nOrder placed successfully"
@@ -82,9 +79,9 @@ appId: com.rupee.template_three
 - tapOn: "Profile"
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"
-- assertVisible: "Process\nhandwork sarees\n₹9.27"
+- assertVisible: "Process\nWestern\n₹15.76"
 - assertVisible: "Process\nFancy sarees\n₹25"
 - assertVisible: "Process\nnon returnable\n₹21.63"
 - assertVisible: "Process\nFrocks\n₹22"
 - assertVisible: "Process\nKurtis\n₹22"
-- assertVisible: "Process\nreturnable\n₹33.66"
+- assertVisible: "Process\nTrendy\n₹21.42"

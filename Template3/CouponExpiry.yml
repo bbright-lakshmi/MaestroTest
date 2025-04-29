@@ -7,26 +7,74 @@ appId: com.rupee.template_three
 - tapOn: "Boutique\nnellore, A.P"
 - tapOn: "Search"
 - tapOn: "Search Products"
-- inputText : "returnable"
+- inputText : "handwork sarees"
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 52
-- tapOn: "soch\nreturnable\n1f x 1\n₹33.66"
+- tapOn: "hwk
+
+    ₹3 off
+
+    0
+
+    0
+
+    1
+
+    1
+
+    :
+
+    2
+
+    2
+
+    2
+
+    2
+
+    :
+
+    1
+
+    1
+
+    9
+
+    9
+
+    :
+
+    0
+
+    0
+
+    5
+
+    5
+
+    handwork sarees
+
+    x 1
+
+    ₹12
+
+    ₹9"
 - tapOn: "Add to bag"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
 - tapOn: "Please select coupon"
-- tapOn: "₹10
+- tapOn: "₹3
 
     OFF
 
-    Store Name 2
+    Boutique
 
     Coupon Code
 
-    COUPON12
+    COUPON_2
 
-    Cart Amount ₹12
+    Cart Amount ₹20
 
-    Expire - Mar 27, 2025"
+    Expire - Apr 29, 2025"
 - assertVisible: "Info\nOops!, Coupon is expired"

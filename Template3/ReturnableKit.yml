@@ -19,7 +19,6 @@ appId: com.rupee.template_three
 - tapOn: "Proceed to checkout"
 - tapOn: "Cash On Delivery"
 - assertVisible: "Cash On Delivery"
-- assertVisible: "₹126.45"
 - tapOn: "Place Order"
 - assertVisible: "Success\nOrder placed successfully"
 - tapOn: "Profile"

@@ -16,19 +16,34 @@ appId: com.rupee.template_three
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
 - tapOn: "Please select coupon"
+- scrollUntilVisible:
+    element: "₹10
+
+      OFF
+
+     Boutique
+
+     Coupon Code
+
+     COUPONMI
+
+     Cart Amount ₹50
+
+     Expire - May 30, 2025"
+    direction: DOWN
 - tapOn: "₹10
 
     OFF
 
-    Store Name 2
+    Boutique
 
     Coupon Code
 
-    COUPONEW
+    COUPONMI
 
     Cart Amount ₹50
 
-    Expire - Mar 25, 2025"
+    Expire - May 30, 2025"
 - assertVisible: "Info
 
     Minimum cart value required is 50"

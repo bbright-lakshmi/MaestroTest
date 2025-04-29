@@ -25,6 +25,6 @@ appId: com.rupee.template_three
 - tapOn: "Profile"
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"
-- assertVisible: "Process\nnon returnable\n₹21"
+- assertVisible: "Process\nnon returnable\n₹21.63"
 - tapOn: "Cancel"
 - assertVisible: "Info\nThis item is not returnable."

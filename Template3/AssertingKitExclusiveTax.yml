@@ -8,14 +8,14 @@ appId: com.rupee.template_three
 - tapOn: "Search"
 - tapOn: "Search Products"
 - inputText: "exclusive tax"
-- tapOn:
-    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 56
-- tapOn: "Count 1\nExclusive tax\nx 1\n₹40"
-- assertVisible: "₹40"
+- tapOn: "Exclusive tax"
+- tapOn: "Count 1\nExclusive tax\n1 x 1\n₹40"
 - tapOn: "Add to bag"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
+- scrollUntilVisible:
+    element: "Pay"
+    direction: DOWN
 - assertVisible: "Tax"
 - assertVisible: "₹1.20"
 - tapOn: "Proceed to checkout"

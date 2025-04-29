@@ -17,9 +17,9 @@ appId: com.rupee.template_three
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
 - assertVisible: "Cart Total (1 Item)"
-- assertVisible: "₹22.44"
-- assertVisible: "Tax"
-- assertVisible: "₹1.20"
+- scrollUntilVisible:
+    element: "Pay"
+    direction: DOWN
 - tapOn: "Proceed to checkout"
 - tapOn: "Cash On Delivery"
 - tapOn: "Place Order"

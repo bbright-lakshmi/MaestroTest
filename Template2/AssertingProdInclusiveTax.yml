@@ -25,7 +25,7 @@ appId: com.rupee.template_two
 - assertVisible: "Cart\n3"
 - tapOn: "Cart\n3"
 - scrollUntilVisible:
-    element: "Note: Cancellation must be requested 24 hours prior."
+    element: "Note:Cancellation must be requested 24 hours prior."
     direction: DOWN
 - assertVisible: "Cart Total (3 Item)
 

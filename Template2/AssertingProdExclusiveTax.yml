@@ -13,7 +13,7 @@ appId: com.rupee.template_two
     index: 52
 - assertVisible: "hod\nnon returnable\nx 1\n₹21"
 - tapOn: "hod\nnon returnable\nx 1\n₹21"
-- assertVisible: "₹21"
+- assertVisible: "₹21\n1"
 - tapOn: "Add to bag"
 - assertVisible: "Success\nItem added to cart"
 - tapOn: "Cart\n1"
@@ -45,7 +45,7 @@ appId: com.rupee.template_two
 
     ₹108.08"
 - scrollUntilVisible:
-    element: "Note: Cancellation must be requested 24 hours prior."
+    element: "Note:Cancellation must be requested 24 hours prior."
     direction: DOWN
 - tapOn: "Cash On Delivery"
 - tapOn: "Place Order"

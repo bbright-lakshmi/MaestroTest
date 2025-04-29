@@ -20,7 +20,6 @@ appId: com.rupee.template_two
 - tapOn: "Cash On Delivery"
 - tapOn: "Place Order"
 - extendedWaitUntil:
-    visible:
-     point: "50%,30%"
+    visible: "Place Order"
     timeout: 5000      
 - takeScreenshot: Images/Template2/StoreMinCart

@@ -1,4 +1,4 @@
-appId: com.rupee.template_one
+appId: com.rupee.template_two
 ---
 - launchApp
 - tapOn: "Search Stores"
@@ -12,8 +12,6 @@ appId: com.rupee.template_one
 - tapOn: "wes\nWestern\nx 1\n₹15.30"
 - tapOn: "Add to bag"
 - tapOn: "Cart\n1"
-- tapOn: "Pay Using"
-- tapOn: "Cash On Delivery\nCash On Delivery" 
 - tapOn: "Please select coupon\nCoupon"
 - tapOn: "5 %
 

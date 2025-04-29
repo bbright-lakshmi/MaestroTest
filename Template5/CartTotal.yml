@@ -8,9 +8,7 @@ appId: com.rupee.template_five
 - tapOn: "Search"
 - tapOn: "Search Products"
 - inputText : "returnable"
-- tapOn:
-    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 52
+- tapOn: "returnable"
 - tapOn: "soch\nreturnable\n1f x 1\n₹33.66"
 - assertVisible: "₹33.66"
 - tapOn: "Add To Cart"

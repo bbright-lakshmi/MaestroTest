@@ -16,7 +16,7 @@ appId: com.rupee.template_five
 - tapOn: "Add To Cart"
 - assertVisible: "Cart\n1"
 - tapOn: "Cart\n1"
-- tapOn: "Please select coupon"
+- tapOn: "Please select coupon\nCoupon"
 - tapOn: "₹3
 
     OFF
@@ -31,8 +31,12 @@ appId: com.rupee.template_five
 
     Expire - Apr 29, 2025"
 - tapOn: "Scrim"
+- assertVisible: "COUPON_2"
 - tapOn: "Proceed to checkout"
 - tapOn: "Cash On Delivery"
+- assertVisible: "Cash On Delivery"
+- tapOn: "Place Order"
+- assertVisible: "Success\nOrder placed successfully"
 - tapOn: "Profile"
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"
@@ -41,3 +45,4 @@ appId: com.rupee.template_five
 - tapOn: "Info
 
     Cannot cancel the order because it contains non-returnable items."
+

@@ -1,0 +1,64 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- assertVisible: "Boutique\nnellore, A.P"
+- tapOn: "Boutique\nnellore, A.P"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText : "returnable"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 52
+- tapOn: "soch\nreturnable\n1f x 1\n₹33.66"
+- assertVisible: "₹33.66"
+- tapOn: "Add to bag"
+- assertVisible: "Cart\n1"
+- tapOn: "2f"
+- assertVisible: "₹57.12"
+- tapOn: "Add to bag"
+- assertVisible: "Cart\n2"
+- tapOn: "3f"
+- assertVisible: "₹70.38"
+- tapOn: "Add to bag"
+- assertVisible: "Cart\n3"
+- tapOn: "Cart\n3"
+- scrollUntilVisible:
+    element: "Note:Cancellation must be requested 24 hours prior."
+    direction: DOWN
+- assertVisible: "Cart Total (3 Item)
+
+    ₹161.16
+
+    Delivery/Package
+
+    ₹86.45
+
+    Discount
+
+    ₹0
+
+    Coupon
+
+    ₹0
+
+    Total Savings
+
+    ₹0
+
+    Tax
+
+    ₹0
+
+    Pay
+
+    ₹247.61"
+- tapOn: "Cash On Delivery"
+- tapOn: "Place Order"
+- tapOn: "Profile"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nreturnable\n₹33.66"
+- assertVisible: "Process\nreturnable\n₹57.12"
+- assertVisible: "Process\nreturnable\n₹70.38"

@@ -1,86 +1,90 @@
-appId: com.rupee.template_three
+appId: com.rupee.template_four
 ---
 - launchApp
-- tapOn: "Search Stores"
-- inputText: "Boutique"
-- assertVisible: "Boutique\nnellore, A.P"
-- tapOn: "Boutique\nnellore, A.P"
-- tapOn: "Search"
+- tapOn: "Store name or a product..."
 - tapOn: "Search Products"
+- inputText: "handcrafts"
+- tapOn: "HandCrafts\n0.0\nRK Beach Road"
 #Premium
-- inputText: "western"
+- tapOn: "Search Products"
+- inputText: "pendants ex return"
+- tapOn: "Pendants EX Return"
+- tapOn: "pa
+
+    Handcrafts
+
+    Pendants EX Return
+
+    ₹10"
+- tapOn: "Add To Cart"
 - tapOn:
-    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 54
-- tapOn: "wes\nWestern\nx 1\n₹15.30"
-- tapOn: "Add to bag"
-- tapOn: "Search"
-- tapOn: "western"
-- eraseText: 50
+    point: "6%,7%"
 #List
-- inputText: "fancy sarees"
-- tapOn:
-    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 56
-- tapOn: "Fancy sarees\nx 1\n₹25"
-- tapOn: "Add to bag"
-- tapOn: "Search"
-- tapOn: "fancy sarees"
+- tapOn: "Search Products"
 - eraseText: 50
+- inputText: "flower"
+- tapOn: "Flower"
+- tapOn: "Handcrafts\nFlower\n₹22.61"
+- tapOn: "Add To Cart"
+- tapOn:
+    point: "6%,7%"
 #Quilt
-- inputText: "non returnable"
+- tapOn: "Search Products"
+- eraseText: 50
+- inputText: "wall frame"
+- tapOn: "Wall Frame"
+- tapOn: "Handcrafts\nWall Frame\n₹29.90"
+- tapOn: "Add To Cart"
 - tapOn:
-    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 52
-- tapOn: "hod\nnon returnable\nx 1\n₹21"
-- tapOn: "Add to bag"
-- tapOn: "Search"
-- tapOn: "non returnable"
+    point: "6%,7%"
+#Horizontal
+- tapOn: "Search Products"
 - eraseText: 50
-#Popular-View
-- inputText: "frocks"
-- tapOn: "Frocks"
-- tapOn: "Frocks\nx 1\n₹22"
-- tapOn: "Add to bag"
-- tapOn: "Search"
-- tapOn: "frocks"
-- eraseText: 50
-#Horizontal-View
-- inputText: "kurtis"
+- inputText: "scented"
+- tapOn: "Scented"
+- tapOn: "Handcrafts\nScented\n₹52.46"
+- tapOn: "Add To Cart"
 - tapOn:
-    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 56
-- tapOn: "Kurtis\nx 1\n₹22"
-- tapOn: "Add to bag"
-- tapOn: "Search"
-- tapOn: "kurtis"
+    point: "6%,7%"
+#Popular
+- tapOn: "Search Products"
 - eraseText: 50
+- inputText: "decor"
+- tapOn: "Decor"
+- tapOn: "Handcrafts\nDecor\n₹42"
+- tapOn: "Add To Cart"
+- tapOn:
+    point: "6%,7%"
 #Carousel
-- inputText: "trendy"
+- tapOn: "Search Products"
+- eraseText: 50
+- inputText: "Dream catcher"
+- tapOn: "Dream Catcher"
+- tapOn: "Handcrafts\nDream Catcher\n₹63.40"
+- tapOn: "Add To Cart"
 - tapOn:
-    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 56
-- tapOn: "dfd\nTrendy\nx 1\n₹21.42"
-- tapOn: "Add to bag"
-#Cart
-- tapOn: "Cart\n6"
-- assertVisible: "Western\nw x 1\n₹15.30"
-- assertVisible: "Fancy sarees\n2 x 1\n₹25"
-- assertVisible: "non returnable\n1p x 1\n₹21"
-- assertVisible: "Frocks\n2 x 1\n₹22"
-- assertVisible: "Kurtis\n1 x 1\n₹22"
-- assertVisible: "Trendy\n2 x 1\n₹21.42"
-- tapOn: "Proceed to checkout"
+    point: "6%,7%"
+- tapOn: "6\nCart"
+- assertVisible: "Pendants EX Return\nra 1 x 1\n₹10"
+- assertVisible: "Flower\nflo x 1\n₹22.61"
+- assertVisible: "Wall Frame\nch x 1\n₹29.90"
+- scrollUntilVisible:
+    element: "Dream Catcher"
+    direction: DOWN
+- assertVisible: "Scented\ndf x 1\n₹52.46"
+- assertVisible: "Decor\njhf x 1\n₹42"
+- assertVisible: "Dream Catcher\ndd x 1\n₹63.40"
+- tapOn: "Pay via\nSelect payment mode"
 - tapOn: "Cash On Delivery"
+- tapOn:
+    point: "6%,7%"
 - tapOn: "Place Order"
-- assertVisible: "Success\nOrder placed successfully"
-#Profile
-- tapOn: "Profile"
+- tapOn: "Settings"
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"
-- assertVisible: "Process\nWestern\n₹15.76"
-- assertVisible: "Process\nFancy sarees\n₹25"
-- assertVisible: "Process\nnon returnable\n₹21.63"
-- assertVisible: "Process\nFrocks\n₹22"
-- assertVisible: "Process\nKurtis\n₹22"
-- assertVisible: "Process\nTrendy\n₹21.42"
+- assertVisible: "Process\nPendants EX Return\n₹10.20"
+- assertVisible: "Process\nFlower\n₹22.61"
+- assertVisible: "Process\nWall Frame\n₹29.90"
+- assertVisible: "Process\nScented\n₹52.46"
+- assertVisible: "Process\nDecor\n₹43.26"
+- assertVisible: "Process\nDream Catcher\n₹63.40"

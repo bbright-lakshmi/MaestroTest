@@ -20,4 +20,6 @@ appId: com.rupee.template_four
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 3
 - tapOn: "Verify & Next"
-- tapOn: "Skip"
+#Onboarding Pages
+- tapOn:
+    point: "76%,95%"

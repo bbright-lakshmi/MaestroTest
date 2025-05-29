@@ -12,12 +12,9 @@ appId: com.rupee.template_four
 - tapOn: "Send OTP"
 #Otp page
 - tapOn:
-    id: "android:id/action0"
-    index: 0
-- tapOn:
     point: "50%,52%"
-- tapOn:
-    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 3
+- inputText: "123456"
 - tapOn: "Verify & Next"
-- tapOn: "Skip"
+- assertVisible: "Error
+
+    OTP verification failed, please double-check the OTP"

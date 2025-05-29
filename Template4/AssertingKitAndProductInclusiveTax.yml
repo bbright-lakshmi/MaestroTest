@@ -1,0 +1,45 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: "Search Products"
+- inputText: "handcrafts"
+- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+#Product
+- tapOn: "Search Products"
+- inputText: "paint exp in"
+- tapOn: "Paint exp IN"
+- tapOn: "Handcrafts\nPaint exp IN\n₹33.99"
+- tapOn: "Add To Cart"
+- tapOn:
+    point: "6%,7%"
+#Kit
+- tapOn: "Search Products"
+- inputText: "Kit inclusive"
+- tapOn: "Kit Inclusive"
+- tapOn: "₹103
+
+    Handcrafts
+
+    Kit Inclusive
+
+    Total: 1 packs"
+- tapOn: "Add To Cart"
+- tapOn:
+    point: "7%,8%"
+- tapOn: "2\nCart"
+- scrollUntilVisible:
+    element: "Note: Cancellation must be requested 24 hours prior."
+    direction: DOWN
+- assertVisible: "Tax"
+- assertVisible: "₹0"  
+- tapOn: "Pay via\nSelect payment mode"
+- tapOn: "Cash On Delivery"
+- tapOn:
+    point: "6%,7%"
+- tapOn: "Place Order"
+- tapOn: "Settings"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nPaint exp IN\n₹33.99"
+- assertVisible: "Process\nKit Inclusive\n₹206"

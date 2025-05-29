@@ -1,0 +1,6 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Grant Permission"
+- tapOn:
+    id: "com.android.permissioncontroller:id/permission_allow_foreground_only_button"

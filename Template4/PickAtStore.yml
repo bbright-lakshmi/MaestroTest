@@ -8,7 +8,11 @@ appId: com.rupee.template_four
 - tapOn: "1\nCart"
 - assertVisible: "Teal Green Clock\nkg x 1\n₹20"
 - tapOn: "Pay via\nSelect payment mode"
-- tapOn: "Cash On Delivery"
+- tapOn: "Pick At Store"
+- assertVisible: "Delivery Address"
+- assertVisible: "HandCrafts"
+- assertVisible: "RK Beach Road"
+- assertVisible: "9876543210"
 - tapOn:
     point: "6%,7%"
 - tapOn: "Place Order"

@@ -1,0 +1,38 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: "Search Products"
+- inputText: "handcrafts"
+- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+- tapOn: "Search Products"
+- inputText: "scented"
+- tapOn: "Scented"
+- tapOn: "Handcrafts\nScented\n₹52.46"
+- tapOn: "Add To Cart"
+- tapOn: "1\nCart"
+- tapOn: "Apply Coupons"
+- assertVisible: "₹3
+
+    COUPONRP
+
+    Tap To Apply
+
+    Expire - May 23, 2025
+
+    Cart Amount ₹20
+
+    HandCrafts"
+- tapOn: "₹3
+
+    COUPONRP
+
+    Tap To Apply
+
+    Expire - May 23, 2025
+
+    Cart Amount ₹20
+
+    HandCrafts"
+#- tapOn: "Tap To Apply" - not working
+- assertVisible: "Info\nOops!, Coupon is expired"

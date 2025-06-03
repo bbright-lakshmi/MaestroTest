@@ -1,0 +1,26 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: " Products\ \nTab 3 of 3"
+- tapOn: "Search Products"
+- inputText: "pendant ex return"
+- tapOn: "Pendants EX Return"
+- tapOn: "pa
+
+    Handcrafts
+
+    Pendants EX Return
+
+    ₹10"
+- tapOn: "Add To Cart"
+- tapOn: "1\nCart"
+- tapOn: "Pay via\nSelect payment mode"
+- tapOn: "Cash On Delivery"
+- tapOn:
+    point: "6%,7%"
+- tapOn: "Place Order"
+- assertVisible: "Info
+
+    Minimum order amount is 20.00. Please add items worth 10.00 more to proceed."
+    

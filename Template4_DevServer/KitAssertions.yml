@@ -1,0 +1,38 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: "Search Products"
+- inputText: "handcrafts"
+- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+- tapOn: "Search Products"
+- inputText: "Flower ib"
+- tapOn: "Flower IB"
+- tapOn: "₹69
+
+    Handcrafts
+
+    Flower IB
+
+    Total: 2 packs"
+- assertVisible: "₹69"
+- tapOn: "Add To Cart"
+- assertVisible: "Success\nItem added to cart"
+- tapOn:
+    point: "7%,8%"
+- tapOn: "1\nCart"
+- assertVisible: "Flower IB\n x 2\n₹138"
+- scrollUntilVisible:
+    element: "Note: Cancellation must be requested 24 hours prior."
+    direction: DOWN
+- assertVisible: "Cart Total (1 Item)"
+- assertVisible: "₹138"
+- tapOn: "Pay via\nSelect payment mode"
+- tapOn: "Cash On Delivery"
+- tapOn:
+    point: "6%,7%"
+- tapOn: "Place Order"
+- tapOn: "Settings"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nFlower IB\n₹142.14"

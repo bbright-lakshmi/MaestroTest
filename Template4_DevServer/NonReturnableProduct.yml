@@ -1,0 +1,25 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: "Search Products"
+- inputText: "handcrafts"
+- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+- tapOn: "Search Products"
+- inputText: "paint exp in"
+- tapOn: "Paint exp IN"
+- tapOn: "Handcrafts\nPaint exp IN\n₹33.99"
+- tapOn: "Add To Cart"
+- tapOn: "1\nCart"
+- assertVisible: "Paint exp IN\nfe x 1\n₹33.99"
+- tapOn: "Pay via\nSelect payment mode"
+- tapOn: "Cash On Delivery"
+- tapOn:
+    point: "6%,7%"
+- tapOn: "Place Order"
+- tapOn: "Settings"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nPaint exp IN\n₹33.99"
+- tapOn: "Cancel"
+- assertVisible: "Info\nThis item is not returnable."

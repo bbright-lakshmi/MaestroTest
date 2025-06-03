@@ -2,8 +2,8 @@ appId: com.rupee.template_four
 ---
 - launchApp
 - tapOn: "Store name or a product..."
-- tapOn: "Search Products"
 - tapOn: " Products\ \nTab 3 of 3"
+- tapOn: "Search Products"
 - inputText: "flower"
 - tapOn: "Flower"
 - tapOn: "Handcrafts\nFlower\n₹22.61"

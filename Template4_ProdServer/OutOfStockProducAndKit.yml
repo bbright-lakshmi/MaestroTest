@@ -1,0 +1,36 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: "Search Products"
+- inputText: "handcrafts"
+- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+#Product
+- tapOn: "Search Products"
+- inputText: "normal zero"
+- tapOn: "Normal Zero"
+- tapOn: "Out of Stock
+
+    Handcrafts
+
+    Normal Zero
+
+    ₹58"
+- assertVisible: "Out of Stock"
+- tapOn:
+    point: "6%,7%"
+#Kit
+- tapOn: "Search Products"
+- eraseText: 50
+- inputText: "out of stock kit"
+- tapOn: "Out of stock kit"
+- tapOn: "Out of Stock
+
+    ₹88
+
+    Handcrafts
+
+    Out of stock kit
+
+    Total: 3 packs"
+- assertVisible: "Out of Stock"

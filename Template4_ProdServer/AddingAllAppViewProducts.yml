@@ -1,0 +1,90 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: "Search Products"
+- inputText: "handcrafts"
+- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+#Premium
+- tapOn: "Search Products"
+- inputText: "pendants ex return"
+- tapOn: "Pendants EX Return"
+- tapOn: "pa
+
+    Handcrafts
+
+    Pendants EX Return
+
+    ₹10"
+- tapOn: "Add To Cart"
+- tapOn:
+    point: "6%,7%"
+#List
+- tapOn: "Search Products"
+- eraseText: 50
+- inputText: "flower"
+- tapOn: "Flower"
+- tapOn: "Handcrafts\nFlower\n₹22.61"
+- tapOn: "Add To Cart"
+- tapOn:
+    point: "6%,7%"
+#Quilt
+- tapOn: "Search Products"
+- eraseText: 50
+- inputText: "wall frame"
+- tapOn: "Wall Frame"
+- tapOn: "Handcrafts\nWall Frame\n₹29.90"
+- tapOn: "Add To Cart"
+- tapOn:
+    point: "6%,7%"
+#Horizontal
+- tapOn: "Search Products"
+- eraseText: 50
+- inputText: "scented"
+- tapOn: "Scented"
+- tapOn: "Handcrafts\nScented\n₹52.46"
+- tapOn: "Add To Cart"
+- tapOn:
+    point: "6%,7%"
+#Popular
+- tapOn: "Search Products"
+- eraseText: 50
+- inputText: "decor"
+- tapOn: "Decor"
+- tapOn: "Handcrafts\nDecor\n₹42"
+- tapOn: "Add To Cart"
+- tapOn:
+    point: "6%,7%"
+#Carousel
+- tapOn: "Search Products"
+- eraseText: 50
+- inputText: "Dream catcher"
+- tapOn: "Dream Catcher"
+- tapOn: "Handcrafts\nDream Catcher\n₹63.40"
+- tapOn: "Add To Cart"
+- tapOn:
+    point: "6%,7%"
+- tapOn: "6\nCart"
+- assertVisible: "Pendants EX Return\nra 1 x 1\n₹10"
+- assertVisible: "Flower\nflo x 1\n₹22.61"
+- assertVisible: "Wall Frame\nch x 1\n₹29.90"
+- scrollUntilVisible:
+    element: "Dream Catcher"
+    direction: DOWN
+- assertVisible: "Scented\ndf x 1\n₹52.46"
+- assertVisible: "Decor\njhf x 1\n₹42"
+- assertVisible: "Dream Catcher\ndd x 1\n₹63.40"
+- tapOn: "Pay via\nSelect payment mode"
+- tapOn: "Cash On Delivery"
+- tapOn:
+    point: "6%,7%"
+- tapOn: "Place Order"
+- tapOn: "Settings"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nPendants EX Return\n₹10.20"
+- assertVisible: "Process\nFlower\n₹22.61"
+- assertVisible: "Process\nWall Frame\n₹29.90"
+- assertVisible: "Process\nScented\n₹52.46"
+- assertVisible: "Process\nDecor\n₹43.26"
+- assertVisible: "Process\nDream Catcher\n₹63.40"

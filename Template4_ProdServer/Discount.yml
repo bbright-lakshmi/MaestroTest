@@ -1,0 +1,17 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: "Search Products"
+- inputText: "handcrafts"
+- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+- tapOn: "Search Products"
+- inputText: "teal green clock"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 58
+- tapOn: contains("Teal Green Clock")
+#- tapOn: 
+#    element: "div[class='px-8 py-6 flex-grow overflow-y-scroll overflow-x-hidden hide-scrollbar'] div:nth-child(2) button:nth-child(1) span:nth-child(2)"
+#- tapOn:
+#    xpath: "//android.widget.TextView[contains(@text, 'Clock')]"

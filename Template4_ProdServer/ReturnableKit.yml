@@ -1,0 +1,34 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: "Search Products"
+- inputText: "handcrafts"
+- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+- tapOn: "Search Products"
+- inputText: "Candles ex return"
+- tapOn: "Candles Ex Return"
+- tapOn: "₹27
+
+    Handcrafts
+
+    Candles Ex Return
+
+    Total: 2 packs"
+- tapOn: "Add To Cart"
+- tapOn:
+    point: "7%,8%"
+- tapOn: "1\nCart"
+- assertVisible: "Candles Ex Return\n x 1\n₹27"
+- tapOn: "Pay via\nSelect payment mode"
+- tapOn: "Cash On Delivery"
+- tapOn:
+    point: "6%,7%"
+- tapOn: "Place Order"
+- tapOn: "Settings"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nCandles Ex Return\n₹27.54"
+- tapOn: "Cancel"
+- assertVisible: "Are you sure you want to cancel this item?"
+- tapOn: "Yes"

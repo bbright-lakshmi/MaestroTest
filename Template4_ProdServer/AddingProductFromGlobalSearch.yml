@@ -1,0 +1,22 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: " Products\ \nTab 3 of 3"
+- tapOn: "Search Products"
+- inputText: "flower"
+- tapOn: "Flower"
+- tapOn: "Handcrafts\nFlower\n₹22.61"
+- tapOn: "Add To Cart"
+- tapOn: "1\nCart"
+- assertVisible: "Flower\nflo x 1\n₹22.61"
+- tapOn: "Pay via\nSelect payment mode"
+- tapOn: "Cash On Delivery"
+- tapOn:
+    point: "6%,7%"
+- tapOn: "Place Order"
+- assertVisible: "Success\nOrder placed successfully"
+- tapOn: "Settings"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nFlower\n₹22.61"

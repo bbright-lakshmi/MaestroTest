@@ -1,0 +1,32 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: " Products\ \nTab 3 of 3"
+- tapOn: "Search Products"
+- inputText: "wall decor"
+- tapOn: "Wall Decor"
+- tapOn: "wd\nHandcrafts\nWall Decor\n₹39.24"
+- tapOn: "Add To Cart"
+- tapOn: "Search Products"
+- eraseText: 50
+- inputText: "decor"
+- tapOn: "Decor"
+- tapOn: "Handcrafts\nDecor\n₹42"
+- tapOn: "Add To Cart"
+- tapOn: "Search Products"
+- eraseText: 50
+- inputText: "flower ib"
+- tapOn: "Flower IB"
+- tapOn: "₹69
+
+    Handcrafts
+
+    Flower IB
+
+    Total: 2 packs"
+- tapOn: "Add To Cart"
+- tapOn: "Clear Cart"
+- assertVisible: "Clear Cart?"
+- tapOn: "Yes"
+- assertVisible: "Start Shopping"

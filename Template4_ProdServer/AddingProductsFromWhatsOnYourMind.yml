@@ -1,0 +1,18 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Resin art"
+- assertVisible: "Resin art"
+- tapOn: " Products\ \nTab 2 of 2"
+- tapOn: "ADD"
+- tapOn: "1\nCart"
+- assertVisible: "Teal Green Clock\nkg x 1\n₹20"
+- tapOn: "Pay via\nSelect payment mode"
+- tapOn: "Cash On Delivery"
+- tapOn:
+    point: "6%,7%"
+- tapOn: "Place Order"
+- tapOn: "Settings"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nTeal Green Clock\n₹20.40"

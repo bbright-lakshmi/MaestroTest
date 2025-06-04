@@ -1,0 +1,51 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: " Products\ \nTab 3 of 3"
+- tapOn: "Search Products"
+- inputText: "wall decor"
+- tapOn: "Wall Decor"
+- tapOn: "wd\nHandcrafts\nWall Decor\n₹39.24"
+- tapOn: "Add To Cart"
+- assertVisible: "Success\nItem added to cart"
+- assertVisible: "1\nCart"
+- tapOn: "1\nCart"
+- assertVisible: "Wall Decor\nda x 1\n₹39.24"
+- scrollUntilVisible:
+    element: "Note: Cancellation must be requested 24 hours prior."
+    direction: DOWN
+- assertVisible: "Cart Total (1 Item)"
+- assertVisible: "₹39.24"
+- assertVisible: "Discount"
+- assertVisible: "₹0"
+- assertVisible: "Coupon"
+- assertVisible: "₹0"
+- assertVisible: "Total Savings"
+- assertVisible: "₹0"
+- assertVisible: "Tax"
+- assertVisible: "₹0"
+
+#Delivery Address Message
+- tapOn: "Place Order"
+- assertVisible: "Info\nAdd delivery address"
+- tapOn: "Add"
+- tapOn: "First name"
+- inputText: "Serving"
+- scrollUntilVisible:
+    element: "Save"
+    direction: DOWN
+- tapOn: "Last name"
+- inputText: "Zone"
+- tapOn: "Phone number"
+- inputText: "9876543210"
+- tapOn: "Full address"
+- inputText: "Serving Zone"
+- tapOn: "City name"
+- inputText: "Nellore"
+- tapOn: "Pin code"
+- inputText: "524004"
+- tapOn: "Save"
+- tapOn: "Place Order"
+#Payment Mode Message
+- assertVisible: "Info\nPlease select a payment mode"

@@ -1,0 +1,51 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: "Search Products"
+- inputText: "handcrafts"
+- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+- tapOn: "Search Products"
+- inputText: "bag"
+- tapOn: "Bag"
+- tapOn: "bag\nHandcrafts\nBag\n₹26"
+- tapOn: "Add To Cart"
+- tapOn: "1\nCart"
+- tapOn: "Apply Coupons"
+- tapOn: "4 %
+
+    PRCOUPON
+
+    Tap To Apply
+
+    Expire - Jun 17, 2025
+
+    Cart Amount ₹20
+
+    HandCrafts"
+#- tapOn: "Tap To Apply" - not working 
+- assertVisible: "Success\nCoupon Applied"
+- assertVisible: "You saved ₹1.04 with PRCOUPON"
+- tapOn: "Pay via\nSelect payment mode"
+- tapOn: "Cash On Delivery"
+- tapOn:
+    point: "6%,7%"
+- tapOn: "Place Order"
+- tapOn: "Home"
+- tapOn: "Add To Cart"
+- tapOn: "1\nCart"
+- tapOn: "Apply Coupons"
+- tapOn: "4 %
+
+    PRCOUPON
+
+    Tap To Apply
+
+    Expire - Jun 17, 2025
+
+    Cart Amount ₹20
+
+    HandCrafts"
+- assertVisible: "Info
+
+    Coupon already applied for this user Mobile number"

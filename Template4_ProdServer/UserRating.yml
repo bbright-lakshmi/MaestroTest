@@ -1,0 +1,47 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: "Search Products"
+- inputText: "handcrafts"
+- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+- tapOn: "Search Products"
+- inputText: "pendants ex return"
+- tapOn: "Pendants EX Return"
+- tapOn: "pa
+
+    Handcrafts
+
+    Pendants EX Return
+
+    ₹10"
+- tapOn: "Add To Cart"
+- tapOn: "ra2"
+- tapOn: "Add To Cart"
+- tapOn: "2\nCart"
+- tapOn: "Pay via\nSelect payment mode"
+- tapOn: "Cash On Delivery"
+- tapOn:
+    point: "6%,7%"
+- tapOn: "Place Order"
+- tapOn: "Settings"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- tapOn: "Cancel"
+- assertVisible: "Are you sure you want to cancel this item?"
+- tapOn: "Yes"
+- tapOn: "Cancel\nPendants EX Return\n₹10.20"
+- tapOn: "Rating"
+- tapOn:
+    point: "62%,87%"
+- tapOn: "Save"
+- assertVisible: "Success
+
+    Your rating matters to us. Thank you for your valuable feedback."
+- tapOn:
+    point: "6%,7%"
+- tapOn: "Home"
+- extendedWaitUntil:
+    visible: "Add to Cart"
+    timeout: 5000      
+- takeScreenshot: Images/Template4/UserRating

@@ -1,0 +1,24 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: "Search Products"
+- inputText: "handcrafts"
+- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+- tapOn: "Search Products"
+- inputText: "flower"
+- tapOn: "Flower"
+- tapOn: "Handcrafts\nFlower\n₹22.61"
+- tapOn: "Add To Cart"
+- tapOn: "1\nCart"
+- tapOn: "Pay via\nSelect payment mode"
+- tapOn: "Cash On Delivery"
+- tapOn:
+    point: "6%,7%"
+- doubleTapOn:
+    text: "Place Order"
+    delay: 100 # (optional) Delay between taps. Default, 100ms
+- tapOn: "Settings"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nFlower\n₹22.61"

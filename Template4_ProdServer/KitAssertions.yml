@@ -3,30 +3,30 @@ appId: com.rupee.template_four
 - launchApp
 - tapOn: "Store name or a product..."
 - tapOn: "Search Products"
-- inputText: "handcrafts"
-- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+- inputText: "one stop_at"
+- tapOn: "One Stop_AT\n0.0\nKukatpally"
 - tapOn: "Search Products"
-- inputText: "Flower ib"
-- tapOn: "Flower IB"
-- tapOn: "₹69
+- inputText: "kit exc"
+- tapOn: "Kit Exc"
+- tapOn: "₹14.20
 
-    Handcrafts
+    One stop_at
 
-    Flower IB
+    Kit Exc
 
-    Total: 2 packs"
-- assertVisible: "₹69"
+    Total: 3 packs"
+- assertVisible: "₹14.20"
 - tapOn: "Add To Cart"
 - assertVisible: "Success\nItem added to cart"
 - tapOn:
     point: "7%,8%"
 - tapOn: "1\nCart"
-- assertVisible: "Flower IB\n x 2\n₹138"
+- assertVisible: "Kit Exc\n x 3\n₹42.60"
 - scrollUntilVisible:
     element: "Note: Cancellation must be requested 24 hours prior."
     direction: DOWN
 - assertVisible: "Cart Total (1 Item)"
-- assertVisible: "₹138"
+- assertVisible: "₹42.60"
 - tapOn: "Pay via\nSelect payment mode"
 - tapOn: "Cash On Delivery"
 - tapOn:
@@ -35,4 +35,4 @@ appId: com.rupee.template_four
 - tapOn: "Settings"
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"
-- assertVisible: "Process\nFlower IB\n₹142.14"
+- assertVisible: "Process\nKit Exc\n₹43.45"

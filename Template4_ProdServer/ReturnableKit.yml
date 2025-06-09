@@ -3,23 +3,23 @@ appId: com.rupee.template_four
 - launchApp
 - tapOn: "Store name or a product..."
 - tapOn: "Search Products"
-- inputText: "handcrafts"
-- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+- inputText: "one stop_at"
+- tapOn: "One Stop_AT\n0.0\nKukatpally"
 - tapOn: "Search Products"
-- inputText: "Candles ex return"
-- tapOn: "Candles Ex Return"
-- tapOn: "₹27
+- inputText: "kit rtn"
+- tapOn: "Kit rtn"
+- tapOn: "₹50
 
-    Handcrafts
+    One stop_at
 
-    Candles Ex Return
+    kit rtn
 
-    Total: 2 packs"
+    Total: 1 packs"
 - tapOn: "Add To Cart"
 - tapOn:
     point: "7%,8%"
 - tapOn: "1\nCart"
-- assertVisible: "Candles Ex Return\n x 1\n₹27"
+- assertVisible: "kit rtn\n x 1\n₹50"
 - tapOn: "Pay via\nSelect payment mode"
 - tapOn: "Cash On Delivery"
 - tapOn:
@@ -28,7 +28,8 @@ appId: com.rupee.template_four
 - tapOn: "Settings"
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"
-- assertVisible: "Process\nCandles Ex Return\n₹27.54"
+- assertVisible: "Process\nkit rtn\n₹50"
 - tapOn: "Cancel"
 - assertVisible: "Are you sure you want to cancel this item?"
 - tapOn: "Yes"
+- assertVisible: "Info\nItem canceled successfully."

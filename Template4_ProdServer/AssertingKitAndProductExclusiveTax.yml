@@ -49,4 +49,4 @@ appId: com.rupee.template_four
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"
 - assertVisible: "Process\nbranded Rtn Ex\n₹25.50"
-- assertVisible: "Process\nKit Exc\n₹14.48"
+- assertVisible: "Process\nKit Exc\n₹43.45"

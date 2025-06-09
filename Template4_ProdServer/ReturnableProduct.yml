@@ -3,24 +3,18 @@ appId: com.rupee.template_four
 - launchApp
 - tapOn: "Store name or a product..."
 - tapOn: "Search Products"
-- inputText: "handcrafts"
-- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+- inputText: "one stop_at"
+- tapOn: "One Stop_AT\n0.0\nKukatpally"
 - tapOn: "Search Products"
-- inputText: "pendants ex return"
-- tapOn: "Pendants EX Return"
-- tapOn: "pa
-
-    Handcrafts
-
-    Pendants EX Return
-
-    ₹10"
+- inputText: "product returnable"
+- tapOn: "product returnable"
+- tapOn: "One stop_at\nproduct returnable\n₹28"
 - tapOn: "Add To Cart"
-- tapOn: "ra2"
+- tapOn: "2kg"
 - tapOn: "Add To Cart"
 - tapOn: "2\nCart"
-- assertVisible: "Pendants EX Return\nra 1 x 1\n₹10"
-- assertVisible: "Pendants EX Return\nra 2 x 1\n₹19"
+- assertVisible: "product returnable\nkg x 1\n₹28"
+- assertVisible: "product returnable\n2kg x 1\n₹43.92"
 - tapOn: "Pay via\nSelect payment mode"
 - tapOn: "Cash On Delivery"
 - tapOn:
@@ -29,8 +23,9 @@ appId: com.rupee.template_four
 - tapOn: "Settings"
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"
-- assertVisible: "Process\nPendants EX Return\n₹10.20"
-- assertVisible: "Process\nPendants EX Return\n₹19.20"
+- assertVisible: "Process\nproduct returnable\n₹28"
+- assertVisible: "Process\nproduct returnable\n₹43.92"
 - tapOn: "Cancel"
 - assertVisible: "Are you sure you want to cancel this item?"
 - tapOn: "Yes"
+- assertVisible: "Info\nItem canceled successfully."

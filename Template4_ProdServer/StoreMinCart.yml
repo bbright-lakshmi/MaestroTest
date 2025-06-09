@@ -22,5 +22,5 @@ appId: com.rupee.template_four
 - tapOn: "Place Order"
 - assertVisible: "Info
 
-    Minimum order amount is 20.00. Please add items worth 10.00 more to proceed."
+    Minimum order amount is 30.00. Please add items worth 4.50 more to proceed."
     

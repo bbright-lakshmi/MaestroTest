@@ -3,29 +3,31 @@ appId: com.rupee.template_four
 - launchApp
 - tapOn: "Store name or a product..."
 - tapOn: "Search Products"
-- inputText: "handcrafts"
-- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+- inputText: "one stop_at"
+- tapOn: "One Stop_AT\n0.0\nKukatpally"
 - tapOn: "Search Products"
-- inputText: "bag"
-- tapOn: "Bag"
-- tapOn: "bag\nHandcrafts\nBag\n₹26"
+- inputText: "kurtis"
+- tapOn: "Kurtis"
+- tapOn: "One stop_at\nKurtis\n₹109.67"
 - tapOn: "Add To Cart"
 - tapOn: "1\nCart"
 - tapOn: "Apply Coupons"
-- tapOn: "4 %
+- tapOn: "₹2
 
-    PRCOUPON
+    COUPONNW
 
     Tap To Apply
 
-    Expire - Jun 17, 2025
+    Expire - Jun 15, 2025
 
     Cart Amount ₹20
 
-    HandCrafts"
+    One Stop_AT"
 #- tapOn: "Tap To Apply" - not working 
+#- tapOn:
+#    point: "50%,34%"
 - assertVisible: "Success\nCoupon Applied"
-- assertVisible: "You saved ₹1.04 with PRCOUPON"
+- assertVisible: "You saved ₹2 with COUPONNW"
 - tapOn: "Pay via\nSelect payment mode"
 - tapOn: "Cash On Delivery"
 - tapOn:
@@ -35,17 +37,17 @@ appId: com.rupee.template_four
 - tapOn: "Add To Cart"
 - tapOn: "1\nCart"
 - tapOn: "Apply Coupons"
-- tapOn: "4 %
+- tapOn: "₹2
 
-    PRCOUPON
+    COUPONNW
 
     Tap To Apply
 
-    Expire - Jun 17, 2025
+    Expire - Jun 15, 2025
 
     Cart Amount ₹20
 
-    HandCrafts"
+    One Stop_AT"
 - assertVisible: "Info
 
     Coupon already applied for this user Mobile number"

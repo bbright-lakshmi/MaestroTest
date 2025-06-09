@@ -1,0 +1,19 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: "Search Products"
+- inputText: "one stop_at"
+- tapOn: "One Stop_AT\n0.0\nKukatpally"
+- tapOn: "Search Products"
+- inputText: "kit items zero"
+- tapOn: "kit items zero"
+- tapOn: "₹0
+
+    One stop_at
+
+    kit items zero
+
+    Total: 0 packs"
+- tapOn: "Add To Cart"
+- assertVisible: "Info\nKit is empty"

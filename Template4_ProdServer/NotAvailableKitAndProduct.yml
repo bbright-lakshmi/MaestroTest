@@ -3,34 +3,34 @@ appId: com.rupee.template_four
 - launchApp
 - tapOn: "Store name or a product..."
 - tapOn: "Search Products"
-- inputText: "handcrafts"
-- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+- inputText: "one stop_at"
+- tapOn: "One Stop_AT\n0.0\nKukatpally"
 #Product
 - tapOn: "Search Products"
 - inputText: "product"
-- tapOn: "product"
+- tapOn: "Product"
 - tapOn: "Not Available
 
-    Handcrafts
+    One stop_at
 
-    product
+    Product
 
-    ₹21.90"
+    ₹122"
 - assertVisible: "Not Available"
 - tapOn:
     point: "6%,7%"
 #Kit
 - tapOn: "Search Products"
 - eraseText: 50
-- inputText: "kit timing"
-- tapOn: "Kit Timing"
+- inputText: "kit time"
+- tapOn: "Kit Time"
 - tapOn: "Not Available
 
-    ₹15
+    ₹6
 
-    Handcrafts
+    One stop_at
 
-    Kit Timing
+    Kit Time
 
     Total: 1 packs"
 - assertVisible: "Not Available"

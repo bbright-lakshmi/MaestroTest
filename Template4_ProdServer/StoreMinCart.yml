@@ -4,15 +4,15 @@ appId: com.rupee.template_four
 - tapOn: "Store name or a product..."
 - tapOn: " Products\ \nTab 3 of 3"
 - tapOn: "Search Products"
-- inputText: "pendant ex return"
-- tapOn: "Pendants EX Return"
-- tapOn: "pa
+- inputText: "branded rtn ex"
+- tapOn: "branded Rtn Ex"
+- tapOn: "dssd
 
-    Handcrafts
+    One stop_at
 
-    Pendants EX Return
+    branded Rtn Ex
 
-    ₹10"
+    ₹25.50"
 - tapOn: "Add To Cart"
 - tapOn: "1\nCart"
 - tapOn: "Pay via\nSelect payment mode"

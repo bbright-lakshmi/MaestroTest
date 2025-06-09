@@ -3,36 +3,37 @@ appId: com.rupee.template_four
 - launchApp
 - tapOn: "Store name or a product..."
 - tapOn: "Search Products"
-- inputText: "handcrafts"
-- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+- inputText: "one stop_at"
+- tapOn: "One Stop_AT\n0.0\nKukatpally"
 - tapOn: "Search Products"
-- inputText: "Flower ib"
-- tapOn: "Flower IB"
-- tapOn: "₹69
+- inputText: "kit inc"
+- tapOn: "Kit Inc"
+- tapOn: "₹24.60
 
-    Handcrafts
+    One stop_at
 
-    Flower IB
+    Kit Inc
 
-    Total: 2 packs"
-- assertVisible: "₹69"
+    Total: 3 packs"
 - tapOn: "Add To Cart"
 - tapOn:
     point: "7%,8%"
 - tapOn: "1\nCart"
-- assertVisible: "Flower IB\n x 2\n₹138"
+- assertVisible: "Kit Inc\n x 2\n₹49.20"
 - tapOn: "Apply Coupons"
-- tapOn: "₹3
+- tapOn: "4 %
 
-    COUPONRP
+    COUPONWN
 
     Tap To Apply
 
-    Expire - May 23, 2025
+    Expire - Jun 15, 2025
 
     Cart Amount ₹20
 
-    HandCrafts"
+    One Stop_AT"
+#- tapOn:
+#    point: "50%,18%"
 #- tapOn: "Tap To Apply" - not working 
 - tapOn: "Pay via\nSelect payment mode"
 - tapOn: "Cash On Delivery"
@@ -42,7 +43,7 @@ appId: com.rupee.template_four
 - tapOn: "Settings"
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"
-- assertVisible: "Process\nFlower IB\n₹142.14"
+- assertVisible: "Process\nKit Inc\n₹49.20"
 - tapOn: "Cancel"
 - tapOn: "Info
 

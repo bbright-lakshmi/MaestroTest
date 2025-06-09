@@ -3,33 +3,34 @@ appId: com.rupee.template_four
 - launchApp
 - tapOn: "Store name or a product..."
 - tapOn: "Search Products"
-- inputText: "handcrafts"
-- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+- inputText: "one stop_at"
+- tapOn: "One Stop_AT\n0.0\nKukatpally"
 #Product
 - tapOn: "Search Products"
-- inputText: "pendants ex return"
-- tapOn: "Pendants EX Return"
-- tapOn: "pa
+- inputText: "branded rtn ex"
+- tapOn: "branded Rtn Ex"
+- tapOn: "dssd
 
-    Handcrafts
+    One stop_at
 
-    Pendants EX Return
+    branded Rtn Ex
 
-    ₹10"
+    ₹25.50"
 - tapOn: "Add To Cart"
 - tapOn:
     point: "6%,7%"
 #Kit
 - tapOn: "Search Products"
-- inputText: "Candles ex return"
-- tapOn: "Candles Ex Return"
-- tapOn: "₹27
+- eraseText: 50
+- inputText: "kit exc"
+- tapOn: "Kit Exc"
+- tapOn: "₹14.20
 
-    Handcrafts
+    One stop_at
 
-    Candles Ex Return
+    Kit Exc
 
-    Total: 2 packs"
+    Total: 3 packs"
 - tapOn: "Add To Cart"
 - tapOn:
     point: "7%,8%"
@@ -38,7 +39,7 @@ appId: com.rupee.template_four
     element: "Note: Cancellation must be requested 24 hours prior."
     direction: DOWN
 - assertVisible: "Tax"
-- assertVisible: "₹0.74"  
+- assertVisible: "₹0.28"
 - tapOn: "Pay via\nSelect payment mode"
 - tapOn: "Cash On Delivery"
 - tapOn:
@@ -47,5 +48,5 @@ appId: com.rupee.template_four
 - tapOn: "Settings"
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"
-- assertVisible: "Process\nPendants EX Return\n₹10.20"
-- assertVisible: "Process\nCandles Ex Return\n₹27.54"
+- assertVisible: "Process\nbranded Rtn Ex\n₹25.50"
+- assertVisible: "Process\nKit Exc\n₹14.48"

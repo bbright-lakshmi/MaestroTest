@@ -17,6 +17,8 @@ appId: com.rupee.template_four
     direction: DOWN
 - assertVisible: "Cart Total (1 Item)"
 - assertVisible: "₹53"
+- assertVisible: "Delivery/Package"
+- assertVisible: "₹4451.10"
 - assertVisible: "Discount"
 - assertVisible: "₹0"
 - assertVisible: "Coupon"

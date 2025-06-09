@@ -3,36 +3,38 @@ appId: com.rupee.template_four
 - launchApp
 - tapOn: "Store name or a product..."
 - tapOn: "Search Products"
-- inputText: "handcrafts"
-- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+- inputText: "one stop_at"
+- tapOn: "One Stop_AT\n0.0\nKukatpally"
 - tapOn: "Search Products"
-- inputText: "pendants ex return"
-- tapOn: "Pendants EX Return"
-- tapOn: "pa
+- inputText: "kit rtn"
+- tapOn: "Kit rtn"
+- tapOn: "₹50
 
-    Handcrafts
+    One stop_at
 
-    Pendants EX Return
+    kit rtn
 
-    ₹10"
+    Total: 1 packs"
 - tapOn: "Add To Cart"
-- tapOn: "ra2"
-- tapOn: "Add To Cart"
-- tapOn: "2\nCart"
-- assertVisible: "Pendants EX Return\nra 1 x 1\n₹10"
-- assertVisible: "Pendants EX Return\nra 2 x 1\n₹19"
+- tapOn:
+    point: "7%,8%"
+- tapOn: "1\nCart"
+- assertVisible: "kit rtn\n x 1\n₹50"
 - tapOn: "Apply Coupons"
-- tapOn: "₹3
+- tapOn: "4 %
 
-    COUPONRP
+    COUPONWN
 
     Tap To Apply
 
-    Expire - May 23, 2025
+    Expire - Jun 15, 2025
 
     Cart Amount ₹20
 
-    HandCrafts"
+    One Stop_AT"
+#- tapOn:
+#    point: "50%,18%"
+#- tapOn: "Tap To Apply" - not working 
 - tapOn: "Pay via\nSelect payment mode"
 - tapOn: "Cash On Delivery"
 - tapOn:
@@ -41,8 +43,11 @@ appId: com.rupee.template_four
 - tapOn: "Settings"
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"
-- assertVisible: "Process\nPendants EX Return\n₹10.20"
-- assertVisible: "Process\nPendants EX Return\n₹19.20"
+- assertVisible: "Process\nAnarkali Ib\n₹21.84"
+- assertVisible: "Process\nAnarkali Ib\n₹33.18"
 - tapOn: "Cancel"
 - assertVisible: "Coupon Applied"
 - assertVisible: "A coupon has been applied to this order. The entire order must be canceled. Do you want to cancel the entire order?"
+- assertVisible: "Info
+
+    The entire order has been canceled."

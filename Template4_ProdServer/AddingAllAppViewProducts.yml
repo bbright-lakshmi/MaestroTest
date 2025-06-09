@@ -3,77 +3,78 @@ appId: com.rupee.template_four
 - launchApp
 - tapOn: "Store name or a product..."
 - tapOn: "Search Products"
-- inputText: "handcrafts"
-- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+- inputText: "one stop_at"
+- tapOn: "One Stop_AT\n0.0\nKukatpally"
 #Premium
 - tapOn: "Search Products"
-- inputText: "pendants ex return"
-- tapOn: "Pendants EX Return"
-- tapOn: "pa
+- inputText: "branded rtn ex"
+- tapOn: "branded Rtn Ex"
+#- tapOn:
+#    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+#    index: 56
+- tapOn: "dssd
 
-    Handcrafts
+    One stop_at
 
-    Pendants EX Return
+    branded Rtn Ex
 
-    ₹10"
+    ₹25.50"
 - tapOn: "Add To Cart"
 - tapOn:
     point: "6%,7%"
 #List
 - tapOn: "Search Products"
 - eraseText: 50
-- inputText: "flower"
-- tapOn: "Flower"
-- tapOn: "Handcrafts\nFlower\n₹22.61"
+- inputText: "plain In"
+- tapOn: "Plain In"
+- tapOn: "One stop_at\nPlain\n₹40.54"
 - tapOn: "Add To Cart"
 - tapOn:
     point: "6%,7%"
 #Quilt
 - tapOn: "Search Products"
 - eraseText: 50
-- inputText: "wall frame"
-- tapOn: "Wall Frame"
-- tapOn: "Handcrafts\nWall Frame\n₹29.90"
+- inputText: "Anarkali ib"
+- tapOn: "Anarkali Ib"
+- tapOn: "One stop_at\nAnarkali Ib\n₹21"
 - tapOn: "Add To Cart"
 - tapOn:
     point: "6%,7%"
 #Horizontal
 - tapOn: "Search Products"
 - eraseText: 50
-- inputText: "scented"
-- tapOn: "Scented"
-- tapOn: "Handcrafts\nScented\n₹52.46"
+- inputText: "shimmer"
+- tapOn: "Shimmer"
+- tapOn: "One stop_at\nShimmer\n₹45.90"
 - tapOn: "Add To Cart"
 - tapOn:
     point: "6%,7%"
 #Popular
 - tapOn: "Search Products"
 - eraseText: 50
-- inputText: "decor"
-- tapOn: "Decor"
-- tapOn: "Handcrafts\nDecor\n₹42"
+- inputText: "bodycon dress"
+- tapOn: "Bodycon dress"
+- tapOn: "One stop_at\nBodycon dress\n₹53"
 - tapOn: "Add To Cart"
 - tapOn:
     point: "6%,7%"
 #Carousel
 - tapOn: "Search Products"
 - eraseText: 50
-- inputText: "Dream catcher"
-- tapOn: "Dream Catcher"
-- tapOn: "Handcrafts\nDream Catcher\n₹63.40"
+- inputText: "lehenga top"
+- tapOn: "Lehenga top"
+- tapOn: "One stop_at\nLehenga top\n₹34"
 - tapOn: "Add To Cart"
-- tapOn:
-    point: "6%,7%"
 - tapOn: "6\nCart"
-- assertVisible: "Pendants EX Return\nra 1 x 1\n₹10"
-- assertVisible: "Flower\nflo x 1\n₹22.61"
-- assertVisible: "Wall Frame\nch x 1\n₹29.90"
+- assertVisible: "branded Rtn Ex\nkg x 1\n₹25.50"
+- assertVisible: "Plain In\nss x 1\n₹40.54"
+- assertVisible: "Anarkali Ib\nl x 1\n₹21"
 - scrollUntilVisible:
-    element: "Dream Catcher"
+    element: "Lehenga Top"
     direction: DOWN
-- assertVisible: "Scented\ndf x 1\n₹52.46"
-- assertVisible: "Decor\njhf x 1\n₹42"
-- assertVisible: "Dream Catcher\ndd x 1\n₹63.40"
+- assertVisible: "Shimmer\ner x 1\n₹45.90"
+- assertVisible: "Bodycon dress\nhh x 1\n₹53"
+- assertVisible: "Lehenga top\n1lit x 1\n₹34"
 - tapOn: "Pay via\nSelect payment mode"
 - tapOn: "Cash On Delivery"
 - tapOn:
@@ -82,9 +83,9 @@ appId: com.rupee.template_four
 - tapOn: "Settings"
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"
-- assertVisible: "Process\nPendants EX Return\n₹10.20"
-- assertVisible: "Process\nFlower\n₹22.61"
-- assertVisible: "Process\nWall Frame\n₹29.90"
-- assertVisible: "Process\nScented\n₹52.46"
-- assertVisible: "Process\nDecor\n₹43.26"
-- assertVisible: "Process\nDream Catcher\n₹63.40"
+- assertVisible: "Process\nbranded Rtn Ex\n₹25.81"
+- assertVisible: "Process\nPlain In\n₹40.54"
+- assertVisible: "Process\nAnarkali Ib\n₹21.84"
+- assertVisible: "Process\nShimmer\n₹45.90"
+- assertVisible: "Process\nBodycon dress\n₹53"
+- assertVisible: "Process\nLehenga top\n₹34"

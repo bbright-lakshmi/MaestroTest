@@ -4,19 +4,20 @@ appId: com.rupee.template_four
 - tapOn: "Store name or a product..."
 - tapOn: "Search Products"
 - tapOn: " Products\ \nTab 3 of 3"
-- inputText: "flower ib"
-- tapOn: "Flower IB"
-- tapOn: "₹69
+- inputText: "kit inc"
+- tapOn: "Kit Inc"
+- tapOn: "₹24.60
 
-    Handcrafts
+    One stop_at
 
-    Flower IB
+    Kit Inc
 
-    Total: 2 packs"
+    Total: 3 packs"
 - tapOn: "Add To Cart"
 - tapOn:
     point: "7%,8%"
 - tapOn: "1\nCart"
+- assertVisible: "Kit Inc\n x 2\n₹49.20"
 - tapOn: "Pay via\nSelect payment mode"
 - tapOn: "Cash On Delivery"
 - tapOn:
@@ -25,4 +26,4 @@ appId: com.rupee.template_four
 - tapOn: "Settings"
 - tapOn: "My Orders"
 - tapOn: "View Order Summary" 
-- assertVisible: "Process\nFlower IB\n₹142.14"   
+- assertVisible: "Process\nKit Inc\n₹49.20"

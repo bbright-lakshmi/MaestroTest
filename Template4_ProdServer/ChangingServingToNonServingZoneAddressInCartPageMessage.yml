@@ -1,0 +1,27 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: "Search Products"
+- inputText: "one stop_at"
+- tapOn: "One Stop_AT\n0.0\nKukatpally"
+- tapOn: "Search Products"
+- inputText: "kit rtn"
+- tapOn: "Kit rtn"
+- tapOn: "₹50
+
+    One stop_at
+
+    kit rtn
+
+    Total: 1 packs"
+- tapOn: "Add To Cart"
+- tapOn:
+    point: "7%,8%"
+- tapOn: "1\nCart"
+- tapOn: "Change"
+- tapOn: "Add New Address"
+
+- assertVisible: "Info
+
+    Ah! Sorry, We won't be serving you selected address"

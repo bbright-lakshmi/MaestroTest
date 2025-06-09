@@ -3,7 +3,7 @@ appId: com.rupee.template_four
 - launchApp
 - tapOn: "Settings"
 - tapOn: "My Addresses"
-- tapOn: "Serving Zone
+- assertVisible: "Serving Zone
 
     Serving Zone
 

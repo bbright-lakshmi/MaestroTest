@@ -1,0 +1,37 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: " Products\ \nTab 3 of 3"
+- tapOn: "Search Products"
+- inputText: "bodycon dress"
+- tapOn: "Bodycon dress"
+- tapOn: "One stop_at\nBodycon dress\n₹53"
+- tapOn: "Add To Cart"
+- assertVisible: "Success\nItem added to cart"
+- assertVisible: "1\nCart"
+- tapOn: "1\nCart"
+- assertVisible: "Bodycon dress\nhh x 1\n₹53"
+#Delivery Address Message
+- tapOn: "Place Order"
+- assertVisible: "Info\nAdd delivery address"
+- tapOn: "Add"
+- tapOn: "First name"
+- inputText: "Serving"
+- scrollUntilVisible:
+    element: "Save"
+    direction: DOWN
+- tapOn: "Last name"
+- inputText: "Zone"
+- tapOn: "Phone number"
+- inputText: "9876543210"
+- tapOn: "Full address"
+- inputText: "Serving Zone"
+- tapOn: "City name"
+- inputText: "Nellore"
+- tapOn: "Pin code"
+- inputText: "524004"
+- tapOn: "Save"
+- tapOn: "Place Order"
+#Payment Mode Message
+- assertVisible: "Info\nPlease select a payment mode"

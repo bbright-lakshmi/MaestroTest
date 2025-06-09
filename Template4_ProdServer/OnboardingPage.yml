@@ -21,5 +21,8 @@ appId: com.rupee.template_four
     index: 3
 - tapOn: "Verify & Next"
 #Onboarding Pages
-- tapOn:
-    point: "76%,95%"
+- repeat:
+    times: 2
+    commands:
+      - tapOn:
+          point: "77%,95%"

@@ -2,11 +2,21 @@ appId: com.rupee.template_four
 ---
 - launchApp
 - tapOn: "Resin art"
-- assertVisible: "Resin art"
+- tapOn: "Dresses In"
 - tapOn: " Products\ \nTab 2 of 2"
-- tapOn: "ADD"
+- tapOn: "One stop_at
+
+    Plain In
+
+    0 ratings
+
+    \ x 1
+
+    ₹40.54"
+#- tapOn: "ADD"
+- assertVisible: "1"
 - tapOn: "1\nCart"
-- assertVisible: "Teal Green Clock\nkg x 1\n₹20"
+- assertVisible: "Plain In\nss x 1\n₹40.54"
 - tapOn: "Pay via\nSelect payment mode"
 - tapOn: "Cash On Delivery"
 - tapOn:
@@ -15,4 +25,4 @@ appId: com.rupee.template_four
 - tapOn: "Settings"
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"
-- assertVisible: "Process\nTeal Green Clock\n₹20.40"
+- assertVisible: "Process\nPlain In\n₹40.54"

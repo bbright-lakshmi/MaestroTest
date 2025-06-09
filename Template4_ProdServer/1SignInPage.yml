@@ -6,7 +6,7 @@ appId: com.rupee.template_four
 #   id: "com.android.permissioncontroller:id/permission_allow_button"
 #Login page
 - tapOn: "Enter Name"
-- inputText: "xyz"
+- inputText: "Xyz"
 - tapOn: "Enter Phone Number"
 - inputText: "9182118702"
 - tapOn: "Send OTP"
@@ -20,4 +20,10 @@ appId: com.rupee.template_four
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 3
 - tapOn: "Verify & Next"
-- tapOn: "Skip"
+#- tapOn: "Skip"
+#Onboarding Pages
+- repeat:
+    times: 2
+    commands:
+      - tapOn:
+          point: "77%,95%"

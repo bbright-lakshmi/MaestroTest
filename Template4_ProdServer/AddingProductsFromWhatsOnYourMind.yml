@@ -1,7 +1,6 @@
 appId: com.rupee.template_four
 ---
 - launchApp
-- tapOn: "Resin art"
 - tapOn: "Dresses In"
 - tapOn: " Products\ \nTab 2 of 2"
 - tapOn: "One stop_at

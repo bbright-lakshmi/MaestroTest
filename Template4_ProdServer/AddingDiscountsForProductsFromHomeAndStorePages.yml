@@ -1,0 +1,13 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Upto
+
+    ₹3.80 Off
+
+    discprod
+
+    product discount"
+- tapOn: "Search Discount Items"
+- inputText: "flared"
+- tapOn: "span.text-purple-500"

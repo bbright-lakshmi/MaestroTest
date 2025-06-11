@@ -1,0 +1,31 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: "Search Products"
+- inputText: "one stop_at"
+- tapOn: "One Stop_AT\n0.0\nKukatpally"
+- tapOn: "Search Products"
+- inputText: "product returnable"
+- tapOn: "product returnable"
+- tapOn: "One stop_at\nproduct returnable\n₹28"
+- assertVisible: "₹28"
+- tapOn: "Add To Cart"
+- tapOn: "Success\nItem added to cart"
+- tapOn: "2kg"
+- assertVisible: "₹43.92"
+- tapOn: "Add To Cart"
+- tapOn: "Success\nItem added to cart"
+- tapOn: "2\nCart"
+- assertVisible: "product returnable\nkg x 1\n₹28"
+- assertVisible: "product returnable\n2kg x 1\n₹43.92"
+- tapOn:
+    text: "Delete"
+    index: 1
+- assertVisible: "Delete it?"
+- tapOn: "Yes"
+- assertVisible: "product returnable\nkg x 1\n₹28"
+- stopApp: "com.rupee.template_four" # Kills the app (adb shell am kill)
+- launchApp: "com.rupee.template_four" # Relaunches the app
+- tapOn: "1\nCart"
+- assertVisible: "product returnable\nkg x 1\n₹28"

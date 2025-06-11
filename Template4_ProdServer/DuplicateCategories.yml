@@ -1,0 +1,45 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- scrollUntilVisible:
+    element: "roses"
+    direction: DOWN
+- tapOn: "roses"
+- tapOn: " Products\ \nTab 2 of 2"
+- tapOn: "One stop_at
+
+    red
+
+    0 ratings
+
+    \ x 1
+
+    ₹132"
+- tapOn: "Add To Cart"
+#- tapOn: "←"  # If the back arrow is a Unicode character
+- back #system back button
+- tapOn:
+    text: "roses"
+    index: 2  # Assuming the second occurrence of "roses"
+- scrollUntilVisible:
+    element: "1"
+    direction: DOWN
+- assertVisible: "1"    
+- repeat:
+    times: 2
+    commands:
+      #- tapOn: "+"
+      - tapOn:
+          point: "29%,81%"   
+- assertVisible: "2"   
+- tapOn: "1\nCart"
+- assertVisible: "red\nsds x 2\n₹264"    
+- tapOn: "Pay via\nSelect payment mode"
+- tapOn: "Cash On Delivery"
+- tapOn:
+    point: "6%,7%"
+- tapOn: "Place Order"
+- tapOn: "Settings"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nred\n₹264"

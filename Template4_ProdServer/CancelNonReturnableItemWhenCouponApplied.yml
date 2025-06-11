@@ -48,3 +48,4 @@ appId: com.rupee.template_four
 - tapOn: "Info
 
     Cannot cancel the order because it contains non-returnable items."
+

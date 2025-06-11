@@ -51,3 +51,4 @@ appId: com.rupee.template_four
 - assertVisible: "Info
 
     The entire order has been canceled."
+    

@@ -1,17 +1,22 @@
 appId: com.rupee.template_four
 ---
 - launchApp
-- tapOn: "Store name or a product..."
-- tapOn: "Search Products"
-- inputText: "one stop_at"
-- tapOn: "One Stop_AT\n0.0\nKukatpally"
-- tapOn: "Search Products"
-- inputText: "teal green clock"
+- tapOn: "Upto
+
+    ₹3.80 Off
+
+    discprod
+
+    product discount"
+- tapOn: "Search Discount Items"
+- inputText: "flared"
 - tapOn:
-    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-    index: 58
-- tapOn: contains("Teal Green Clock")
-#- tapOn: 
-#    element: "div[class='px-8 py-6 flex-grow overflow-y-scroll overflow-x-hidden hide-scrollbar'] div:nth-child(2) button:nth-child(1) span:nth-child(2)"
+    - "@xpath=//span[contains(text(),'flared')]"
+
 #- tapOn:
-#    xpath: "//android.widget.TextView[contains(@text, 'Clock')]"
+#    - "@css=span.text-purple-500"
+
+#- tapOn: "@xpath=//div[contains(text(),'flared')]"
+
+#- scrollTo: "@xpath=//span[contains(text(),'flared')]"
+#- tapOn: "@xpath=//span[contains(text(),'flared')]"

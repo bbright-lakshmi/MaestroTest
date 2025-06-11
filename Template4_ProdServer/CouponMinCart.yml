@@ -12,7 +12,7 @@ appId: com.rupee.template_four
 - tapOn: "Add To Cart"
 - tapOn: "1\nCart"
 - tapOn: "Apply Coupons"
-- tapOn: "₹2
+- assertVisible: "₹2
 
     COUPONNW
 
@@ -23,9 +23,8 @@ appId: com.rupee.template_four
     Cart Amount ₹20
 
     One Stop_AT"
-#- tapOn: "Tap To Apply" - not working
-#- tapOn:
-#    point: "50%,34%"
+- tapOn:
+    point: "50%,34%"
 - assertVisible: "Info
 
     Minimum cart value required is 20"    

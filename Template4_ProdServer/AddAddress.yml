@@ -8,7 +8,7 @@ appId: com.rupee.template_four
 - tapOn: "First name"
 - inputText: "Serving"
 - scrollUntilVisible:
-    element: "Save"
+    element: "Full address"
     direction: DOWN
 - tapOn: "Last name"
 - inputText: "Zone"
@@ -16,9 +16,16 @@ appId: com.rupee.template_four
 - inputText: "9876543210"
 - tapOn: "Full address"
 - inputText: "Serving Zone"
+- scrollUntilVisible:
+    element: "Save"
+    direction: DOWN
 - tapOn: "City name"
 - inputText: "Nellore"
 - tapOn: "Pin code"
 - inputText: "524004"
 - tapOn: "Save"
-- assertVisible: "Serving Zone, Nellore\n9876543210"
+- assertVisible: "Serving Zone
+
+    Serving Zone
+
+    9876543210"

@@ -9,13 +9,15 @@ appId: com.rupee.template_four
 - tapOn: "Trendy"
 - tapOn: "Boutique_mt\nTrendy\n₹24.60"
 - tapOn: "Add To Cart"
-- tapOn:
-    point: "6%,7%"
+- back
 #Store2
-- tapOn: "Search Products"
+- tapOn: "Trendy"
 - eraseText: 50
 - inputText: "bodycon dress"
 - tapOn: "Bodycon dress"
+#- tapOn:
+#    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+#    index: 58
 - tapOn: "One stop_at\nBodycon dress\n₹53"
 - tapOn: "Add To Cart"
 - assertVisible: "Attention: New Store Selected"

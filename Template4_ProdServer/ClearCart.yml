@@ -14,18 +14,22 @@ appId: com.rupee.template_four
 
     Total: 1 packs"
 - tapOn: "Add To Cart"
-- tapOn: "Search Products"
+- back
+- tapOn: "Kit rtn"
 - eraseText: 50
 - inputText: "Anarkali ib"
 - tapOn: "Anarkali Ib"
 - tapOn: "One stop_at\nAnarkali Ib\n₹21"
 - tapOn: "Add To Cart"
-- tapOn: "Search Products"
+- back
+- tapOn: "Anarkali Ib"
 - eraseText: 50
 - inputText: "lehenga top"
 - tapOn: "Lehenga top"
 - tapOn: "One stop_at\nLehenga top\n₹34"
 - tapOn: "Add To Cart"
+- back
+- tapOn: "3\nCart"
 - tapOn: "Clear Cart"
 - assertVisible: "Clear Cart?"
 - tapOn: "Yes"

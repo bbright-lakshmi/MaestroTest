@@ -2,8 +2,8 @@ appId: com.rupee.template_four
 ---
 - launchApp
 #Allow Notifications
-#- tapOn:
-#   id: "com.android.permissioncontroller:id/permission_allow_button"
+- tapOn:
+    id: "com.android.permissioncontroller:id/permission_allow_button"
 #Login page
 - tapOn: "Enter Name"
 - inputText: "Xyz"
@@ -15,7 +15,7 @@ appId: com.rupee.template_four
     id: "android:id/action0"
     index: 0
 - tapOn:
-    point: "50%,52%"
+    point: "50%,51%"
 - tapOn:
     id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
     index: 3
@@ -27,3 +27,7 @@ appId: com.rupee.template_four
     commands:
       - tapOn:
           point: "77%,95%"
+#GrantPermission
+- tapOn: "Grant Permission"
+- tapOn:
+    id: "com.android.permissioncontroller:id/permission_allow_foreground_only_button"

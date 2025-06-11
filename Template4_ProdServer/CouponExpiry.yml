@@ -7,7 +7,10 @@ appId: com.rupee.template_four
 - tapOn: "One Stop_AT\n0.0\nKukatpally"
 - tapOn: "Search Products"
 - inputText: "bodycon dress"
-- tapOn: "Bodycon dress"
+#- tapOn: "Bodycon dress"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 58
 - tapOn: "One stop_at\nBodycon dress\n₹53"
 - tapOn: "Add To Cart"
 - tapOn: "1\nCart"
@@ -23,18 +26,6 @@ appId: com.rupee.template_four
     Cart Amount ₹20
 
     One Stop_AT"
-#- tapOn:
-#    point: "50%,34%"
-- tapOn: "₹2
-
-    COUPONNW
-
-    Tap To Apply
-
-    Expire - Jun 7, 2025
-
-    Cart Amount ₹20
-
-    One Stop_AT"
-#- tapOn: "Tap To Apply" - not working
+- tapOn:
+    point: "50%,18%"
 - assertVisible: "Info\nOops!, Coupon is expired"

@@ -11,10 +11,9 @@ appId: com.rupee.template_four
 - tapOn: "Kurtis"
 - tapOn: "One stop_at\nKurtis\n₹109.67"
 - tapOn: "Add To Cart"
-- tapOn:
-    point: "6%,7%"
+- back
 #Kit
-- tapOn: "Search Products"
+- tapOn: "Kurtis"
 - eraseText: 50
 - inputText: "kit inc"
 - tapOn: "Kit Inc"
@@ -26,8 +25,7 @@ appId: com.rupee.template_four
 
     Total: 3 packs"
 - tapOn: "Add To Cart"
-- tapOn:
-    point: "7%,8%"
+- back
 - tapOn: "2\nCart"
 - scrollUntilVisible:
     element: "Note: Cancellation must be requested 24 hours prior."

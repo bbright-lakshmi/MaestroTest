@@ -1,9 +1,12 @@
 appId: com.rupee.template_four
 ---
 - launchApp
+- scrollUntilVisible:
+    element: "Dresses In"
+    direction: DOWN
 - tapOn: "Dresses In"
 - tapOn: " Products\ \nTab 2 of 2"
-- tapOn: "One stop_at
+- assertVisible: "One stop_at
 
     Plain In
 
@@ -12,8 +15,9 @@ appId: com.rupee.template_four
     \ x 1
 
     ₹40.54"
-#- tapOn: "ADD"
-- assertVisible: "1"
+- tapOn:
+    text: "ADD"
+    index: 1
 - tapOn: "1\nCart"
 - assertVisible: "Plain In\nss x 1\n₹40.54"
 - tapOn: "Pay via\nSelect payment mode"

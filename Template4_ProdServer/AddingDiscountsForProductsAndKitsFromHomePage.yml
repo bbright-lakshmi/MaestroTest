@@ -1,0 +1,48 @@
+appId: com.rupee.template_four
+---
+- launchApp
+#Product
+- tapOn: "Upto
+
+    ₹3.80 Off
+
+    discprod
+
+    product discount"
+- tapOn: "Search Discount Items"
+- inputText: "flared"
+- tapOn:
+    point: "26%,34%"
+- tapOn: "Add To Cart"
+- back
+- tapOn:
+    point: "6%,7%"
+#Kits
+- tapOn: "Upto
+
+    5% Off
+
+    disckitper
+
+    kit discount"
+- inputText: "kit dis"
+- tapOn:
+    point: "26%,34%"
+- tapOn: "Add To Cart"
+- back
+- tapOn: "2\nCart"
+- assertVisible: "flared\ndd x 1\n₹34\n₹30.20"
+- assertVisible: "kit dis\n x 1\n₹7\n₹6.65"
+- scrollUntilVisible:
+    element: "Note: Cancellation must be requested 24 hours prior."
+    direction: DOWN
+- tapOn: "Pay via\nSelect payment mode"
+- tapOn: "Cash On Delivery"
+- tapOn:
+    point: "6%,7%"
+- tapOn: "Place Order"
+- tapOn: "Settings"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nflared\n₹31.41"
+- assertVisible: "Process\nkit dis\n₹6.65"

@@ -11,8 +11,10 @@ appId: com.rupee.template_four
 - inputText: "9182118702"
 - tapOn: "Send OTP"
 #Otp page
+- tapOn: "Verify & Next"
+- assertVisible: "Info\nInvalid OTP"
 - tapOn:
-    point: "50%,52%"
+    point: "50%,51%"
 - inputText: "123456"
 - tapOn: "Verify & Next"
 - assertVisible: "Error

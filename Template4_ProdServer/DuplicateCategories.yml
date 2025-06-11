@@ -16,21 +16,21 @@ appId: com.rupee.template_four
 
     ₹132"
 - tapOn: "Add To Cart"
-#- tapOn: "←"  # If the back arrow is a Unicode character
+#- tapOn: "←"  # If back arrow is a Unicode character
 - back #system back button
 - tapOn:
     text: "roses"
-    index: 2  # Assuming the second occurrence of "roses"
+    index: 2  #second occurrence of "roses"
 - scrollUntilVisible:
     element: "1"
     direction: DOWN
 - assertVisible: "1"    
-- repeat:
-    times: 2
-    commands:
+#- repeat:
+#    times: 2
+#    commands:
       #- tapOn: "+"
-      - tapOn:
-          point: "29%,81%"   
+- tapOn:
+    point: "29%,81%"   
 - assertVisible: "2"   
 - tapOn: "1\nCart"
 - assertVisible: "red\nsds x 2\n₹264"    

@@ -9,9 +9,6 @@ appId: com.rupee.template_four
 - tapOn: "Search Products"
 - inputText: "branded rtn ex"
 - tapOn: "branded Rtn Ex"
-#- tapOn:
-#    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
-#    index: 56
 - tapOn: "dssd
 
     One stop_at
@@ -20,46 +17,47 @@ appId: com.rupee.template_four
 
     ₹25.50"
 - tapOn: "Add To Cart"
-- tapOn:
-    point: "6%,7%"
+- back
+# back arrow point
+#- tapOn:
+#    point: "6%,7%"
 #List
-- tapOn: "Search Products"
+- tapOn: "branded rtn ex"
 - eraseText: 50
 - inputText: "plain In"
 - tapOn: "Plain In"
-- tapOn: "One stop_at\nPlain\n₹40.54"
+- tapOn: "One stop_at\nPlain In\n₹40.54"
 - tapOn: "Add To Cart"
-- tapOn:
-    point: "6%,7%"
+- back
 #Quilt
-- tapOn: "Search Products"
+- tapOn: "plain in"
 - eraseText: 50
 - inputText: "Anarkali ib"
 - tapOn: "Anarkali Ib"
 - tapOn: "One stop_at\nAnarkali Ib\n₹21"
 - tapOn: "Add To Cart"
-- tapOn:
-    point: "6%,7%"
+- back
 #Horizontal
-- tapOn: "Search Products"
+- tapOn: "anarkali ib"
 - eraseText: 50
 - inputText: "shimmer"
 - tapOn: "Shimmer"
 - tapOn: "One stop_at\nShimmer\n₹45.90"
 - tapOn: "Add To Cart"
-- tapOn:
-    point: "6%,7%"
+- back
 #Popular
-- tapOn: "Search Products"
+- tapOn: "shimmer"
 - eraseText: 50
 - inputText: "bodycon dress"
-- tapOn: "Bodycon dress"
+#- tapOn: "Bodycon dress"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 58
 - tapOn: "One stop_at\nBodycon dress\n₹53"
 - tapOn: "Add To Cart"
-- tapOn:
-    point: "6%,7%"
+- back
 #Carousel
-- tapOn: "Search Products"
+- tapOn: "Bodycon dress"
 - eraseText: 50
 - inputText: "lehenga top"
 - tapOn: "Lehenga top"
@@ -70,7 +68,7 @@ appId: com.rupee.template_four
 - assertVisible: "Plain In\nss x 1\n₹40.54"
 - assertVisible: "Anarkali Ib\nl x 1\n₹21"
 - scrollUntilVisible:
-    element: "Lehenga Top"
+    element: "Lehenga top\n1lit x 1\n₹34"
     direction: DOWN
 - assertVisible: "Shimmer\ner x 1\n₹45.90"
 - assertVisible: "Bodycon dress\nhh x 1\n₹53"

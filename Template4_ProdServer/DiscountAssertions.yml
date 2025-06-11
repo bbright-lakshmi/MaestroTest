@@ -1,0 +1,78 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: "Search Products"
+- inputText: "one stop_at"
+- tapOn: "One Stop_AT\n0.0\nKukatpally"
+- tapOn: "Search Products"
+- inputText: "regular"
+- tapOn: "Regular"
+- tapOn:
+    point: "25%,35%"
+- assertVisible: "₹24.40"
+- assertVisible: "₹20.60"
+- tapOn: "Add To Cart"
+- tapOn: "2kg"
+- assertVisible: "₹15.75"
+- assertVisible: "₹11.95"
+- tapOn: "Add To Cart"
+- tapOn: "2\nCart"
+- assertVisible: "Regular\nkg x 1\n₹24.40\n₹20.60"
+- assertVisible: "Regular\n2kg x 1\n₹15.75\n₹11.95"
+- scrollUntilVisible:
+    element: "Note: Cancellation must be requested 24 hours prior."
+    direction: DOWN
+- assertVisible: "Discount"
+- assertVisible: "₹7.60"
+- tapOn: "Pay via\nSelect payment mode"
+- tapOn: "Cash On Delivery"
+- tapOn:
+    point: "6%,7%"
+- tapOn: "Place Order"
+- tapOn: "Settings"
+- tapOn: "My Orders"
+- tapOn: "View Order Summary"
+- assertVisible: "Process\nRegular\n₹20.60"
+- assertVisible: "Process\nRegular\n₹12.19"
+- tapOn: "Process\nRegular\n₹20.60"
+- scrollUntilVisible:
+    element: "Total Amount"
+    direction: DOWN
+- assertVisible: "Payment Details
+
+    Package Cost
+
+    ₹10
+
+    Delivery Cost
+
+    ₹6659.30
+
+    Discount
+
+    ₹7.60
+
+    Payment Mode
+
+    Cash On Delivery
+
+    Coupon
+
+    No Coupon
+
+    Coupon Amount
+
+    0
+
+    Tax
+
+    ₹0.24
+
+    Total Savings
+
+    ₹7.60
+
+    Total Amount
+
+    ₹6702.09"

@@ -5,26 +5,11 @@ appId: com.rupee.template_four
 - tapOn: "Search Products"
 - inputText: "one stop_at"
 - tapOn: "One Stop_AT\n0.0\nKukatpally"
-#Kit
 - tapOn: "Search Products"
-- inputText: "kit inc"
-- tapOn: "Kit Inc"
-- tapOn: "₹24.60
-
-    One stop_at
-
-    Kit Inc
-
-    Total: 3 packs"
-- tapOn: "Add To Cart"
-- back
-#Product
-- tapOn: "Kit Inc"
-- eraseText: 50
 - inputText: "shimmer"
 - tapOn: "Shimmer"
 - tapOn: "One stop_at\nShimmer\n₹45.90"
-- tapOn: "2\nCart"
+- tapOn: "1\nCart"
 - tapOn: "Apply Coupons"
 #- tapOn: "4 %
 
@@ -45,7 +30,7 @@ appId: com.rupee.template_four
     element: "Note: Cancellation must be requested 24 hours prior."
     direction: DOWN
 - assertVisible: "Coupon"
-- assertVisible: "₹2.82"
+- assertVisible: "₹1.84"
 - tapOn: "Pay via\nSelect payment mode"
 - tapOn: "Cash On Delivery"
 - tapOn:
@@ -54,12 +39,45 @@ appId: com.rupee.template_four
 - tapOn: "Settings"
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"
-- assertVisible: "Process\nKit Inc\n₹49.20"
 - assertVisible: "Shimmer\ner x 1\n₹45.90"
-- tapOn:
-    text: "Cancel"
-    index: 0
-- tapOn: "Info
+- assertVisible: "Shimmer\ner x 1\n₹45.90"
+- scrollUntilVisible:
+    element: "Total Amount"
+    direction: DOWN
+- assertVisible: "Payment Details
 
-    Cannot cancel the order because it contains non-returnable items."
+    Package Cost
 
+    ₹10
+
+    Delivery Cost
+
+    ₹6659.15
+
+    Discount
+
+    ₹0
+
+    Payment Mode
+
+    Cash On Delivery
+
+    Coupon
+
+    COUPONWN
+
+    Coupon Amount
+
+    ₹1.84
+
+    Tax
+
+    ₹0
+
+    Total Savings
+
+    ₹1.84
+
+    Total Amount
+
+    ₹6713.21"

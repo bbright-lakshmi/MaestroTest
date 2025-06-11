@@ -5,6 +5,7 @@ appId: com.rupee.template_four
 - tapOn: "Search Products"
 - inputText: "one stop_at"
 - tapOn: "One Stop_AT\n0.0\nKukatpally"
+#Kit
 - tapOn: "Search Products"
 - inputText: "kit rtn"
 - tapOn: "Kit rtn"
@@ -16,25 +17,38 @@ appId: com.rupee.template_four
 
     Total: 1 packs"
 - tapOn: "Add To Cart"
-- tapOn:
-    point: "7%,8%"
-- tapOn: "1\nCart"
-- assertVisible: "kit rtn\n x 1\n₹50"
+- back
+#Product
+- tapOn: "Kit rtn"
+- eraseText: 50
+- inputText: "product returnable"
+- tapOn: "product returnable"
+- tapOn: "One stop_at\nproduct returnable\n₹28"
+- tapOn: "Add To Cart"
+- tapOn: "2\nCart"
 - tapOn: "Apply Coupons"
-- tapOn: "4 %
+#- tapOn: "4 %
 
-    COUPONWN
+#    COUPONWN
 
-    Tap To Apply
+#    Tap To Apply
 
-    Expire - Jun 15, 2025
+#    Expire - Jun 15, 2025
 
-    Cart Amount ₹20
+#    Cart Amount ₹20
 
-    One Stop_AT"
-#- tapOn:
-#    point: "50%,18%"
-#- tapOn: "Tap To Apply" - not working 
+#    One Stop_AT"
+- tapOn:
+    containsDescendants:
+      - text: "Tap To Apply"
+    index: 1
+- tapOn:
+    point: "6%,7%"
+- scrollUntilVisible:
+    element: "Note: Cancellation must be requested 24 hours prior."
+    direction: DOWN
+- assertVisible: "Coupon"
+- assertVisible: "₹3.12"
 - tapOn: "Pay via\nSelect payment mode"
 - tapOn: "Cash On Delivery"
 - tapOn:
@@ -43,9 +57,11 @@ appId: com.rupee.template_four
 - tapOn: "Settings"
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"
-- assertVisible: "Process\nAnarkali Ib\n₹21.84"
-- assertVisible: "Process\nAnarkali Ib\n₹33.18"
-- tapOn: "Cancel"
+- assertVisible: "Process\nkit rtn\n₹50"
+- assertVisible: "Process\nproduct returnable\n₹28"
+- tapOn:
+    text: "Cancel"
+    index: 0
 - assertVisible: "Coupon Applied"
 - assertVisible: "A coupon has been applied to this order. The entire order must be canceled. Do you want to cancel the entire order?"
 - assertVisible: "Info

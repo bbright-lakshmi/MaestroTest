@@ -5,7 +5,10 @@ appId: com.rupee.template_four
 - tapOn: " Products\ \nTab 3 of 3"
 - tapOn: "Search Products"
 - inputText: "bodycon dress"
-- tapOn: "Bodycon dress"
+#- tapOn: "Bodycon dress"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 58
 - tapOn: "One stop_at\nBodycon dress\n₹53"
 - tapOn: "Add To Cart"
 - assertVisible: "Success\nItem added to cart"
@@ -18,7 +21,7 @@ appId: com.rupee.template_four
 - assertVisible: "Cart Total (1 Item)"
 - assertVisible: "₹53"
 - assertVisible: "Delivery/Package"
-- assertVisible: "₹4451.10"
+- assertVisible: "₹6669.15"
 - assertVisible: "Discount"
 - assertVisible: "₹0"
 - assertVisible: "Coupon"

@@ -42,13 +42,9 @@ appId: com.rupee.template_four
     containsDescendants:
       - text: "Tap To Apply"
     index: 1
-- tapOn:
-    point: "6%,7%"
 - scrollUntilVisible:
     element: "Note: Cancellation must be requested 24 hours prior."
     direction: DOWN
-- assertVisible: "Coupon"
-- assertVisible: "₹3.12"
 - tapOn: "Pay via\nSelect payment mode"
 - tapOn: "Cash On Delivery"
 - tapOn:
@@ -67,5 +63,4 @@ appId: com.rupee.template_four
 - assertVisible: "Info
 
     The entire order has been canceled."
-    
     

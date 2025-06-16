@@ -15,18 +15,17 @@ appId: com.rupee.template_four
 - tapOn: "Add To Cart"
 - tapOn: "1\nCart"
 - tapOn: "Apply Coupons"
-- assertVisible: "₹2
+- tapOn: "₹2
 
-    COUPONNW
+    COUPONEX
 
     Tap To Apply
 
-    Expire - Jun 7, 2025
+    Expire - Jun 14, 2025
 
     Cart Amount ₹20
 
     One Stop_AT"
 - tapOn:
-    point: "50%,18%"
+    point: "50%,34%"
 - assertVisible: "Info\nOops!, Coupon is expired"
-

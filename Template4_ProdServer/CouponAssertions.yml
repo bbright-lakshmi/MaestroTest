@@ -27,12 +27,14 @@ appId: com.rupee.template_four
 #- tapOn:
 #    containsDescendants:
 #      - text: "Tap To Apply"
-#    index: 1  # Optional: targets second occurrence
+#    index: 1 
+
+#- tapOn:
+#    text: "(//span[contains(text(),'Tap To Apply')])[2]"
 
 - tapOn:
     point: "50%,18%"
-- tapOn:
-    point: "6%,7%"
+- assertVisible: "Success\nCoupon Applied"
 - scrollUntilVisible:
     element: "Note: Cancellation must be requested 24 hours prior."
     direction: DOWN

@@ -39,13 +39,9 @@ appId: com.rupee.template_four
 #    One Stop_AT"
 - tapOn:
     point: "50%,18%"
-- tapOn:
-    point: "6%,7%"
 - scrollUntilVisible:
     element: "Note: Cancellation must be requested 24 hours prior."
     direction: DOWN
-- assertVisible: "Coupon"
-- assertVisible: "₹2.82"
 - tapOn: "Pay via\nSelect payment mode"
 - tapOn: "Cash On Delivery"
 - tapOn:

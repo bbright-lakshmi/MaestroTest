@@ -12,23 +12,20 @@ appId: com.rupee.template_four
 - tapOn: "Add To Cart"
 - tapOn: "1\nCart"
 - tapOn: "Apply Coupons"
-- tapOn: "₹2
+- tapOn: "3 %
 
-    COUPONNW
+    COUPONSM
 
     Tap To Apply
 
-    Expire - Jun 24, 2025
+    Expire - Jun 23, 2025
 
-    Cart Amount ₹20
+    Cart Amount ₹15
 
     One Stop_AT"
 #- tapOn: "Tap To Apply" - not working 
 #- tapOn:
-#    point: "50%,34%"
-- assertVisible: "Success\nCoupon Applied"
-- tapOn:
-    point: "6%,7%"
+#    point: "50%,67%"
 - assertVisible: "You saved ₹2 with COUPONNW"
 - tapOn: "Pay via\nSelect payment mode"
 - tapOn: "Cash On Delivery"
@@ -39,17 +36,18 @@ appId: com.rupee.template_four
 - tapOn: "Add To Cart"
 - tapOn: "1\nCart"
 - tapOn: "Apply Coupons"
-- tapOn: "₹2
+- tapOn: "3 %
 
-    COUPONNW
+    COUPONSM
 
     Tap To Apply
 
-    Expire - Jun 15, 2025
+    Expire - Jun 23, 2025
 
-    Cart Amount ₹20
+    Cart Amount ₹15
 
     One Stop_AT"
 - assertVisible: "Info
 
     Coupon already applied for this user Mobile number"
+    

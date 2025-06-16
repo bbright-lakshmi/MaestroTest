@@ -9,6 +9,7 @@ appId: com.rupee.template_four
 - inputText: "shimmer"
 - tapOn: "Shimmer"
 - tapOn: "One stop_at\nShimmer\n₹45.90"
+- tapOn: "Add To Cart"
 - tapOn: "1\nCart"
 - tapOn: "Apply Coupons"
 #- tapOn: "4 %
@@ -22,6 +23,12 @@ appId: com.rupee.template_four
 #    Cart Amount ₹20
 
 #    One Stop_AT"
+
+#- tapOn:
+#    containsDescendants:
+#      - text: "Tap To Apply"
+#    index: 1  # Optional: targets second occurrence
+
 - tapOn:
     point: "50%,18%"
 - tapOn:
@@ -42,7 +49,7 @@ appId: com.rupee.template_four
 - assertVisible: "Shimmer\ner x 1\n₹45.90"
 - assertVisible: "Shimmer\ner x 1\n₹45.90"
 - scrollUntilVisible:
-    element: "Total Amount"
+    element: "Cash On Delivery"
     direction: DOWN
 - assertVisible: "Payment Details
 

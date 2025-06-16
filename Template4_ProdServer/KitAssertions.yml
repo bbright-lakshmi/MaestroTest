@@ -18,8 +18,7 @@ appId: com.rupee.template_four
 - assertVisible: "₹14.20"
 - tapOn: "Add To Cart"
 - assertVisible: "Success\nItem added to cart"
-- tapOn:
-    point: "7%,8%"
+- back
 - tapOn: "1\nCart"
 - assertVisible: "Kit Exc\n x 3\n₹42.60"
 - scrollUntilVisible:

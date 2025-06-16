@@ -28,3 +28,4 @@ appId: com.rupee.template_four
 - assertVisible: "Info
 
     Minimum cart value required is 20"    
+

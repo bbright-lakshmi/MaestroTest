@@ -25,7 +25,9 @@ appId: com.rupee.template_four
 - tapOn: "View Order Summary"
 - assertVisible: "Process\nproduct returnable\n₹28"
 - assertVisible: "Process\nproduct returnable\n₹43.92"
-- tapOn: "Cancel"
+- tapOn:
+    text: "Cancel"
+    index: 0 
 - assertVisible: "Are you sure you want to cancel this item?"
 - tapOn: "Yes"
 - assertVisible: "Info\nItem canceled successfully."

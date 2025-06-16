@@ -20,3 +20,4 @@ appId: com.rupee.template_four
 - assertVisible: "Error
 
     OTP verification failed, please double-check the OTP"
+

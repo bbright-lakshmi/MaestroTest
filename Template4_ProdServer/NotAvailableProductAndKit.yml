@@ -17,10 +17,9 @@ appId: com.rupee.template_four
 
     ₹122"
 - assertVisible: "Not Available"
-- tapOn:
-    point: "6%,7%"
+- back
 #Kit
-- tapOn: "Search Products"
+- tapOn: "Product"
 - eraseText: 50
 - inputText: "kit time"
 - tapOn: "Kit Time"

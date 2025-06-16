@@ -17,10 +17,9 @@ appId: com.rupee.template_four
 
     ₹54"
 - assertVisible: "Out of Stock"
-- tapOn:
-    point: "6%,7%"
+- back
 #Kit
-- tapOn: "Search Products"
+- tapOn: "Zero Stock"
 - eraseText: 50
 - inputText: "kit zero"
 - tapOn: "kit zero"

@@ -8,7 +8,7 @@ appId: com.rupee.template_four
 - tapOn: "Search Products"
 - inputText: "plain In"
 - tapOn: "Plain In"
-- tapOn: "One stop_at\nPlain\n₹40.54"
+- tapOn: "One stop_at\nPlain In\n₹40.54"
 - tapOn: "Add To Cart"
 - tapOn: "1\nCart"
 - assertVisible: "Plain In\nss x 1\n₹40.54"

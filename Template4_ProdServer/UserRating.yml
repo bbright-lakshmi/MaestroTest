@@ -16,8 +16,7 @@ appId: com.rupee.template_four
 
     Total: 1 packs"
 - tapOn: "Add To Cart"
-- tapOn:
-    point: "7%,8%"
+- back
 - tapOn: "1\nCart"
 - tapOn: "Pay via\nSelect payment mode"
 - tapOn: "Cash On Delivery"
@@ -34,7 +33,7 @@ appId: com.rupee.template_four
 - tapOn: "Cancel\nkit rtn\n₹50"
 - tapOn: "Rating"
 - tapOn:
-    point: "62%,90%"
+    point: "62%,87%"
 - tapOn: "Save"
 - assertVisible: "Success
 
@@ -42,6 +41,9 @@ appId: com.rupee.template_four
 - tapOn:
     point: "6%,7%"
 - tapOn: "Home"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 56
 - tapOn: "₹50
 
     One stop_at
@@ -52,4 +54,4 @@ appId: com.rupee.template_four
 - extendedWaitUntil:
     visible: "Add to Cart"
     timeout: 5000      
-- takeScreenshot: Images/Template4/UserRating
+- takeScreenshot: Images/Template4_ProdServer/UserRating

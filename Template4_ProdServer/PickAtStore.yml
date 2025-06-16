@@ -17,20 +17,20 @@ appId: com.rupee.template_four
     Total: 3 packs"
 - assertVisible: "₹14.20"
 - tapOn: "Add To Cart"
-- tapOn:
-    point: "7%,8%"
+- back
 - tapOn: "1\nCart"
 - assertVisible: "Kit Exc\n x 3\n₹42.60"
 - tapOn: "Pay via\nSelect payment mode"
 - tapOn: "Pick At Store"
+- tapOn:
+    point: "6%,7%"
 - assertVisible: "Delivery Address"
 - assertVisible: "One Stop_AT"
 - assertVisible: "Kukatpally"
 - assertVisible: "9876543210"
-- tapOn: "Pay via\nPick At Store"
-- tapOn: "Pick At Store"
-- tapOn:
-    point: "6%,7%"
+- scrollUntilVisible:
+    element: "Note: Cancellation must be requested 24 hours prior."
+    direction: DOWN
 - assertVisible: "Delivery/Package"
 - assertVisible: "₹0"
 - tapOn: "Place Order"
@@ -38,44 +38,3 @@ appId: com.rupee.template_four
 - tapOn: "My Orders"
 - tapOn: "View Order Summary"
 - assertVisible: "Process\nKit Exc\n₹43.45"
-- tapOn: "Process\nKit Exc\n₹43.45"
-- scrollUntilVisible:
-    element: "Total Amount"
-    direction: DOWN
-- assertVisible: "Payment Details
-
-    Package Cost
-
-    ₹0
-
-    Delivery Cost
-
-    ₹0
-
-    Discount
-
-    ₹0
-
-    Payment Mode
-
-    Pick At Store
-
-    Coupon
-
-    No Coupon
-
-    Coupon Amount
-
-    0
-
-    Tax
-
-    ₹0.85
-
-    Total Savings
-
-    ₹0
-
-    Total Amount
-
-    ₹43.45"

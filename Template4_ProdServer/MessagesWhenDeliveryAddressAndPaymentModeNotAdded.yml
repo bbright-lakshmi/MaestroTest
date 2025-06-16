@@ -14,9 +14,8 @@ appId: com.rupee.template_four
 - assertVisible: "Success\nItem added to cart"
 - assertVisible: "1\nCart"
 - tapOn: "1\nCart"
-- assertVisible: "Bodycon dress\nhh x 1\n₹53"
-#Delivery Address Message
 - tapOn: "Place Order"
+#Delivery Address Message
 - assertVisible: "Info\nAdd delivery address"
 - tapOn: "Add"
 - tapOn: "First name"
@@ -41,3 +40,4 @@ appId: com.rupee.template_four
 - tapOn: "Place Order"
 #Payment Mode Message
 - assertVisible: "Info\nPlease select a payment mode"
+

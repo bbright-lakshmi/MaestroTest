@@ -18,7 +18,7 @@ appId: com.rupee.template_four
 
     Tap To Apply
 
-    Expire - Jun 15, 2025
+    Expire - Jun 24, 2025
 
     Cart Amount ₹20
 
@@ -27,6 +27,8 @@ appId: com.rupee.template_four
 #- tapOn:
 #    point: "50%,34%"
 - assertVisible: "Success\nCoupon Applied"
+- tapOn:
+    point: "6%,7%"
 - assertVisible: "You saved ₹2 with COUPONNW"
 - tapOn: "Pay via\nSelect payment mode"
 - tapOn: "Cash On Delivery"

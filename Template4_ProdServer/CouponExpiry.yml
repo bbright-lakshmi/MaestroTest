@@ -29,3 +29,4 @@ appId: com.rupee.template_four
 - tapOn:
     point: "50%,18%"
 - assertVisible: "Info\nOops!, Coupon is expired"
+

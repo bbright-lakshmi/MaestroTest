@@ -17,8 +17,7 @@ appId: com.rupee.template_four
     Total: 3 packs"
 - assertVisible: "₹24.60"
 - tapOn: "Add To Cart"
-- tapOn:
-    point: "7%,8%"
+- back
 - tapOn: "1\nCart"
 - assertVisible: "Kit Inc\n x 2\n₹49.20"
 - tapOn: "Pay via\nSelect payment mode"

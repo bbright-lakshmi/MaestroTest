@@ -13,13 +13,12 @@ appId: com.rupee.template_four
 - tapOn: "Home"
 - tapOn: "Store name or a product..."
 - tapOn: "Search Products"
-- inputText: "handcrafts"
-- tapOn: "HandCrafts"
-- tapOn: "HandCrafts\n0.0\nRK Beach Road"
+- inputText: "one stop_at"
+- tapOn: "One Stop_AT\n0.0\nKukatpally"
 - tapOn: "Search Products"
-- inputText: "tea coaster"
-- tapOn: "Tea coaster"
-- tapOn: "Handcrafts\nTea coaster\n₹24"
+- inputText: "product returnable"
+- tapOn: "product returnable"
+- tapOn: "One stop_at\nproduct returnable\n₹28"
 - tapOn: "Add To Cart"
 - tapOn: "Change"
 - tapOn: "Non Serving Zone
@@ -37,4 +36,4 @@ appId: com.rupee.template_four
 - extendedWaitUntil:
     visible: "Cart"
     timeout: 5000      
-- takeScreenshot: Images/Template4/HomePage
+- takeScreenshot: Images/Template4_ProdServer/HomePage

@@ -1,0 +1,16 @@
+appId: com.rupee.template_five
+---
+- launchApp
+- tapOn: "Search Stores"
+- inputText: "Boutique"
+- tapOn: "Boutique\nnellore, A.P"
+- assertVisible: "Store is Inactive. Please try again later"
+- tapOn: "Search"
+- tapOn: "Search Products"
+- inputText: "exclusive tax"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 56
+- tapOn: "Count 1\nExclusive tax\nx 1\n₹40"
+- tapOn: "Add to bag"
+- assertVisible: "Store is Inactive. Please try again later"

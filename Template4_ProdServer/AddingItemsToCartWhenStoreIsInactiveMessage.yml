@@ -1,0 +1,17 @@
+appId: com.rupee.template_four
+---
+- launchApp
+- tapOn: "Store name or a product..."
+- tapOn: "Search Products"
+- inputText: "one stop_at"
+- tapOn: "One Stop_AT\n0.0\nKukatpally"
+- assertVisible: "Store is Inactive. Please try again later"
+- tapOn: "Search Products"
+- inputText: "bodycon dress"
+#- tapOn: "Bodycon dress"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/0_resource_name_obfuscated"
+    index: 58
+- tapOn: "One stop_at\nBodycon dress\n₹53"
+- tapOn: "Add To Cart"
+- assertVisible: "Store is Inactive. Please try again later"

@@ -22,13 +22,7 @@ appId: com.rupee.template_one
       - tapOn: 
           point: "50%,93%"
 - tapOn: "Get Started"
-
-#- tapOn:
-#    point: "50%,93%"
-#- tapOn:
-#    point: "50%,93%"
-#- tapOn:
-#    point: "50%,93%"
-#- tapOn:
-#    point: "50%,93%"
-#- tapOn: "Get Started"
+#GrantPermission
+- tapOn: "Grant Permission"
+- tapOn:
+    id: "com.android.permissioncontroller:id/permission_allow_foreground_only_button"

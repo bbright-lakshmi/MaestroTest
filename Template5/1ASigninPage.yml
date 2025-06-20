@@ -21,4 +21,7 @@ appId: com.rupee.template_five
     times: 4
     commands:
       - tapOn: "Get Started"
-          
+#GrantPermission
+- tapOn: "Grant Permission"
+- tapOn:
+    id: "com.android.permissioncontroller:id/permission_allow_foreground_only_button"

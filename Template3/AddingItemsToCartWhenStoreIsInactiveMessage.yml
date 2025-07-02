@@ -4,7 +4,10 @@ appId: com.rupee.template_three
 - tapOn: "Search Stores"
 - inputText: "Boutique"
 - tapOn: "Boutique\nnellore, A.P"
-- assertVisible: "Store is Inactive. Please try again later"
+- extendedWaitUntil:
+    visible: "Search..."
+    timeout: 5000      
+- takeScreenshot: Images/Template3/AddingItemsToCartWhenStoreIsInactiveMessage
 - tapOn: "Search"
 - tapOn: "Search Products"
 - inputText: "exclusive tax"
@@ -13,4 +16,4 @@ appId: com.rupee.template_three
     index: 56
 - tapOn: "Count 1\nExclusive tax\nx 1\n₹40"
 - tapOn: "Add to bag"
-- assertVisible: "Store is Inactive. Please try again later"
+- assertVisible: "Store is currently inactive, please try again later."

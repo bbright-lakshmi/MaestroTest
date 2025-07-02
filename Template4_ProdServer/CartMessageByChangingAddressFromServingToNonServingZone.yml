@@ -21,11 +21,30 @@ appId: com.rupee.template_four
 - tapOn: "One stop_at\nproduct returnable\n₹28"
 - tapOn: "Add To Cart"
 - tapOn: "Change"
+- tapOn: "Search for a place, street, city..."
+- inputText: "delhi"
+- tapOn: "Delhi, Kotwali Tehsil, Delhi, India"
+- tapOn: "CONFIRM LOCATION"
+- tapOn: "First name"
+- inputText: "Non Serving"
+- tapOn: "Last name"
+- inputText: "Zone"
+- tapOn: "Phone number"
+- inputText: "9876543210"
+- assertVisible: "h-159 Lal Kuan"
+- scrollUntilVisible:
+    element: "Save"
+    direction: DOWN
+- assertVisible: "Delhi"
+- assertVisible: "110006"
+- tapOn: "Save"
 - tapOn: "Non Serving Zone
 
-    Non Serving Zone
+    h-159 Lal Kuan
 
     9876543210"
+#- tapOn:
+#    point: "77%,42%"
 - assertVisible: "Warning
 
     Cart items removed as they are not available in your serving area"
@@ -33,6 +52,7 @@ appId: com.rupee.template_four
     point: "5%,16%"
 - assertVisible: "Start Shopping"
 - tapOn: "Home"
+- back
 - extendedWaitUntil:
     visible: "Cart"
     timeout: 5000      

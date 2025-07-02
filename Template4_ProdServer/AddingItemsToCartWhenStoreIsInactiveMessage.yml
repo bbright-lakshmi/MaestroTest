@@ -5,7 +5,16 @@ appId: com.rupee.template_four
 - tapOn: "Search Products"
 - inputText: "one stop_at"
 - tapOn: "One Stop_AT\n0.0\nKukatpally"
-- assertVisible: "Store is Inactive. Please try again later"
+- extendedWaitUntil:
+    visible:  "Arts & Crafts
+
+       Kochi, Kozhikode
+
+       0
+
+       0 Ratings"
+    timeout: 5000      
+- takeScreenshot: Images/Template4/AddingItemsToCartWhenStoreIsInactiveMessage
 - tapOn: "Search Products"
 - inputText: "bodycon dress"
 #- tapOn: "Bodycon dress"
@@ -14,4 +23,4 @@ appId: com.rupee.template_four
     index: 58
 - tapOn: "One stop_at\nBodycon dress\n₹53"
 - tapOn: "Add To Cart"
-- assertVisible: "Store is Inactive. Please try again later"
+- assertVisible: "Store is currently inactive, please try again later."

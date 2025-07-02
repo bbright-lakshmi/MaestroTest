@@ -5,22 +5,20 @@ appId: com.rupee.template_four
 - tapOn: "My Addresses"
 - assertVisible: "No Delivery Address Found"
 - tapOn: "Add New Address"
+- tapOn: "CONFIRM LOCATION"
 - tapOn: "First name"
 - inputText: "Serving"
-- scrollUntilVisible:
-    element: "Full address"
-    direction: DOWN
 - tapOn: "Last name"
 - inputText: "Zone"
 - tapOn: "Phone number"
 - inputText: "9876543210"
-- tapOn: "Full address"
+- tapOn: "MDR"
+- eraseText: 50
 - inputText: "Serving Zone"
 - scrollUntilVisible:
     element: "Save"
     direction: DOWN
-- tapOn: "City name"
-- inputText: "Nellore"
+- assertVisible: "Nellore"
 - tapOn: "Pin code"
 - inputText: "524004"
 - tapOn: "Save"
